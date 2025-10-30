@@ -163,7 +163,11 @@ if st.session_state["user"] is None:
         else:
             if verify_login(user_id, password):
                 st.session_state["user"] = user_id
-                st.session_state["score"] = get_last_saved_score(user_id)
+
+                # Reset score for this user
+                st.session_state["score"] = 0
+                update_score(user_id, 0, 0)  # reset score in MongoDB
+
                 st.session_state["questions_loaded"] = []
                 st.session_state["total_questions"] = 0
                 st.session_state["choices"] = []
@@ -175,8 +179,9 @@ if st.session_state["user"] is None:
                 # ✅ Update last_active in MongoDB
                 update_last_active(user_id)
 
-                st.success(f"✅ Login successful! Welcome {user_id}.")
+                st.success(f"✅ Login successful! Welcome {user_id}. Your score has been reset.")
                 st.rerun()
+
 
             else:
                 st.error("❌ Invalid User ID or Password.")
@@ -220,8 +225,7 @@ if st.session_state["user"]:
             st.markdown(f"**{pos}: {uid} — {score} {online_dot}**", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
-    st.sidebar.markdown("### 🧭 Controls")
-    load_all_button = st.sidebar.button("🔁 Shuffle All Questions")
+
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 📂 Subjects & Topics")
 
@@ -335,7 +339,7 @@ if st.session_state["user"]:
         random.shuffle(all_questions)
         return all_questions
 
-    if load_all_button or not st.session_state.get("questions_loaded"):
+    if not st.session_state.get("questions_loaded"):
         st.session_state.questions_loaded = load_all_questions()
         random.shuffle(st.session_state.questions_loaded)
         st.session_state.q_index = 0
