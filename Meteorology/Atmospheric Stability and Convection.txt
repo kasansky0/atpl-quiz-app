@@ -1,0 +1,184 @@
+{
+  "Atmospheric Stability and Convection": [
+    {
+      "id": 1,
+      "question": "Environmental lapse rate (ELR) greater than the dry adiabatic lapse rate indicates:",
+      "options": [
+        "Absolute stability",
+        "Absolute instability",
+        "Conditional instability",
+        "Neutral stability"
+      ],
+      "answer": "Absolute instability",
+      "explanation": "If ELR > DALR, a lifted unsaturated parcel will be warmer than environment and continue to rise — absolute instability."
+    },
+    {
+      "id": 2,
+      "question": "A temperature inversion near the surface typically implies:",
+      "options": [
+        "Enhanced vertical mixing",
+        "A stable layer suppressing convection and mixing",
+        "Thunderstorm formation",
+        "High lapse rate"
+      ],
+      "answer": "A stable layer suppressing convection and mixing",
+      "explanation": "Surface inversions (temperature increases with height) create strong stability, suppressing convection and trapping pollutants/fog."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following favours strong surface-based convection during daytime?",
+      "options": [
+        "Strong inversion at low level",
+        "Dry mid-level air and steep low-level lapse rate with surface heating",
+        "Cloud cover preventing solar heating",
+        "Cold stable surface"
+      ],
+      "answer": "Dry mid-level air and steep low-level lapse rate with surface heating",
+      "explanation": "Surface heating plus dry mid-levels and steep lapse rates lead to strong buoyancy and vigorous surface-based convection."
+    },
+    {
+      "id": 4,
+      "question": "The Level of Free Convection (LFC) is the altitude where:",
+      "options": [
+        "A lifted parcel first becomes saturated",
+        "A lifted parcel becomes warmer than the environment and rises freely",
+        "The environmental temperature equals the dew point",
+        "Air pressure drops below 500 hPa"
+      ],
+      "answer": "A lifted parcel becomes warmer than the environment and rises freely",
+      "explanation": "LFC is the altitude where a lifted parcel, often after reaching saturation, becomes positively buoyant and ascends freely."
+    },
+    {
+      "id": 5,
+      "question": "Which describes Convective Available Potential Energy (CAPE)?",
+      "options": [
+        "A measure of stability based on surface pressure only",
+        "The integrated buoyant energy available to an air parcel; larger CAPE implies stronger updraft potential",
+        "A humidity index unrelated to convection",
+        "An index used only for icing"
+      ],
+      "answer": "The integrated buoyant energy available to an air parcel; larger CAPE implies stronger updraft potential",
+      "explanation": "CAPE quantifies the energy an air parcel would gain from buoyancy; high CAPE indicates potential for strong convection and thunderstorms."
+    },
+    {
+      "id": 6,
+      "question": "A surface-based temperature inversion followed by strong heating aloft could produce:",
+      "options": [
+        "Enhanced turbulence at high altitudes only",
+        "No effect on cloud formation",
+        "Elevated convection (clouds and storms at levels above the inversion)",
+        "Guaranteed clear skies everywhere"
+      ],
+      "answer": "Elevated convection (clouds and storms at levels above the inversion)",
+      "explanation": "If surface inversion caps surface parcels, but heating above the inversion destabilizes layers, elevated convection (above the inversion) can occur."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following vertical profiles is most likely to support pileus or cap clouds atop growing cumulus towers?",
+      "options": [
+        "Very dry profile with no instability",
+        "A moist layer just above a strong updraft leading to rapid condensation",
+        "A stable stratosphere",
+        "Strong subsidence everywhere"
+      ],
+      "answer": "A moist layer just above a strong updraft leading to rapid condensation",
+      "explanation": "A strong updraft encountering moist stable layer can produce cap (pileus) clouds as air is rapidly lifted and condensed at that level."
+    },
+    {
+      "id": 8,
+      "question": "Which statement about subsidence inversions associated with high-pressure systems is true?",
+      "options": [
+        "They produce widespread convective clouds",
+        "They are associated with sinking air that warms adiabatically and suppresses cloud formation",
+        "They only occur in tropical regions",
+        "They increase surface humidity strongly"
+      ],
+      "answer": "They are associated with sinking air that warms adiabatically and suppresses cloud formation",
+      "explanation": "Subsidence inversion from sinking air warms aloft, creating a cap and inhibiting vertical cloud growth and convection."
+    },
+    {
+      "id": 9,
+      "question": "What is entrainment in the context of convective updrafts?",
+      "options": [
+        "The process of precipitation formation only",
+        "Mixing of environmental air into an updraft, often reducing buoyancy",
+        "Cloud-to-ground lightning formation",
+        "Cooling due to radiative loss only"
+      ],
+      "answer": "Mixing of environmental air into an updraft, often reducing buoyancy",
+      "explanation": "Entrainment mixes environmental air (often cooler/drier) into an updraft, diluting it and reducing buoyancy and updraft strength."
+    },
+    {
+      "id": 10,
+      "question": "Which vertical temperature profile would most likely produce widespread stratiform cloud and light precipitation rather than deep convection?",
+      "options": [
+        "Steep lapse rate and high CAPE",
+        "Gentle lapse rate with large-scale ascent (stable to conditionally unstable)",
+        "Very dry column with strong surface heating",
+        "Inversion aloft with extreme instability below it"
+      ],
+      "answer": "Gentle lapse rate with large-scale ascent (stable to conditionally unstable)",
+      "explanation": "Gentle large-scale ascent over a moist layer favors stratiform cloud and steady light precipitation (e.g., warm front), not deep convection."
+    },
+    {
+      "id": 11,
+      "question": "If an air parcel is lifted dry adiabatically until saturation then follows moist adiabatic lapse rate, the altitude at which it becomes saturated is called:",
+      "options": [
+        "LCL (Lifting Condensation Level)",
+        "EL (Equilibrium Level)",
+        "FL (Flight Level)",
+        "Tropopause"
+      ],
+      "answer": "LCL (Lifting Condensation Level)",
+      "explanation": "LCL is where an ascending parcel reaches saturation (dew point) and cloud formation typically begins."
+    },
+    {
+      "id": 12,
+      "question": "A stable atmosphere tends to:",
+      "options": [
+        "Amplify vertical motions and encourage thunderstorms",
+        "Suppress vertical motions and inhibit convection",
+        "Always produce strong low-level wind shear",
+        "Cause immediate turbulence everywhere"
+      ],
+      "answer": "Suppress vertical motions and inhibit convection",
+      "explanation": "Stability resists vertical displacement, reducing the potential for convection and large vertical motions."
+    },
+    {
+      "id": 13,
+      "question": "Which condition often leads to morning radiation fog forming in valleys?",
+      "options": [
+        "Daytime strong winds and cloud cover",
+        "Clear skies at night and calm winds allowing radiative cooling",
+        "Warm ocean currents only",
+        "Heavy frontal precipitation"
+      ],
+      "answer": "Clear skies at night and calm winds allowing radiative cooling",
+      "explanation": "Clear, calm nights permit strong radiational cooling of surfaces, chilling near-surface air to the dew point and forming radiation fog in low areas."
+    },
+    {
+      "id": 14,
+      "question": "The Equilibrium Level (EL) in a sounding is the altitude where:",
+      "options": [
+        "Parcel temperature equals the environmental temperature and buoyancy becomes zero or negative",
+        "Air is first saturated",
+        "The tropopause starts",
+        "Wind shear is maximum"
+      ],
+      "answer": "Parcel temperature equals the environmental temperature and buoyancy becomes zero or negative",
+      "explanation": "EL is where a rising parcel reaches neutral buoyancy again; above EL the parcel may become negatively buoyant and stop rising."
+    },
+    {
+      "id": 15,
+      "question": "Which parameter measured from a sounding best quantifies the potential intensity of thunderstorm updrafts?",
+      "options": [
+        "Dew point depression at surface only",
+        "CAPE",
+        "Surface pressure only",
+        "Visibility"
+      ],
+      "answer": "CAPE",
+      "explanation": "CAPE gives the energy available for updrafts and is a primary index for convective potential and updraft strength."
+    }
+  ]
+}

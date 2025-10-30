@@ -24,7 +24,6 @@ st.markdown(
 )
 
 
-
 # -----------------------------
 # CONFIG
 # -----------------------------
@@ -32,9 +31,11 @@ BASE_FOLDER = "."
 QUESTIONS_FILE_TYPES = [".txt", ".json"]
 SESSION_TIMEOUT_SECONDS = 300  # 5 minutes timeout
 
-# MongoDB connection
-MONGO_URI = "mongodb+srv://atpl_user:Alenka123@cluster0.rhn7axa.mongodb.net/?appName=Cluster0"
-DB_NAME = "atpl_quiz"
+MONGO_URI = st.secrets["MONGO_URI"]
+DB_NAME = st.secrets["DB_NAME"]  # <--- ADD THIS
+client = MongoClient(MONGO_URI)
+
+
 
 # -----------------------------
 # MONGO CONNECTION
@@ -99,6 +100,10 @@ def update_score(user_id, score, total_questions):
 def load_scores_cache():
     if "scores_cache" not in st.session_state:
         st.session_state["scores_cache"] = list(scores_col.find())
+
+def refresh_chat():
+    """Fetch latest chat messages and store in session state."""
+    st.session_state.chat_messages = get_messages()
 
 # -----------------------------
 # LAST ACTIVE HELPER
@@ -359,9 +364,8 @@ if st.session_state["user"]:
         st.session_state.q_index -= 1
     elif st.session_state.nav_action == "next" and st.session_state.q_index < len(questions) - 1:
         st.session_state.q_index += 1
-
-    # ✅ Update last_active on navigation
-    update_last_active(user_name)
+        update_last_active(user_name)
+        refresh_chat()
 
     st.session_state.nav_action = None
 
@@ -369,8 +373,6 @@ if st.session_state["user"]:
     # LAYOUT: QUIZ + CHAT SIDE BY SIDE
     # -----------------------------
     col_main, col_chat = st.columns([3, 1])
-
-
 
     # Scrollable container for questions
     with col_main:
@@ -414,6 +416,7 @@ if st.session_state["user"]:
                         # ✅ Auto-save score and update last_active
                         update_score(user_name, st.session_state.score, total_questions)
                         update_last_active(user_name)
+                        refresh_chat()
 
                     else:
                         st.info("You already submitted this question. Click Next to continue.")

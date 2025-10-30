@@ -1,0 +1,184 @@
+{
+  "Precipitation Processes": [
+    {
+      "id": 1,
+      "question": "The Bergeron-Findeisen process requires which two particle types to be effective?",
+      "options": [
+        "Ice crystals and supercooled water droplets",
+        "Hailstones and rain only",
+        "Dust particles and salt",
+        "Water vapor and ozone"
+      ],
+      "answer": "Ice crystals and supercooled water droplets",
+      "explanation": "Bergeron process relies on coexistence of ice crystals and supercooled droplets; ice grows at the expense of vapor from droplets leading to precipitation."
+    },
+    {
+      "id": 2,
+      "question": "Which precipitation type is most likely to produce significant airframe icing on contact?",
+      "options": [
+        "Snow",
+        "Freezing rain",
+        "Drizzle above freezing",
+        "Virga"
+      ],
+      "answer": "Freezing rain",
+      "explanation": "Freezing rain consists of supercooled liquid drops that freeze on impact, causing rapid airframe and ground icing."
+    },
+    {
+      "id": 3,
+      "question": "Which mechanism primarily produces hail in severe thunderstorms?",
+      "options": [
+        "Evaporation of raindrops",
+        "Repeated growth cycles in strong updrafts through supercooled regions",
+        "Large-scale stratiform rain processes",
+        "Orographic lifting without convection"
+      ],
+      "answer": "Repeated growth cycles in strong updrafts through supercooled regions",
+      "explanation": "Hailstones grow by cyclic ascent and descent through supercooled layers inside strong thunderstorm updrafts."
+    },
+    {
+      "id": 4,
+      "question": "Virga refers to:",
+      "options": [
+        "Precipitation that evaporates before reaching the ground",
+        "Small ice crystals at high altitude",
+        "A type of drizzle",
+        "Ground frost after rain"
+      ],
+      "answer": "Precipitation that evaporates before reaching the ground",
+      "explanation": "Virga is precipitation that falls but evaporates or sublimates before reaching the surface, often producing virga shafts."
+    },
+    {
+      "id": 5,
+      "question": "Collision-coalescence is the dominant precipitation process in:",
+      "options": [
+        "Cold mid-latitude stratiform clouds",
+        "Warm tropical cumulus clouds composed of liquid droplets",
+        "Upper-level cirrus clouds",
+        "Glaciated anvils"
+      ],
+      "answer": "Warm tropical cumulus clouds composed of liquid droplets",
+      "explanation": "In warm clouds (no ice), collision-coalescence (droplets colliding and merging) forms raindrops, typical in tropical regions."
+    },
+    {
+      "id": 6,
+      "question": "Sleet (ice pellets) forms when:",
+      "options": [
+        "Snowflakes pass through a deep warm layer then refreeze in a deep cold layer before hitting the ground",
+        "Rain falls and freezes on contact with the ground",
+        "Supercooled drizzle freezes on aircraft surfaces",
+        "Only in hailstorms"
+      ],
+      "answer": "Snowflakes pass through a deep warm layer then refreeze in a deep cold layer before hitting the ground",
+      "explanation": "Sleet forms when snow melts in a warm layer and then refreezes into ice pellets in a subsequent cold layer before reaching the ground."
+    },
+    {
+      "id": 7,
+      "question": "Which precipitation type is most likely to produce very poor braking action on runways due to glaze after freezing?",
+      "options": [
+        "Light snow",
+        "Freezing rain",
+        "Dry hail",
+        "Virga"
+      ],
+      "answer": "Freezing rain",
+      "explanation": "Freezing rain creates smooth glaze ice on surfaces, severely reducing braking and taxiway traction."
+    },
+    {
+      "id": 8,
+      "question": "Which statement about drizzle is correct?",
+      "options": [
+        "Drizzle drops are larger than raindrops",
+        "Drizzle consists of very small droplets, often from stratus or stratocumulus clouds",
+        "Drizzle cannot reduce visibility",
+        "Drizzle only occurs above 10,000 ft"
+      ],
+      "answer": "Drizzle consists of very small droplets, often from stratus or stratocumulus clouds",
+      "explanation": "Drizzle is composed of small droplets typically from stable, low-level stratiform clouds; it can reduce visibility and wet surfaces."
+    },
+    {
+      "id": 9,
+      "question": "Which instrument is most useful for detecting precipitation intensity at an airport?",
+      "options": [
+        "Ceilometer",
+        "Rain gauge or weather radar",
+        "Anemometer only",
+        "Thermometer"
+      ],
+      "answer": "Rain gauge or weather radar",
+      "explanation": "Rain gauges measure accumulation and radar estimates intensity and coverage; radar is widely used to show precipitation intensity and movement."
+    },
+    {
+      "id": 10,
+      "question": "Graupel differs from hail in that graupel is:",
+      "options": [
+        "A form of fresher snow only",
+        "Soft, heavily rimed snow pellets formed by accretion on snow crystals",
+        "Larger than most hailstones",
+        "Caused by sea spray"
+      ],
+      "answer": "Soft, heavily rimed snow pellets formed by accretion on snow crystals",
+      "explanation": "Graupel are soft snow pellets formed by riming where supercooled droplets freeze onto snow crystals, distinct from layered hailstones."
+    },
+    {
+      "id": 11,
+      "question": "Freezing rain requires which layered temperature profile?",
+      "options": [
+        "Subfreezing near surface only",
+        "Warm layer aloft above 0°C with shallow subfreezing near surface",
+        "Deep warm layer only",
+        "Entire column below freezing"
+      ],
+      "answer": "Warm layer aloft above 0°C with shallow subfreezing near surface",
+      "explanation": "Freezing rain occurs when precipitation melts in a warm layer then falls into a shallow subfreezing near-surface layer and remains liquid until impact."
+    },
+    {
+      "id": 12,
+      "question": "Which precipitation process is most important in mid-latitude stratiform clouds that produce widespread steady rain?",
+      "options": [
+        "Collision–coalescence only",
+        "Bergeron process with ice-phase mechanisms",
+        "Hailstone growth",
+        "Evaporation only"
+      ],
+      "answer": "Bergeron process with ice-phase mechanisms",
+      "explanation": "In cooler mid-latitude stratiform clouds, ice-phase processes (Bergeron) often dominate and produce steady precipitation over wide areas."
+    },
+    {
+      "id": 13,
+      "question": "Which is true about virga and its effect on the atmosphere beneath it?",
+      "options": [
+        "Virga moistens the lower atmosphere strongly",
+        "Evaporation of virga can cool and increase downdrafts beneath it",
+        "Virga always reaches the ground",
+        "Virga prevents turbulence"
+      ],
+      "answer": "Evaporation of virga can cool and increase downdrafts beneath it",
+      "explanation": "Evaporation of falling precipitation (virga) cools the air and can produce negative buoyancy and downdrafts or microbursts."
+    },
+    {
+      "id": 14,
+      "question": "Which cloud type is most likely to produce intense, short-lived convective precipitation?",
+      "options": [
+        "Altostratus",
+        "Cumulonimbus",
+        "Stratus",
+        "Cirrostratus"
+      ],
+      "answer": "Cumulonimbus",
+      "explanation": "Cumulonimbus clouds produce intense convective precipitation, often in thunderstorms with heavy rain and hail."
+    },
+    {
+      "id": 15,
+      "question": "Which atmospheric factor increases the probability of large raindrop formation via collision–coalescence?",
+      "options": [
+        "Very dry ambient air",
+        "Broad spectrum of droplet sizes and strong turbulence within the cloud",
+        "Only ice crystals present",
+        "No updrafts"
+      ],
+      "answer": "Broad spectrum of droplet sizes and strong turbulence within the cloud",
+      "explanation": "Collision–coalescence is enhanced by a wide droplet size distribution and turbulence or differential fall speeds promoting collisions."
+    }
+  ]
+}
