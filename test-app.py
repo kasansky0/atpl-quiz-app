@@ -205,7 +205,9 @@ if st.session_state["user"]:
         sheet_leaderboard = sheet_leaderboard.sort_values(by="score", ascending=False)
         for _, row in sheet_leaderboard.iterrows():
             leaderboard_data.append((row["user_id"], row["score"]))
-    leaderboard_data = [x for x in leaderboard_data if x[0] != user_name]
+    leaderboard_data = [
+        (uid, score) for (uid, score) in leaderboard_data if uid != user_name
+    ]
     leaderboard_data.append((user_name, st.session_state.get("score", 0)))
     leaderboard_data.sort(key=lambda x: x[1], reverse=True)
 
