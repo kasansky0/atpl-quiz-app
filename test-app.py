@@ -197,19 +197,20 @@ if st.session_state["user"]:
     # -----------------------------
     # SIDEBAR: LEADERBOARD + Controls + Folders
     # -----------------------------
-    load_scores_cache()
+    # Build leaderboard data for ALL users
+    all_users = list(users_col.find())
     leaderboard_data = []
-    df = pd.DataFrame(st.session_state.get("scores_cache", []))
-    if not df.empty and "score" in df.columns:
-        sheet_leaderboard = df.groupby("user_id")["score"].max().reset_index()
-        sheet_leaderboard = sheet_leaderboard.sort_values(by="score", ascending=False)
-        for _, row in sheet_leaderboard.iterrows():
-            leaderboard_data.append((row["user_id"], row["score"]))
-    leaderboard_data = [
-        (uid, score) for (uid, score) in leaderboard_data if uid != user_name
-    ]
-    leaderboard_data.append((user_name, st.session_state.get("score", 0)))
+
+    for user in all_users:
+        uid = user["user_id"]
+        # Get the user's latest score from scores collection
+        score_doc = scores_col.find_one({"user_id": uid}, sort=[("timestamp", -1)])
+        score = score_doc["score"] if score_doc else 0
+        leaderboard_data.append((uid, score))
+
+    # Sort descending
     leaderboard_data.sort(key=lambda x: x[1], reverse=True)
+
 
     def position_suffix(i):
         return f"{i + 1}{'st' if i == 0 else 'nd' if i == 1 else 'rd' if i == 2 else 'th'}"
