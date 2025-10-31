@@ -118,7 +118,7 @@ def update_last_active(user_id):
 # -----------------------------
 # ONLINE STATUS HELPER
 # -----------------------------
-ONLINE_THRESHOLD_SECONDS = 20  # 2 minutes to be considered online
+ONLINE_THRESHOLD_SECONDS = 120  # 2 minutes to be considered online
 
 def is_user_online(user_doc):
     if not user_doc or "last_active" not in user_doc:
