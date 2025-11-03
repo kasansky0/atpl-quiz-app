@@ -29,7 +29,6 @@ st.markdown(
 # -----------------------------
 BASE_FOLDER = "subjects"
 QUESTIONS_FILE_TYPES = [".txt", ".json"]
-SESSION_TIMEOUT_SECONDS = 3600  # 1 hour timeout
 
 MONGO_URI = st.secrets["MONGO_URI"]
 DB_NAME = st.secrets["DB_NAME"]  # <--- ADD THIS
@@ -136,27 +135,6 @@ if "user" not in st.session_state:
     st.session_state["user"] = None
 if "last_active" not in st.session_state:
     st.session_state["last_active"] = datetime.now()
-
-# -----------------------------
-# SESSION TIMEOUT CHECK
-# -----------------------------
-if "user" in st.session_state and st.session_state["user"]:
-    now = datetime.now()
-
-    # Ensure last_active exists
-    if "last_active" not in st.session_state or st.session_state["last_active"] is None:
-        st.session_state["last_active"] = now
-
-    elapsed = (now - st.session_state["last_active"]).total_seconds()
-
-    if elapsed > SESSION_TIMEOUT_SECONDS:
-        st.session_state["user"] = None
-        st.session_state["last_active"] = None
-        st.warning("⚠️ Your session expired after 1 hour of inactivity. Please log in again.")
-        st.rerun()
-    else:
-        # Update activity timestamp
-        st.session_state["last_active"] = now
 
 
 
