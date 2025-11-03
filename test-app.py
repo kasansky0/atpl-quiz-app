@@ -140,14 +140,24 @@ if "last_active" not in st.session_state:
 # -----------------------------
 # SESSION TIMEOUT CHECK
 # -----------------------------
-if st.session_state["user"]:
+if "user" in st.session_state and st.session_state["user"]:
     now = datetime.now()
+
+    # Ensure last_active exists
+    if "last_active" not in st.session_state or st.session_state["last_active"] is None:
+        st.session_state["last_active"] = now
+
     elapsed = (now - st.session_state["last_active"]).total_seconds()
+
     if elapsed > SESSION_TIMEOUT_SECONDS:
         st.session_state["user"] = None
         st.session_state["last_active"] = None
-        st.warning("⚠️ Your session has expired after 1 hour of inactivity. Please log in again.")
+        st.warning("⚠️ Your session expired after 1 hour of inactivity. Please log in again.")
         st.rerun()
+    else:
+        # Update activity timestamp
+        st.session_state["last_active"] = now
+
 
 
 # -----------------------------
