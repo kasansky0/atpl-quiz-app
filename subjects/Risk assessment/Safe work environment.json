@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "What is the first step in creating a safe work environment before starting electrical testing activities?",
+    "options": [
+      "Notify affected employees",
+      "Conduct a risk assessment",
+      "Apply lockout/tagout devices",
+      "Inspect PPE for damage"
+    ],
+    "answer": "Conduct a risk assessment",
+    "explanation": "A formal risk assessment identifies hazards and determines control measures before work begins. (NFPA 70E Article 110.1(H); OSHA 1910.132(d))"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a primary requirement for a safe electrical work environment?",
+    "options": [
+      "Always work energized to avoid downtime",
+      "Ensure proper illumination and housekeeping",
+      "Remove all signage from work areas",
+      "Disable circuit labeling for confidentiality"
+    ],
+    "answer": "Ensure proper illumination and housekeeping",
+    "explanation": "Good lighting and clean work areas reduce trip hazards and improve safety awareness. (NFPA 70E 110.4; OSHA 1910.22(a))"
+  },
+  {
+    "id": 3,
+    "question": "When determining whether to perform work de-energized or energized, what must be evaluated?",
+    "options": [
+      "Only convenience of the operator",
+      "Risk of exposure to electrical hazards",
+      "Project completion deadlines",
+      "Employer’s financial loss"
+    ],
+    "answer": "Risk of exposure to electrical hazards",
+    "explanation": "NFPA 70E requires evaluating shock and arc flash hazards before energized work. (NFPA 70E 110.1(A); OSHA 1910.333(a)(1))"
+  },
+  {
+    "id": 4,
+    "question": "What document formally defines a company’s safety-related work practices?",
+    "options": [
+      "Job hazard analysis",
+      "Safety program",
+      "Electrical one-line diagram",
+      "Project management plan"
+    ],
+    "answer": "Safety program",
+    "explanation": "An employer’s electrical safety program outlines training, PPE, procedures, and hazard controls. (NFPA 70E 110.1; ANSI/NETA ETT Section 5.1)"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following best ensures a safe work environment for technicians?",
+    "options": [
+      "Using untested extension cords",
+      "Following established lockout/tagout procedures",
+      "Bypassing protective relays",
+      "Working alone in confined areas"
+    ],
+    "answer": "Following established lockout/tagout procedures",
+    "explanation": "LOTO ensures all energy sources are isolated to prevent accidental energization. (OSHA 1910.333(b)(2); NFPA 70E Article 120)"
+  },
+  {
+    "id": 6,
+    "question": "How often must an employer review and update their electrical safety program?",
+    "options": [
+      "Every 5 years",
+      "Annually",
+      "Whenever new hazards or regulations emerge",
+      "Only after an incident"
+    ],
+    "answer": "Whenever new hazards or regulations emerge",
+    "explanation": "NFPA 70E mandates updates when changes in tasks, equipment, or regulations occur. (NFPA 70E 110.1(K))"
+  },
+  {
+    "id": 7,
+    "question": "Which is the most critical component of a Job Safety Plan?",
+    "options": [
+      "The name of the project manager",
+      "The list of test instruments used",
+      "Hazard identification and risk mitigation",
+      "The weather forecast"
+    ],
+    "answer": "Hazard identification and risk mitigation",
+    "explanation": "A Job Safety Plan must include hazards, control methods, and PPE. (NFPA 70E 110.1(I))"
+  },
+  {
+    "id": 8,
+    "question": "What defines the employer’s responsibility in maintaining a safe work environment?",
+    "options": [
+      "Provide incentives for faster work",
+      "Provide and enforce a written safety program",
+      "Allow employees to self-train",
+      "Require verbal job briefings only"
+    ],
+    "answer": "Provide and enforce a written safety program",
+    "explanation": "Employers must establish and enforce safe work practices. (OSHA 1910.332(b); NFPA 70E 110.1)"
+  },
+  {
+    "id": 9,
+    "question": "What is the purpose of an Energized Electrical Work Permit?",
+    "options": [
+      "To authorize routine energized work",
+      "To document justification, risk, and protective measures",
+      "To replace PPE testing requirements",
+      "To approve energized testing of new installations"
+    ],
+    "answer": "To document justification, risk, and protective measures",
+    "explanation": "EEWPs justify why energized work is unavoidable and outline required safety controls. (NFPA 70E 130.2(B))"
+  },
+  {
+    "id": 10,
+    "question": "When performing a field inspection, what condition indicates an unsafe work environment?",
+    "options": [
+      "Properly posted arc flash labels",
+      "Missing or illegible warning signage",
+      "Calibrated test instruments",
+      "Labeled disconnects"
+    ],
+    "answer": "Missing or illegible warning signage",
+    "explanation": "Lack of proper labeling increases hazard exposure. (NFPA 70E 130.5(H); OSHA 1910.145)"
+  },
+  {
+    "id": 11,
+    "question": "Which standard defines the requirement for arc flash hazard labeling?",
+    "options": [
+      "NFPA 70E",
+      "IEEE 1584",
+      "NFPA 70 (NEC)",
+      "ANSI/NETA MTS"
+    ],
+    "answer": "NFPA 70E",
+    "explanation": "NFPA 70E Article 130.5(H) establishes labeling requirements for arc flash hazard identification."
+  },
+  {
+    "id": 12,
+    "question": "Why must equipment be properly maintained to ensure a safe work environment?",
+    "options": [
+      "To maintain warranty eligibility",
+      "To ensure protective devices operate as intended",
+      "To improve energy efficiency",
+      "To comply with local fire department requirements"
+    ],
+    "answer": "To ensure protective devices operate as intended",
+    "explanation": "Preventive maintenance ensures fault-clearing devices protect workers effectively. (NFPA 70E 205.3; OSHA 1910.303(b)(2))"
+  },
+  {
+    "id": 13,
+    "question": "What does a Job Briefing accomplish before starting work?",
+    "options": [
+      "Assigns overtime hours",
+      "Ensures all workers understand hazards and procedures",
+      "Outlines marketing and customer contact steps",
+      "Lists upcoming payroll deadlines"
+    ],
+    "answer": "Ensures all workers understand hazards and procedures",
+    "explanation": "Job briefings review tasks, hazards, and mitigation strategies. (NFPA 70E 110.1(I); OSHA 1910.269(c))"
+  },
+  {
+    "id": 14,
+    "question": "Which document must define responsibilities, training, and qualifications for workers?",
+    "options": [
+      "Electrical safety program",
+      "Arc flash study report",
+      "One-line diagram",
+      "Calibration certificate"
+    ],
+    "answer": "Electrical safety program",
+    "explanation": "Defines worker qualifications and responsibilities per NFPA 70E 110.1(E)."
+  },
+  {
+    "id": 15,
+    "question": "How does effective communication contribute to a safe work environment?",
+    "options": [
+      "It allows shortcuts when experienced personnel are present",
+      "It prevents misunderstanding of hazards and procedures",
+      "It ensures faster work completion",
+      "It removes need for PPE"
+    ],
+    "answer": "It prevents misunderstanding of hazards and procedures",
+    "explanation": "Clear communication prevents unsafe assumptions. (OSHA 1910.269(c); NFPA 70E 110.1(I))"
+  },
+  {
+    "id": 16,
+    "question": "Which type of documentation must be available to workers at the job site?",
+    "options": [
+      "Tax documents",
+      "Material safety data sheets (SDS)",
+      "Personal identification",
+      "Payroll records"
+    ],
+    "answer": "Material safety data sheets (SDS)",
+    "explanation": "SDS provide chemical hazard information required for safe handling. (OSHA 1910.1200(g))"
+  },
+  {
+    "id": 17,
+    "question": "What is the most effective method to eliminate electrical hazards?",
+    "options": [
+      "Using PPE",
+      "Establishing an electrically safe work condition",
+      "Installing additional lighting",
+      "Working from a distance"
+    ],
+    "answer": "Establishing an electrically safe work condition",
+    "explanation": "De-energization removes the hazard source entirely. (NFPA 70E Article 120; OSHA 1910.333(b)(2))"
+  },
+  {
+    "id": 18,
+    "question": "What must be done when conditions change during work?",
+    "options": [
+      "Continue under initial safety plan",
+      "Pause work and perform a new risk assessment",
+      "Report after the job is complete",
+      "Ignore minor changes"
+    ],
+    "answer": "Pause work and perform a new risk assessment",
+    "explanation": "Any change in conditions requires reassessment of hazards. (NFPA 70E 110.1(H)(3))"
+  },
+  {
+    "id": 19,
+    "question": "What role does management play in ensuring a safe work environment?",
+    "options": [
+      "Providing incentives for high production rates",
+      "Allocating resources and enforcing safety policies",
+      "Delegating all safety responsibilities to technicians",
+      "Reviewing only completed projects"
+    ],
+    "answer": "Allocating resources and enforcing safety policies",
+    "explanation": "Leadership must ensure safety program enforcement. (ANSI/NETA ETT Section 5.1; OSHA 1910.269(a)(2))"
+  },
+  {
+    "id": 20,
+    "question": "Which factor is NOT part of the risk assessment procedure?",
+    "options": [
+      "Identifying hazards",
+      "Assessing likelihood and severity",
+      "Evaluating risk controls",
+      "Scheduling team lunch breaks"
+    ],
+    "answer": "Scheduling team lunch breaks",
+    "explanation": "Risk assessment involves hazard identification and control evaluation. (NFPA 70E 110.1(H))"
+  },
+  {
+    "id": 21,
+    "question": "Which environmental factor can increase the risk of electrical incidents?",
+    "options": [
+      "Low humidity",
+      "Wet or damp conditions",
+      "Warm lighting",
+      "Short work breaks"
+    ],
+    "answer": "Wet or damp conditions",
+    "explanation": "Water increases the conductivity of surfaces, heightening shock and arc flash risk. (OSHA 1910.304(b)(3); NFPA 70E 110.4(A))"
+  },
+  {
+    "id": 22,
+    "question": "What must be verified before authorizing any energized work?",
+    "options": [
+      "That management approves overtime pay",
+      "That no safe alternative method exists",
+      "That all workers have matching uniforms",
+      "That circuit labels are color coded"
+    ],
+    "answer": "That no safe alternative method exists",
+    "explanation": "NFPA 70E permits energized work only when de-energizing introduces additional hazards or is infeasible. (NFPA 70E 130.2(A))"
+  },
+  {
+    "id": 23,
+    "question": "How can fatigue impact the creation of a safe work environment?",
+    "options": [
+      "It improves concentration",
+      "It increases risk of human error and accidents",
+      "It helps workers adapt faster",
+      "It reduces the need for supervision"
+    ],
+    "answer": "It increases risk of human error and accidents",
+    "explanation": "Human factors such as fatigue and stress increase likelihood of unsafe acts. (OSHA 1910.132(d); NFPA 70E Annex Q)"
+  },
+  {
+    "id": 24,
+    "question": "Which document outlines responsibilities and communication flow for safety on site?",
+    "options": [
+      "Safety organizational chart",
+      "Maintenance record",
+      "Equipment calibration log",
+      "Test result sheet"
+    ],
+    "answer": "Safety organizational chart",
+    "explanation": "Clearly defining safety roles ensures accountability and hazard control. (ANSI/NETA ETT Section 5.1.2)"
+  },
+  {
+    "id": 25,
+    "question": "Why is equipment labeling critical to workplace safety?",
+    "options": [
+      "It promotes company branding",
+      "It ensures quick identification of hazards and isolation points",
+      "It allows easier inventory management",
+      "It helps with marketing visuals"
+    ],
+    "answer": "It ensures quick identification of hazards and isolation points",
+    "explanation": "Proper labeling supports hazard awareness and safe system operation. (NFPA 70E 130.5(H); OSHA 1910.303(e))"
+  },
+  {
+    "id": 26,
+    "question": "What is the key purpose of maintaining clear egress routes at job sites?",
+    "options": [
+      "To facilitate emergency evacuation",
+      "To store tools and cables conveniently",
+      "To mark restricted zones",
+      "To separate administrative staff"
+    ],
+    "answer": "To facilitate emergency evacuation",
+    "explanation": "Unobstructed egress routes are required for safe escape in emergencies. (OSHA 1910.37(a); NFPA 101 Life Safety Code)"
+  },
+  {
+    "id": 27,
+    "question": "What is required before performing work inside an energized panel?",
+    "options": [
+      "Written justification and approval",
+      "Verbal acknowledgment",
+      "Safety poster displayed nearby",
+      "Weekly safety inspection"
+    ],
+    "answer": "Written justification and approval",
+    "explanation": "Energized work requires an Energized Electrical Work Permit documenting justification and safety controls. (NFPA 70E 130.2(B))"
+  },
+  {
+    "id": 28,
+    "question": "Which factor most directly influences incident energy levels?",
+    "options": [
+      "Switchgear configuration and distance",
+      "Technician's height",
+      "Voltage detector brand",
+      "Lighting color temperature"
+    ],
+    "answer": "Switchgear configuration and distance",
+    "explanation": "Incident energy is affected by fault current, distance, and clearing time. (NFPA 70E 130.5(G))"
+  },
+  {
+    "id": 29,
+    "question": "How should defective tools be managed to ensure safety?",
+    "options": [
+      "Tag and remove them from service",
+      "Use them for light-duty tasks only",
+      "Mark them with tape and store nearby",
+      "Ignore minor defects"
+    ],
+    "answer": "Tag and remove them from service",
+    "explanation": "Damaged tools pose shock and injury hazards and must be removed. (OSHA 1910.334(a)(2); NFPA 70E 110.4(B))"
+  },
+  {
+    "id": 30,
+    "question": "Which safety control method ranks highest in the hierarchy of risk control?",
+    "options": [
+      "Administrative controls",
+      "PPE",
+      "Engineering controls",
+      "Elimination"
+    ],
+    "answer": "Elimination",
+    "explanation": "Elimination removes the hazard entirely and is the most effective control. (NFPA 70E Annex F; OSHA 1910.132(d))"
+  },
+  {
+    "id": 31,
+    "question": "Why must environmental hazards be considered during electrical testing?",
+    "options": [
+      "They can influence test readings and worker safety",
+      "They help improve insulation resistance",
+      "They determine equipment brand selection",
+      "They reduce required PPE"
+    ],
+    "answer": "They can influence test readings and worker safety",
+    "explanation": "Moisture, temperature, and contaminants can create unsafe conditions. (NFPA 70E 110.4(A); ANSI/NETA MTS Section 5.2)"
+  },
+  {
+    "id": 32,
+    "question": "What is the purpose of a Job Hazard Analysis (JHA)?",
+    "options": [
+      "To identify job tasks and associated hazards",
+      "To record payroll hours",
+      "To compare equipment brands",
+      "To manage customer contracts"
+    ],
+    "answer": "To identify job tasks and associated hazards",
+    "explanation": "JHAs systematically identify hazards and determine preventive measures. (OSHA 3071; NFPA 70E 110.1(H))"
+  },
+  {
+    "id": 33,
+    "question": "Why is routine PPE inspection mandatory before each use?",
+    "options": [
+      "To meet insurance audit requirements",
+      "To ensure PPE integrity and protection capability",
+      "To align with uniform standards",
+      "To avoid replacing worn equipment too soon"
+    ],
+    "answer": "To ensure PPE integrity and protection capability",
+    "explanation": "Damaged PPE may not provide rated protection against electrical hazards. (NFPA 70E 130.7(C)(9); OSHA 1910.137(b))"
+  },
+  {
+    "id": 34,
+    "question": "Which type of control relies on employee behavior rather than hazard removal?",
+    "options": [
+      "Administrative control",
+      "Engineering control",
+      "Elimination",
+      "Substitution"
+    ],
+    "answer": "Administrative control",
+    "explanation": "Administrative controls manage worker exposure through procedures and training. (NFPA 70E Annex F; OSHA 1910.132(d)(1))"
+  },
+  {
+    "id": 35,
+    "question": "When should a safety observer be assigned to a task?",
+    "options": [
+      "Whenever work involves shock or arc flash risk",
+      "Only for indoor testing",
+      "Only during night shifts",
+      "When more than three workers are present"
+    ],
+    "answer": "Whenever work involves shock or arc flash risk",
+    "explanation": "NFPA 70E requires an observer for tasks with significant hazard exposure. (NFPA 70E 110.1(I); OSHA 1910.333(c))"
+  },
+  {
+    "id": 36,
+    "question": "What must be communicated during a pre-job briefing?",
+    "options": [
+      "Hazards, procedures, and special precautions",
+      "Estimated profit margin",
+      "Lunch and break times",
+      "Tool brand preferences"
+    ],
+    "answer": "Hazards, procedures, and special precautions",
+    "explanation": "Job briefings ensure all workers understand task-specific risks and controls. (NFPA 70E 110.1(I); OSHA 1910.269(c))"
+  },
+  {
+    "id": 37,
+    "question": "How can an employer verify the effectiveness of its safety program?",
+    "options": [
+      "Through periodic audits and corrective actions",
+      "By comparing productivity levels",
+      "By reducing training frequency",
+      "By minimizing PPE purchases"
+    ],
+    "answer": "Through periodic audits and corrective actions",
+    "explanation": "Regular audits confirm compliance and continuous improvement. (NFPA 70E 110.1(K); ANSI/NETA ETT Section 5.3)"
+  },
+  {
+    "id": 38,
+    "question": "Which standard mandates training for employees exposed to electrical hazards?",
+    "options": [
+      "OSHA 1910.332",
+      "NFPA 72",
+      "IEEE C37.2",
+      "ANSI Z535"
+    ],
+    "answer": "OSHA 1910.332",
+    "explanation": "OSHA requires training in safe electrical work practices. (OSHA 1910.332(a); NFPA 70E 110.6)"
+  },
+  {
+    "id": 39,
+    "question": "Why is proper lighting a requirement for safe electrical work?",
+    "options": [
+      "To enhance visibility and prevent accidental contact",
+      "To maintain a pleasant workspace",
+      "To improve test equipment performance",
+      "To meet aesthetic standards"
+    ],
+    "answer": "To enhance visibility and prevent accidental contact",
+    "explanation": "Adequate lighting reduces error and ensures clear visibility of hazards. (OSHA 1910.303(g)(1); NFPA 70E 110.4(A))"
+  },
+  {
+    "id": 40,
+    "question": "What is the purpose of signage like “Danger – High Voltage”?",
+    "options": [
+      "To satisfy decorative requirements",
+      "To warn personnel of hazardous conditions",
+      "To identify maintenance schedules",
+      "To replace PPE requirements"
+    ],
+    "answer": "To warn personnel of hazardous conditions",
+    "explanation": "Warning signs alert workers to the presence of electrical hazards. (OSHA 1910.145(c)(1); NFPA 70E 110.3(A))"
+  },
+  {
+    "id": 41,
+    "question": "How should safety lessons learned from incidents be used?",
+    "options": [
+      "Filed and ignored once reported",
+      "Reviewed and integrated into future training",
+      "Used for disciplinary purposes only",
+      "Reported to customers for transparency"
+    ],
+    "answer": "Reviewed and integrated into future training",
+    "explanation": "Lessons learned improve prevention and reinforce safety culture. (ANSI/NETA ETT Section 5.4; NFPA 70E 110.1(K))"
+  },
+  {
+    "id": 42,
+    "question": "What defines the minimum distance a worker can approach an energized part?",
+    "options": [
+      "Restricted approach boundary",
+      "Voltage category",
+      "Equipment manufacturer’s label",
+      "Location signage"
+    ],
+    "answer": "Restricted approach boundary",
+    "explanation": "Boundaries define safe approach distances. (NFPA 70E Table 130.4(E)(a))"
+  },
+  {
+    "id": 43,
+    "question": "What is the goal of continuous safety training?",
+    "options": [
+      "To reduce awareness over time",
+      "To reinforce and update hazard recognition skills",
+      "To replace PPE requirements",
+      "To increase production output"
+    ],
+    "answer": "To reinforce and update hazard recognition skills",
+    "explanation": "Ongoing training maintains competence as standards evolve. (OSHA 1910.332(b)(2); NFPA 70E 110.6(F))"
+  },
+  {
+    "id": 44,
+    "question": "What factor primarily determines PPE category selection?",
+    "options": [
+      "Incident energy level",
+      "Equipment manufacturer",
+      "Technician experience",
+      "Ambient temperature"
+    ],
+    "answer": "Incident energy level",
+    "explanation": "Arc flash PPE is selected based on calculated incident energy. (NFPA 70E 130.5(G); Table 130.7(C)(15)(a))"
+  },
+  {
+    "id": 45,
+    "question": "Which standard requires maintenance of protective devices to manufacturer’s instructions?",
+    "options": [
+      "NFPA 70E 205.3",
+      "OSHA 1910.269(d)",
+      "NFPA 70 Article 250",
+      "IEEE 519"
+    ],
+    "answer": "NFPA 70E 205.3",
+    "explanation": "NFPA 70E mandates maintenance per manufacturer or industry standards. (NFPA 70E 205.3; OSHA 1910.303(b)(2))"
+  },
+  {
+    "id": 46,
+    "question": "Which factor ensures safe use of test instruments?",
+    "options": [
+      "Verifying they are rated for the system voltage and category",
+      "Using the newest model available",
+      "Color matching to panel",
+      "Calibrating once every five years"
+    ],
+    "answer": "Verifying they are rated for the system voltage and category",
+    "explanation": "Meters must be CAT-rated and verified before use. (NFPA 70E 110.4(A)(5); OSHA 1910.334(c)(1))"
+  },
+  {
+    "id": 47,
+    "question": "What type of control is PPE considered in the hierarchy of risk controls?",
+    "options": [
+      "Last line of defense",
+      "Primary elimination method",
+      "Engineering control",
+      "System substitution"
+    ],
+    "answer": "Last line of defense",
+    "explanation": "PPE protects only after other controls are applied. (NFPA 70E Annex F; OSHA 1910.132(a))"
+  },
+  {
+    "id": 48,
+    "question": "Why must ground paths be verified before testing begins?",
+    "options": [
+      "To ensure safe fault clearing capability",
+      "To provide alternate test reference points",
+      "To comply with data recording standards",
+      "To increase current flow during tests"
+    ],
+    "answer": "To ensure safe fault clearing capability",
+    "explanation": "Proper grounding ensures protective devices clear faults safely. (NFPA 70E 120.5(7); OSHA 1910.304(g)(5))"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following best supports a culture of safety?",
+    "options": [
+      "Encouraging open reporting without fear of retaliation",
+      "Rewarding only incident-free performance",
+      "Keeping safety incidents confidential",
+      "Reducing training to save time"
+    ],
+    "answer": "Encouraging open reporting without fear of retaliation",
+    "explanation": "Psychological safety supports hazard reporting and improvement. (ANSI Z10; OSHA 1904.35(b)(1)(iv))"
+  },
+  {
+    "id": 50,
+    "question": "What should always be the final verification step before beginning electrical work?",
+    "options": [
+      "Test for absence of voltage using verified instruments",
+      "Visually confirm breaker position",
+      "Assume equipment is de-energized",
+      "Trust the control room indication"
+    ],
+    "answer": "Test for absence of voltage using verified instruments",
+    "explanation": "NFPA 70E mandates testing for absence of voltage with a live-dead-live check. (NFPA 70E 120.5(7); OSHA 1910.333(b)(2)(iv)(B))"
+  }
+]

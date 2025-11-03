@@ -27,7 +27,7 @@ st.markdown(
 # -----------------------------
 # CONFIG
 # -----------------------------
-BASE_FOLDER = "."
+BASE_FOLDER = "subjects"
 QUESTIONS_FILE_TYPES = [".txt", ".json"]
 SESSION_TIMEOUT_SECONDS = 300  # 5 minutes timeout
 
@@ -186,6 +186,7 @@ if st.session_state["user"] is None:
             else:
                 st.error("❌ Invalid User ID or Password.")
 
+
 # -----------------------------
 # QUIZ + CHAT SECTION
 # -----------------------------
@@ -193,27 +194,137 @@ if st.session_state["user"]:
     st.session_state["last_active"] = datetime.now()
     user_name = st.session_state["user"]
 
+    # ======================================
+    # 📂 SUBJECT & TOPIC SELECTOR (SIDEBAR)
+    # ======================================
+
+    st.sidebar.markdown("### 📘 Choose Subject and Topic")
+
+    base_folder = BASE_FOLDER  # "subjects"
+
+    try:
+        subject_folders = [f for f in os.listdir(base_folder) if os.path.isdir(os.path.join(base_folder, f))]
+    except Exception as e:
+        st.sidebar.error(f"Could not access folder '{base_folder}': {e}")
+        subject_folders = []
+
+    if not subject_folders:
+        st.sidebar.warning("⚠️ No subject folders found inside 'subjects/'.")
+    else:
+        selected_subject = st.sidebar.selectbox("Select Subject Folder:", subject_folders)
+
+        subject_path = os.path.join(base_folder, selected_subject)
+        available_files = [
+            f for f in os.listdir(subject_path)
+            if any(f.endswith(ext) for ext in QUESTIONS_FILE_TYPES)
+        ]
+
+        if available_files:
+            selected_file = st.sidebar.selectbox("Select Topic File:", available_files)
+
+            # ✅ Checkboxes for loading scope
+            load_all_in_subject = st.sidebar.checkbox("📚 Load All Files in This Subject (Shuffle Every Time)")
+            load_all_subjects = st.sidebar.checkbox("🌍 Load ALL JSON Files in ALL Subjects")
+
+            questions = []
+
+            # 🟥 Highest priority — load everything
+            if load_all_subjects:
+                st.sidebar.success("✅ Loading ALL questions from ALL subjects...")
+                for root, _, files in os.walk(BASE_FOLDER):
+                    for file_name in files:
+                        if any(file_name.endswith(ext) for ext in QUESTIONS_FILE_TYPES):
+                            file_path = os.path.join(root, file_name)
+                            try:
+                                with open(file_path, "r", encoding="utf-8") as f:
+                                    data = json.load(f)
+                                    if isinstance(data, list):
+                                        questions.extend(data)
+                                    elif isinstance(data, dict):
+                                        for topic, qlist in data.items():
+                                            if isinstance(qlist, list):
+                                                questions.extend(qlist)
+                            except Exception as e:
+                                st.warning(f"⚠️ Could not load {file_name}: {e}")
+
+                random.shuffle(questions)
+
+            # 🟡 Medium priority — all files in selected subject
+            elif load_all_in_subject:
+                st.sidebar.success(f"✅ Loading all files from **{selected_subject}**...")
+                for file_name in available_files:
+                    file_path = os.path.join(subject_path, file_name)
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            data = json.load(f)
+                            if isinstance(data, list):
+                                questions.extend(data)
+                            elif isinstance(data, dict):
+                                for topic, qlist in data.items():
+                                    if isinstance(qlist, list):
+                                        questions.extend(qlist)
+                    except Exception as e:
+                        st.warning(f"⚠️ Could not load {file_name}: {e}")
+                random.shuffle(questions)
+
+            # 🟢 Default — single file only
+            else:
+                st.sidebar.success(f"✅ Loaded questions from **{selected_file}** in **{selected_subject}**.")
+                file_path = os.path.join(subject_path, selected_file)
+                try:
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                    if isinstance(data, dict):
+                        for topic, qlist in data.items():
+                            if isinstance(qlist, list):
+                                questions.extend(qlist)
+                    elif isinstance(data, list):
+                        questions = data
+                except Exception as e:
+                    st.sidebar.error(f"Failed to load {selected_file}: {e}")
+
+            # ✅ Only reset session state when new mode is chosen
+            if (
+                    st.session_state.get("current_file") != selected_file
+                    or st.session_state.get("load_all_mode") != load_all_in_subject
+                    or st.session_state.get("load_global_mode") != load_all_subjects
+            ):
+                st.session_state["current_file"] = selected_file
+                st.session_state["load_all_mode"] = load_all_in_subject
+                st.session_state["load_global_mode"] = load_all_subjects
+                st.session_state.questions_loaded = questions
+                st.session_state.q_index = 0
+                st.session_state.score = 0
+                st.session_state.answered = [False] * len(questions)
+                st.session_state.feedback = [""] * len(questions)
+                st.session_state.choices = [None] * len(questions)
+            else:
+                if "questions_loaded" not in st.session_state:
+                    st.session_state.questions_loaded = questions
 
     # -----------------------------
     # SIDEBAR: LEADERBOARD + Controls + Folders
     # -----------------------------
-    load_scores_cache()
+    # Build leaderboard data for ALL users
+
+    all_users = list(users_col.find())
     leaderboard_data = []
-    df = pd.DataFrame(st.session_state.get("scores_cache", []))
-    if not df.empty and "score" in df.columns:
-        sheet_leaderboard = df.groupby("user_id")["score"].max().reset_index()
-        sheet_leaderboard = sheet_leaderboard.sort_values(by="score", ascending=False)
-        for _, row in sheet_leaderboard.iterrows():
-            leaderboard_data.append((row["user_id"], row["score"]))
-    leaderboard_data = [x for x in leaderboard_data if x[0] != user_name]
-    leaderboard_data.append((user_name, st.session_state.get("score", 0)))
+
+    for user in all_users:
+        uid = user["user_id"]
+        # Get the user's latest score from scores collection
+        score_doc = scores_col.find_one({"user_id": uid}, sort=[("timestamp", -1)])
+        score = score_doc["score"] if score_doc else 0
+        leaderboard_data.append((uid, score))
+
+    # Sort descending
     leaderboard_data.sort(key=lambda x: x[1], reverse=True)
+
 
     def position_suffix(i):
         return f"{i + 1}{'st' if i == 0 else 'nd' if i == 1 else 'rd' if i == 2 else 'th'}"
 
 
-    st.sidebar.markdown(f"### 👤 Logged in as: {user_name}")
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🥇 Leaderboard")
     with st.sidebar.container():
@@ -227,55 +338,8 @@ if st.session_state["user"]:
 
 
     st.sidebar.markdown("---")
-    st.sidebar.markdown("### 📂 Subjects & Topics")
 
 
-    def display_folder_structure(base_folder):
-        subjects = [f for f in sorted(os.listdir(base_folder)) if os.path.isdir(os.path.join(base_folder, f))]
-        if not subjects:
-            st.sidebar.info("No question folders found yet.")
-            return
-
-        last_subject = subjects[-1]
-        for subject in subjects:
-            subject_path = os.path.join(base_folder, subject)
-            topic_files = [f for f in sorted(os.listdir(subject_path)) if
-                           any(f.endswith(ext) for ext in QUESTIONS_FILE_TYPES)]
-            if not topic_files:
-                continue
-
-            # Subject name
-            st.sidebar.markdown(
-                f"<div style='color:#1E90FF; font-weight:600; font-size:16px;'>📘 {subject}</div>",
-                unsafe_allow_html=True
-            )
-
-            # Loop through each topic file
-            for topic in topic_files:
-                topic_name = os.path.splitext(topic)[0].replace("_", " ").title()
-                topic_path = os.path.join(subject_path, topic)
-
-                # Count number of questions inside each topic file
-                try:
-                    with open(topic_path, "r", encoding="utf-8") as f:
-                        data = json.load(f)
-                        question_count = sum(len(qlist) for qlist in data.values())
-                except Exception:
-                    question_count = 0  # fallback if file cannot be read
-
-                # Display topic name + question count
-                st.sidebar.markdown(
-                    f"<div style='padding-left:20px; font-size:14px; color:#555;'>• {topic_name} "
-                    f"<span style='color:#1E90FF;'>({question_count})</span></div>",
-                    unsafe_allow_html=True
-                )
-
-            if subject != last_subject:
-                st.sidebar.markdown("<hr style='margin:6px 0;'>", unsafe_allow_html=True)
-
-
-    display_folder_structure(BASE_FOLDER)
-    st.sidebar.markdown("---")
 
     # -----------------------------
     # CHAT COLLECTION
@@ -312,32 +376,83 @@ if st.session_state["user"]:
     # -----------------------------
     # LOAD QUESTIONS
     # -----------------------------
+    st.markdown(f"### 👤 Logged in as: {user_name}<br>", unsafe_allow_html=True)
+
     def load_questions(path):
         questions = []
-        files_to_load = [path] if os.path.isfile(path) else [
-            os.path.join(path, f) for f in os.listdir(path) if any(f.endswith(ext) for ext in QUESTIONS_FILE_TYPES)
-        ]
-        for file_path in files_to_load:
-            try:
-                with open(file_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                    for topic, qlist in data.items():
-                        questions.extend(qlist)
-            except Exception as e:
-                st.warning(f"Could not load {file_path}: {e}")
+
+        def scan_folder(folder_path, level=0):
+            indent = "&nbsp;" * (level * 4)
+
+            # ✅ If it's a file, just try to load it directly
+            if os.path.isfile(folder_path) and any(folder_path.endswith(ext) for ext in QUESTIONS_FILE_TYPES):
+                try:
+                    with open(folder_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        file_questions = []
+
+                        if isinstance(data, list):
+                            file_questions = data
+                        elif isinstance(data, dict):
+                            for topic, qlist in data.items():
+                                if isinstance(qlist, list):
+                                    file_questions.extend(qlist)
+
+                        questions.extend(file_questions)
+                        st.sidebar.markdown(
+                            f"{indent}📄 {os.path.basename(folder_path)} — "
+                            f"<span style='color:#1E90FF'>{len(file_questions)}</span> questions",
+                            unsafe_allow_html=True
+                        )
+                except Exception as e:
+                    st.warning(f"❌ Could not load {folder_path}: {e}")
+                return  # ✅ Exit after processing a file
+
+            # ✅ Otherwise, it’s a folder → scan inside it
+            if os.path.isdir(folder_path):
+                st.sidebar.markdown(f"{indent}📂 **{os.path.basename(folder_path)}/**")
+                try:
+                    for entry in os.listdir(folder_path):
+                        scan_folder(os.path.join(folder_path, entry), level + 1)
+                except Exception as e:
+                    st.warning(f"❌ Could not access {folder_path}: {e}")
+            else:
+                st.warning(f"⚠️ Skipped non-file/non-folder: {folder_path}")
+
+        # 🏁 Start recursive scan
+        if os.path.exists(path):
+            st.sidebar.markdown("### 🧩 Loaded Question Files")
+            scan_folder(path)
+        else:
+            st.warning(f"Path not found: {path}")
+
         return questions
 
-    def load_all_questions():
+
+    def load_all_questions(base_folder="."):
         all_questions = []
-        for folder_name in sorted(os.listdir(BASE_FOLDER)):
-            folder_path = os.path.join(BASE_FOLDER, folder_name)
-            if os.path.isdir(folder_path):
-                for file_name in sorted(os.listdir(folder_path)):
-                    if any(file_name.endswith(ext) for ext in QUESTIONS_FILE_TYPES):
-                        file_path = os.path.join(folder_path, file_name)
-                        all_questions.extend(load_questions(file_path))
+
+        for root, _, files in os.walk(base_folder):
+            for file in files:
+                IGNORE_FILES = {"requirements.txt", "README.txt"}
+                if any(file.endswith(ext) for ext in QUESTIONS_FILE_TYPES) and file not in IGNORE_FILES:
+
+                    file_path = os.path.join(root, file)
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            data = json.load(f)
+                            if isinstance(data, list):
+                                all_questions.extend(data)
+                            elif isinstance(data, dict):
+                                for topic, qlist in data.items():
+                                    if isinstance(qlist, list):
+                                        all_questions.extend(qlist)
+                    except Exception as e:
+                        st.warning(f"❌ Could not load {file_path}: {e}")
+
         random.shuffle(all_questions)
         return all_questions
+
 
     if not st.session_state.get("questions_loaded"):
         st.session_state.questions_loaded = load_all_questions()
@@ -381,7 +496,6 @@ if st.session_state["user"]:
     # Scrollable container for questions
     with col_main:
         st.markdown("<div style='max-height:600px; overflow-y:auto; padding-right:5px;'>", unsafe_allow_html=True)
-
         if questions:
             current_q = questions[st.session_state.q_index]
             st.markdown(f"### Question {st.session_state.q_index + 1} of {len(questions)}")

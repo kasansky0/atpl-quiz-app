@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary purpose of establishing shock and arc-flash protection boundaries?",
+    "options": [
+      "To limit unauthorized personnel from approaching energized equipment",
+      "To ensure the equipment remains energized during maintenance",
+      "To minimize PPE use in electrical areas",
+      "To increase electrical system efficiency"
+    ],
+    "answer": "To limit unauthorized personnel from approaching energized equipment",
+    "explanation": "Protection boundaries prevent unqualified or unprotected workers from entering hazardous zones where they could be exposed to shock or arc-flash energy. (NFPA 70E Article 130.4; OSHA 1910.333(a)(1))"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following defines the Arc Flash Boundary according to NFPA 70E?",
+    "options": [
+      "The distance from an exposed energized part within which a person could receive a second-degree burn",
+      "The outermost perimeter of the limited approach boundary",
+      "The closest point at which unqualified persons can approach",
+      "The required distance for PPE inspection"
+    ],
+    "answer": "The distance from an exposed energized part within which a person could receive a second-degree burn",
+    "explanation": "The Arc Flash Boundary is determined based on the incident energy level capable of causing a second-degree burn to exposed skin. (NFPA 70E 130.5(E))"
+  },
+  {
+    "id": 3,
+    "question": "Which standard primarily defines approach boundaries for electrical shock protection?",
+    "options": [
+      "NFPA 70E",
+      "IEEE C37.20",
+      "ANSI Z89.1",
+      "NEC Article 110"
+    ],
+    "answer": "NFPA 70E",
+    "explanation": "NFPA 70E provides detailed definitions and requirements for approach boundaries and risk assessment related to electrical safety. (NFPA 70E 130.4(D)(a))"
+  },
+  {
+    "id": 4,
+    "question": "Which boundary is closest to an exposed energized part?",
+    "options": [
+      "Restricted Approach Boundary",
+      "Limited Approach Boundary",
+      "Arc Flash Boundary",
+      "Prohibited Approach Boundary"
+    ],
+    "answer": "Restricted Approach Boundary",
+    "explanation": "The Restricted Approach Boundary is the nearest approach distance for qualified persons using appropriate shock protection techniques. (NFPA 70E Table 130.4(E)(a))"
+  },
+  {
+    "id": 5,
+    "question": "What is required before crossing the Restricted Approach Boundary?",
+    "options": [
+      "An energized electrical work permit and use of appropriate PPE",
+      "A supervisor’s verbal authorization only",
+      "Grounding of all circuits",
+      "Removal of all barriers and barricades"
+    ],
+    "answer": "An energized electrical work permit and use of appropriate PPE",
+    "explanation": "Crossing the Restricted Approach Boundary requires an energized work permit and proper PPE due to elevated shock risk. (NFPA 70E 130.2(B)(1); OSHA 1910.333(a)(2))"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following determines the distance of the Arc Flash Boundary?",
+    "options": [
+      "Incident energy analysis or the table method",
+      "System voltage rating only",
+      "Circuit breaker type",
+      "Number of electrical panels"
+    ],
+    "answer": "Incident energy analysis or the table method",
+    "explanation": "Arc Flash Boundary distance is calculated using incident energy analysis or estimated with tables provided in NFPA 70E. (NFPA 70E 130.5(G))"
+  },
+  {
+    "id": 7,
+    "question": "Who is allowed inside the Limited Approach Boundary?",
+    "options": [
+      "Only qualified persons with proper training and PPE",
+      "Any maintenance personnel",
+      "Visitors accompanied by a supervisor",
+      "Facility managers"
+    ],
+    "answer": "Only qualified persons with proper training and PPE",
+    "explanation": "Only qualified personnel trained in shock protection and using PPE may enter the Limited Approach Boundary. (NFPA 70E 130.4(E)(2); OSHA 1910.332(b)(3))"
+  },
+  {
+    "id": 8,
+    "question": "What must be posted on equipment likely to require examination while energized?",
+    "options": [
+      "Arc Flash warning label with incident energy or PPE category",
+      "Manufacturer’s logo and serial number",
+      "Only voltage rating",
+      "Name of last inspector"
+    ],
+    "answer": "Arc Flash warning label with incident energy or PPE category",
+    "explanation": "Equipment must display an arc-flash warning label indicating incident energy or PPE category. (NFPA 70E 130.5(H); OSHA 1910.335(b)(1))"
+  },
+  {
+    "id": 9,
+    "question": "When should arc flash boundaries be re-evaluated?",
+    "options": [
+      "Whenever a system change or modification occurs",
+      "Every 20 years",
+      "Only after an electrical accident",
+      "Once at installation"
+    ],
+    "answer": "Whenever a system change or modification occurs",
+    "explanation": "Boundaries and labels must be updated whenever a change could affect the arc-flash risk. (NFPA 70E 130.5(G); OSHA 1910.303(e))"
+  },
+  {
+    "id": 10,
+    "question": "What is the main hazard protected against by the Arc Flash Boundary?",
+    "options": [
+      "Thermal burns from arc energy",
+      "Electrical shock",
+      "Electromagnetic interference",
+      "Noise exposure"
+    ],
+    "answer": "Thermal burns from arc energy",
+    "explanation": "The Arc Flash Boundary protects against thermal injury caused by arc energy exposure. (NFPA 70E 130.5(E))"
+  },
+  {
+    "id": 11,
+    "question": "What determines the Limited Approach Boundary distance?",
+    "options": [
+      "System voltage",
+      "Available fault current",
+      "Temperature rating of conductors",
+      "PPE category"
+    ],
+    "answer": "System voltage",
+    "explanation": "Limited Approach Boundary distances are based primarily on the system voltage level. (NFPA 70E Table 130.4(E)(a))"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following must be documented as part of the shock risk assessment?",
+    "options": [
+      "Voltage exposure and boundary distances",
+      "Employee work hours",
+      "Daily weather conditions",
+      "Equipment manufacturer"
+    ],
+    "answer": "Voltage exposure and boundary distances",
+    "explanation": "The shock risk assessment includes identifying voltage and determining approach boundaries. (NFPA 70E 130.4(A))"
+  },
+  {
+    "id": 13,
+    "question": "What must a qualified worker do before entering the Arc Flash Boundary?",
+    "options": [
+      "Wear appropriate PPE and ensure all unnecessary personnel are clear",
+      "Turn off adjacent lighting",
+      "Check equipment serial numbers",
+      "Log entry time only"
+    ],
+    "answer": "Wear appropriate PPE and ensure all unnecessary personnel are clear",
+    "explanation": "Only trained personnel wearing suitable PPE may cross the Arc Flash Boundary. (NFPA 70E 130.7(C); OSHA 1910.335(a)(1))"
+  },
+  {
+    "id": 14,
+    "question": "Why are approach boundaries important in electrical safety?",
+    "options": [
+      "They establish safe working distances based on voltage and energy levels",
+      "They improve grounding system efficiency",
+      "They reduce harmonics in the system",
+      "They eliminate the need for PPE"
+    ],
+    "answer": "They establish safe working distances based on voltage and energy levels",
+    "explanation": "Boundaries define distances to prevent shock or arc-flash exposure. (NFPA 70E 130.4(D); OSHA 1910.333(c))"
+  },
+  {
+    "id": 15,
+    "question": "What factor most influences the severity of an arc flash incident?",
+    "options": [
+      "Available fault current and clearing time",
+      "Conductor size",
+      "Ambient temperature",
+      "Insulation type"
+    ],
+    "answer": "Available fault current and clearing time",
+    "explanation": "Arc flash severity depends mainly on fault current magnitude and clearing duration. (NFPA 70E Annex D; IEEE 1584)"
+  },
+  {
+    "id": 16,
+    "question": "Who defines the approach boundaries in NFPA 70E?",
+    "options": [
+      "The employer based on analysis",
+      "The manufacturer",
+      "OSHA directly",
+      "Local building code authority"
+    ],
+    "answer": "The employer based on analysis",
+    "explanation": "Employers must determine and document boundary distances per NFPA 70E and OSHA requirements. (NFPA 70E 130.5; OSHA 1910.132(d))"
+  },
+  {
+    "id": 17,
+    "question": "Which boundary is based on the potential for electrical shock, not thermal energy?",
+    "options": [
+      "Limited Approach Boundary",
+      "Arc Flash Boundary",
+      "Working Distance Boundary",
+      "Flash Protection Boundary"
+    ],
+    "answer": "Limited Approach Boundary",
+    "explanation": "The Limited and Restricted Approach Boundaries relate to shock hazards, while Arc Flash Boundary relates to thermal energy. (NFPA 70E 130.4(D))"
+  },
+  {
+    "id": 18,
+    "question": "Which standard regulates training for qualified and unqualified persons regarding electrical boundaries?",
+    "options": [
+      "OSHA 1910.332",
+      "NFPA 70",
+      "IEEE 242",
+      "ANSI Z87.1"
+    ],
+    "answer": "OSHA 1910.332",
+    "explanation": "OSHA 1910.332 requires training for employees on safe work practices and boundaries. (OSHA 1910.332(b))"
+  },
+  {
+    "id": 19,
+    "question": "What color is commonly used to mark arc flash boundaries?",
+    "options": [
+      "Orange or red barricade tape",
+      "Green paint",
+      "Blue light",
+      "Black and white stripes"
+    ],
+    "answer": "Orange or red barricade tape",
+    "explanation": "Physical barricades are typically marked in red or orange to warn of electrical hazards. (NFPA 70E 130.7(E)(1))"
+  },
+  {
+    "id": 20,
+    "question": "Why should unqualified persons remain outside the Limited Approach Boundary?",
+    "options": [
+      "They lack the training and PPE required to avoid shock hazards",
+      "They slow down the job progress",
+      "They may mislabel the equipment",
+      "They interfere with voltage readings"
+    ],
+    "answer": "They lack the training and PPE required to avoid shock hazards",
+    "explanation": "Unqualified personnel may not recognize electrical hazards or use PPE correctly. (NFPA 70E 130.4(E)(2); OSHA 1910.332(c))"
+  },
+  {
+    "id": 21,
+    "question": "What defines the Restricted Approach Boundary according to NFPA 70E?",
+    "options": [
+      "The minimum distance where there is increased likelihood of shock from inadvertent movement",
+      "The safe distance for unqualified persons",
+      "The point at which PPE can be removed",
+      "The minimum distance for arc flash PPE"
+    ],
+    "answer": "The minimum distance where there is increased likelihood of shock from inadvertent movement",
+    "explanation": "Restricted Approach Boundary is the minimum distance to an energized part where accidental contact could occur, requiring special PPE and work techniques. (NFPA 70E 130.4(E)(1); OSHA 1910.333(c)(2))"
+  },
+  {
+    "id": 22,
+    "question": "Which parameter is NOT used to calculate the arc flash boundary?",
+    "options": [
+      "Conductor length",
+      "Fault current",
+      "Clearing time",
+      "Working distance"
+    ],
+    "answer": "Conductor length",
+    "explanation": "Arc flash boundary is based on fault current, clearing time, and working distance—not conductor length. (NFPA 70E 130.5(G); IEEE 1584-2018 Section 5.3)"
+  },
+  {
+    "id": 23,
+    "question": "What must be considered when determining the arc flash boundary in the absence of labels?",
+    "options": [
+      "Incident energy analysis or default PPE tables",
+      "The age of the equipment",
+      "The manufacturer’s country of origin",
+      "Only system voltage"
+    ],
+    "answer": "Incident energy analysis or default PPE tables",
+    "explanation": "Where field labels are missing, the employer must use analysis or tables to determine boundaries. (NFPA 70E 130.5(G); OSHA 1910.303(e))"
+  },
+  {
+    "id": 24,
+    "question": "If the incident energy at a location is 8 cal/cm², what is required before entry into the arc flash boundary?",
+    "options": [
+      "Arc-rated PPE of equal or greater rating",
+      "Safety glasses only",
+      "Lockout/tagout the equipment",
+      "No PPE is required under 10 cal/cm²"
+    ],
+    "answer": "Arc-rated PPE of equal or greater rating",
+    "explanation": "PPE must meet or exceed the incident energy level for the task. (NFPA 70E 130.7(C)(15)(a); OSHA 1910.335(a)(1)(i))"
+  },
+  {
+    "id": 25,
+    "question": "What is the implication of entering the Limited Approach Boundary without authorization?",
+    "options": [
+      "Potential exposure to electrical shock",
+      "Reduced work efficiency",
+      "Automatic system shutdown",
+      "Loss of power factor"
+    ],
+    "answer": "Potential exposure to electrical shock",
+    "explanation": "Crossing the Limited Approach Boundary without qualification or PPE can expose personnel to shock hazard. (NFPA 70E 130.4(E)(2); OSHA 1910.333(c)(2))"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following most directly reduces arc flash boundary distance?",
+    "options": [
+      "Faster overcurrent device clearing time",
+      "Lower system voltage",
+      "Increased conductor insulation",
+      "Greater working distance"
+    ],
+    "answer": "Faster overcurrent device clearing time",
+    "explanation": "Reducing fault clearing time decreases the total incident energy, thereby shrinking the boundary. (NFPA 70E Annex D; IEEE 1584 Section 4.3.4)"
+  },
+  {
+    "id": 27,
+    "question": "What defines a 'qualified person' in the context of electrical boundaries?",
+    "options": [
+      "One who has demonstrated skills and knowledge in electrical safety and received proper training",
+      "A licensed electrician only",
+      "Any maintenance worker with experience",
+      "A person who works under supervision"
+    ],
+    "answer": "One who has demonstrated skills and knowledge in electrical safety and received proper training",
+    "explanation": "A qualified person must have training to identify hazards and take precautionary measures. (NFPA 70E Article 100 Definitions; OSHA 1910.399)"
+  },
+  {
+    "id": 28,
+    "question": "What is the minimum requirement before performing work inside the Restricted Approach Boundary?",
+    "options": [
+      "Use of shock protection PPE and insulated tools",
+      "Supervisor approval only",
+      "Posting a warning sign",
+      "Arc flash label visible"
+    ],
+    "answer": "Use of shock protection PPE and insulated tools",
+    "explanation": "Work inside the Restricted Approach Boundary requires shock protection measures. (NFPA 70E 130.4(E)(1); OSHA 1910.333(c)(8))"
+  },
+  {
+    "id": 29,
+    "question": "How are approach boundaries established for systems under 50 volts?",
+    "options": [
+      "No approach boundaries required",
+      "Minimum 10 inches Limited Approach",
+      "Same as 120 V systems",
+      "Determined by the employer’s discretion"
+    ],
+    "answer": "No approach boundaries required",
+    "explanation": "Boundaries begin at 50 V and higher per NFPA 70E Table 130.4(E)(a). (OSHA 1910.303(g)(2))"
+  },
+  {
+    "id": 30,
+    "question": "What is the typical arc flash boundary for 480 V switchgear with 35 kA fault current and 0.3 sec clearing time?",
+    "options": [
+      "Approximately 4 feet",
+      "6 inches",
+      "10 feet",
+      "1 inch"
+    ],
+    "answer": "Approximately 4 feet",
+    "explanation": "Typical IEEE 1584 calculations yield about 4 ft (1.2 m) for 480 V, 35 kA, 0.3 s conditions. (NFPA 70E Annex D; IEEE 1584 Example D.6)"
+  },
+  {
+    "id": 31,
+    "question": "Which of the following must always be included in the arc flash label?",
+    "options": [
+      "Nominal system voltage",
+      "Technician name",
+      "Test equipment brand",
+      "Date of installation"
+    ],
+    "answer": "Nominal system voltage",
+    "explanation": "Labels must show nominal voltage, arc flash boundary, and PPE requirements. (NFPA 70E 130.5(H))"
+  },
+  {
+    "id": 32,
+    "question": "Why is the working distance an important variable in arc flash analysis?",
+    "options": [
+      "It affects the incident energy exposure at the worker’s location",
+      "It determines conductor ampacity",
+      "It defines grounding method",
+      "It adjusts insulation resistance"
+    ],
+    "answer": "It affects the incident energy exposure at the worker’s location",
+    "explanation": "Incident energy reduces with distance, making working distance a key variable. (IEEE 1584-2018 Section 4.3.3; NFPA 70E Annex D)"
+  },
+  {
+    "id": 33,
+    "question": "What does 'incident energy' represent in an arc flash study?",
+    "options": [
+      "Thermal energy on a surface at a specific distance from the arc",
+      "Electrical resistance of insulation",
+      "Magnetic field intensity",
+      "Arc current rating of a breaker"
+    ],
+    "answer": "Thermal energy on a surface at a specific distance from the arc",
+    "explanation": "Incident energy is the thermal energy density impacting a worker during an arc event. (NFPA 70E 130.5(G); IEEE 1584 3.3.6)"
+  },
+  {
+    "id": 34,
+    "question": "What action is required if measured incident energy exceeds 40 cal/cm²?",
+    "options": [
+      "De-energize before any work unless infeasible",
+      "Use Category 2 PPE",
+      "Proceed with insulated gloves only",
+      "Increase boundary by 6 inches"
+    ],
+    "answer": "De-energize before any work unless infeasible",
+    "explanation": "At >40 cal/cm², PPE may not protect against severe burns; de-energizing is required. (NFPA 70E 130.2(A); OSHA 1910.333(a)(1))"
+  },
+  {
+    "id": 35,
+    "question": "What type of energy causes injury at the arc flash boundary?",
+    "options": [
+      "Thermal radiant energy",
+      "Mechanical vibration",
+      "Static discharge",
+      "Optical radiation only"
+    ],
+    "answer": "Thermal radiant energy",
+    "explanation": "Arc flash releases intense radiant heat capable of causing burns. (NFPA 70E 130.5(E))"
+  },
+  {
+    "id": 36,
+    "question": "How can an electrical worker minimize exposure when operating a breaker?",
+    "options": [
+      "Stand to the side and use the manufacturer’s remote racking or switching device",
+      "Face the breaker directly",
+      "Use bare hands with insulated tools",
+      "Increase available fault current"
+    ],
+    "answer": "Stand to the side and use the manufacturer’s remote racking or switching device",
+    "explanation": "Side stance and remote operation minimize thermal and blast exposure. (NFPA 70E 130.7(A); OSHA 1910.335(b)(1))"
+  },
+  {
+    "id": 37,
+    "question": "Which document provides equations for calculating arc flash boundary distances?",
+    "options": [
+      "IEEE 1584-2018 Guide for Performing Arc-Flash Hazard Calculations",
+      "NFPA 70 National Electrical Code",
+      "ANSI Z136 Laser Safety",
+      "OSHA Subpart S Appendix A"
+    ],
+    "answer": "IEEE 1584-2018 Guide for Performing Arc-Flash Hazard Calculations",
+    "explanation": "IEEE 1584-2018 provides empirical models used by NFPA 70E for boundary determination."
+  },
+  {
+    "id": 38,
+    "question": "If equipment has no arc flash label, who is responsible for establishing the boundary?",
+    "options": [
+      "The employer or owner of the equipment",
+      "The local fire marshal",
+      "The nearest utility provider",
+      "The PPE manufacturer"
+    ],
+    "answer": "The employer or owner of the equipment",
+    "explanation": "The employer must ensure proper hazard analysis and labeling. (OSHA 1910.132(d); NFPA 70E 130.5(H))"
+  },
+  {
+    "id": 39,
+    "question": "What is the minimum information required on an arc flash label per NFPA 70E?",
+    "options": [
+      "Nominal voltage, arc flash boundary, and either incident energy or PPE category",
+      "Technician’s initials and inspection date",
+      "Facility name and address",
+      "Cable type and insulation class"
+    ],
+    "answer": "Nominal voltage, arc flash boundary, and either incident energy or PPE category",
+    "explanation": "Labels must show voltage, boundary, and PPE/incident energy information. (NFPA 70E 130.5(H))"
+  },
+  {
+    "id": 40,
+    "question": "Which factor has the greatest impact on reducing both arc flash and shock risk?",
+    "options": [
+      "Establishing an electrically safe work condition",
+      "Wearing thicker gloves",
+      "Using larger conductors",
+      "Working faster"
+    ],
+    "answer": "Establishing an electrically safe work condition",
+    "explanation": "De-energizing equipment removes both shock and arc flash hazards. (NFPA 70E Article 120; OSHA 1910.333(b))"
+  },
+  {
+    "id": 41,
+    "question": "What determines the necessity of arc-rated face shields or hoods?",
+    "options": [
+      "Incident energy level and boundary proximity",
+      "System frequency only",
+      "Nominal voltage only",
+      "Employer preference"
+    ],
+    "answer": "Incident energy level and boundary proximity",
+    "explanation": "Arc-rated shields or hoods are selected based on energy exposure. (NFPA 70E 130.7(C)(10); OSHA 1910.335(a)(1)(v))"
+  },
+  {
+    "id": 42,
+    "question": "At what point does an unqualified person require a qualified escort near exposed parts?",
+    "options": [
+      "When approaching inside the Limited Approach Boundary",
+      "When crossing any property line",
+      "At any time they are in the same room",
+      "Only during maintenance shutdown"
+    ],
+    "answer": "When approaching inside the Limited Approach Boundary",
+    "explanation": "Unqualified persons can enter the Limited Approach area only under continuous escort. (NFPA 70E 130.4(E)(2))"
+  },
+  {
+    "id": 43,
+    "question": "Which of the following describes the relationship between shock and arc flash boundaries?",
+    "options": [
+      "They may overlap but are calculated from different hazard criteria",
+      "They are always equal",
+      "Shock boundary is always inside arc boundary",
+      "Arc flash boundary depends on voltage only"
+    ],
+    "answer": "They may overlap but are calculated from different hazard criteria",
+    "explanation": "Shock boundaries depend on voltage; arc flash boundaries depend on incident energy. (NFPA 70E 130.4 and 130.5)"
+  },
+  {
+    "id": 44,
+    "question": "What is the purpose of an energized electrical work permit?",
+    "options": [
+      "To authorize justified energized work and document protective measures",
+      "To request PPE from inventory",
+      "To bypass lockout/tagout",
+      "To record equipment serial numbers"
+    ],
+    "answer": "To authorize justified energized work and document protective measures",
+    "explanation": "An energized work permit ensures proper justification and controls. (NFPA 70E 130.2(B); OSHA 1910.333(a)(2))"
+  },
+  {
+    "id": 45,
+    "question": "How often must shock and arc flash risk assessments be reviewed?",
+    "options": [
+      "At least every five years or after system modifications",
+      "Every month",
+      "Only after incidents",
+      "Every new hire"
+    ],
+    "answer": "At least every five years or after system modifications",
+    "explanation": "Risk assessments must be reviewed at intervals not exceeding five years. (NFPA 70E 130.5(G))"
+  },
+  {
+    "id": 46,
+    "question": "Why is system short-circuit current important in determining protection boundaries?",
+    "options": [
+      "It influences arc energy release and boundary size",
+      "It determines equipment color coding",
+      "It defines grounding method",
+      "It sets motor torque"
+    ],
+    "answer": "It influences arc energy release and boundary size",
+    "explanation": "Higher fault current increases incident energy and boundary distance. (IEEE 1584 Equation 5.3; NFPA 70E Annex D)"
+  },
+  {
+    "id": 47,
+    "question": "Which document provides employer guidance on safe approach distances and training?",
+    "options": [
+      "OSHA 1910 Subpart S (Electrical)",
+      "ANSI C37.13",
+      "IEEE 242",
+      "NFPA 99"
+    ],
+    "answer": "OSHA 1910 Subpart S (Electrical)",
+    "explanation": "OSHA Subpart S outlines requirements for approach distances and training. (OSHA 1910.332–1910.335)"
+  },
+  {
+    "id": 48,
+    "question": "What happens if the Restricted Approach Boundary is crossed unintentionally?",
+    "options": [
+      "Immediate exposure to potential lethal shock",
+      "Arc flash incident always occurs",
+      "Breaker automatically trips",
+      "No hazard exists if PPE is worn"
+    ],
+    "answer": "Immediate exposure to potential lethal shock",
+    "explanation": "Crossing this boundary without insulation or PPE can result in direct contact and shock. (NFPA 70E 130.4(E)(1); OSHA 1910.333(c)(2))"
+  },
+  {
+    "id": 49,
+    "question": "Which factor does NOT affect the arc flash boundary?",
+    "options": [
+      "Cable color",
+      "Fault current magnitude",
+      "Clearing time",
+      "Working distance"
+    ],
+    "answer": "Cable color",
+    "explanation": "Arc flash boundaries depend on electrical parameters, not conductor color. (IEEE 1584 Section 4.3)"
+  },
+  {
+    "id": 50,
+    "question": "Why must both shock and arc flash boundaries be displayed on field-marked equipment?",
+    "options": [
+      "To inform workers of both electrical contact and thermal hazards",
+      "To comply with company branding standards",
+      "To mark equipment ownership",
+      "To reduce paperwork"
+    ],
+    "answer": "To inform workers of both electrical contact and thermal hazards",
+    "explanation": "Labeling both ensures full awareness of shock and burn risks. (NFPA 70E 130.5(H); OSHA 1910.335(b)(1))"
+  }
+]

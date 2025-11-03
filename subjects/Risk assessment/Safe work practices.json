@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "What is the first step in performing an electrical risk assessment before beginning energized work?",
+    "options": [
+      "Determine the available incident energy at the work location",
+      "Establish an electrically safe work condition",
+      "Identify all electrical hazards that could be present",
+      "Select appropriate personal protective equipment"
+    ],
+    "answer": "Identify all electrical hazards that could be present",
+    "explanation": "Risk assessment begins with hazard identification to determine what could cause harm. This foundational step precedes determining risk severity or controls. Reference: NFPA 70E 110.1(H)(1); OSHA 1910.132(d)(1)(i)."
+  },
+  {
+    "id": 2,
+    "question": "Which of the following defines 'arc flash boundary' as used in electrical safety practices?",
+    "options": [
+      "The distance from an exposed energized part within which a person could receive a second-degree burn",
+      "The minimum safe approach distance for qualified personnel",
+      "The boundary beyond which unqualified persons must not enter for any reason",
+      "The clearance distance required for switching operations"
+    ],
+    "answer": "The distance from an exposed energized part within which a person could receive a second-degree burn",
+    "explanation": "The arc flash boundary is defined as the distance at which the incident energy equals 1.2 cal/cm², potentially causing a curable second-degree burn. Reference: NFPA 70E Article 100 (Definitions); NFPA 70E 130.5(E)."
+  },
+  {
+    "id": 3,
+    "question": "When is it permissible to perform energized electrical work?",
+    "options": [
+      "Only when de-energizing would introduce additional hazards or is infeasible due to equipment design",
+      "Whenever the job can be completed faster if the equipment remains energized",
+      "If the worker is wearing full arc-rated PPE",
+      "If the equipment voltage is below 120 volts"
+    ],
+    "answer": "Only when de-energizing would introduce additional hazards or is infeasible due to equipment design",
+    "explanation": "Energized work is allowed only under justified exceptions, such as when de-energizing introduces additional hazards or is infeasible for diagnostics. Reference: NFPA 70E 130.2(A)(1); OSHA 1910.333(a)(1)."
+  },
+  {
+    "id": 4,
+    "question": "What must be established before any person performs work within the Limited Approach Boundary?",
+    "options": [
+      "An Energized Electrical Work Permit",
+      "A job hazard analysis",
+      "Lockout/Tagout documentation",
+      "Insulated tool inspection"
+    ],
+    "answer": "An Energized Electrical Work Permit",
+    "explanation": "An Energized Electrical Work Permit is required whenever work is performed inside the Limited Approach Boundary on energized conductors or parts. Reference: NFPA 70E 130.2(B); OSHA 1910.333(b)(2)."
+  },
+  {
+    "id": 5,
+    "question": "What is the main purpose of a Job Safety Planning and Job Briefing before electrical work?",
+    "options": [
+      "To discuss emergency evacuation routes only",
+      "To review required PPE and work procedures for identified hazards",
+      "To assign administrative duties for project reporting",
+      "To verify schedule and labor distribution"
+    ],
+    "answer": "To review required PPE and work procedures for identified hazards",
+    "explanation": "The job briefing ensures that all involved understand hazards, controls, PPE, and procedures prior to work. Reference: NFPA 70E 110.1(I); OSHA 1910.269(c)."
+  },
+  {
+    "id": 6,
+    "question": "Which document defines the requirements for establishing an electrically safe work condition?",
+    "options": [
+      "NFPA 70E Article 120",
+      "OSHA 1910 Subpart Z",
+      "IEEE Std C57.12",
+      "NEC Article 110"
+    ],
+    "answer": "NFPA 70E Article 120",
+    "explanation": "NFPA 70E Article 120 provides detailed steps for establishing an electrically safe work condition, including verification of absence of voltage. Reference: NFPA 70E Article 120 (2024 Edition)."
+  },
+  {
+    "id": 7,
+    "question": "According to OSHA, what must be done before any employee works on or near exposed de-energized parts?",
+    "options": [
+      "The parts must be tested to verify absence of voltage",
+      "The equipment must be grounded",
+      "A hot work permit must be issued",
+      "The area must be barricaded"
+    ],
+    "answer": "The parts must be tested to verify absence of voltage",
+    "explanation": "OSHA mandates verification of de-energized parts using appropriate test instruments before work begins. Reference: OSHA 1910.333(b)(2)(iv)(B); NFPA 70E 120.5(7)."
+  },
+  {
+    "id": 8,
+    "question": "What is the minimum training required for a 'qualified person' under NFPA 70E?",
+    "options": [
+      "Understanding the construction and operation of equipment and recognizing hazards",
+      "Completion of an apprenticeship program",
+      "Certification as a NETA technician",
+      "Completion of first aid training only"
+    ],
+    "answer": "Understanding the construction and operation of equipment and recognizing hazards",
+    "explanation": "A qualified person must have the knowledge and training to identify electrical hazards and understand the equipment being worked on. Reference: NFPA 70E Article 100; OSHA 1910.332(b)(3)."
+  },
+  {
+    "id": 9,
+    "question": "What should be done if test instruments show voltage after lockout/tagout has been applied?",
+    "options": [
+      "Recheck the test instrument on a known live source and reassess the isolation points",
+      "Ignore the reading as an instrument fault",
+      "Proceed cautiously while wearing PPE",
+      "Continue work with an observer present"
+    ],
+    "answer": "Recheck the test instrument on a known live source and reassess the isolation points",
+    "explanation": "When voltage is indicated, verify instrument function and re-evaluate isolation; do not assume false indication. Reference: NFPA 70E 120.5(7)(b); OSHA 1910.333(b)(2)(iv)(B)."
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is NOT considered a hazard control in the hierarchy of risk control methods?",
+    "options": [
+      "Elimination",
+      "Substitution",
+      "PPE",
+      "Shortcuts"
+    ],
+    "answer": "Shortcuts",
+    "explanation": "The hierarchy includes elimination, substitution, engineering controls, administrative controls, and PPE — shortcuts are unsafe practices. Reference: NFPA 70E 110.5(H)(3); ISO 45001:2018 Clause 8.1.2."
+  },
+  {
+    "id": 11,
+    "question": "What is the primary purpose of the Limited Approach Boundary?",
+    "options": [
+      "To protect personnel from electrical shock hazards",
+      "To mark the area for arc flash PPE requirements",
+      "To indicate safe approach distances for unqualified persons",
+      "To define the required clearance for mechanical equipment"
+    ],
+    "answer": "To protect personnel from electrical shock hazards",
+    "explanation": "The Limited Approach Boundary establishes a safe distance to prevent shock from exposed energized conductors. Reference: NFPA 70E Table 130.4(E)(a); OSHA 1910.333(c)(2)."
+  },
+  {
+    "id": 12,
+    "question": "Which control method should be applied first when mitigating electrical hazards according to the hierarchy of controls?",
+    "options": [
+      "Personal Protective Equipment (PPE)",
+      "Engineering Controls",
+      "Administrative Controls",
+      "Elimination"
+    ],
+    "answer": "Elimination",
+    "explanation": "Hazard elimination is the most effective risk control method, removing the hazard entirely. Reference: NFPA 70E 110.5(H)(3); ISO 45001:2018 Clause 8.1.2."
+  },
+  {
+    "id": 13,
+    "question": "Which document requires a written energized electrical work permit before work can proceed inside the restricted approach boundary?",
+    "options": [
+      "NFPA 70E 130.2(B)",
+      "OSHA 1910.335(a)(1)",
+      "IEEE 1584 Annex D",
+      "NEC 240.87"
+    ],
+    "answer": "NFPA 70E 130.2(B)",
+    "explanation": "NFPA 70E 130.2(B) mandates a written permit for energized work within the Restricted Approach Boundary unless exempted for diagnostic testing. Reference: NFPA 70E 130.2(B)."
+  },
+  {
+    "id": 14,
+    "question": "Which of the following must be documented during job planning for electrical work?",
+    "options": [
+      "Hazards, mitigations, PPE requirements, and emergency procedures",
+      "Only the estimated duration of the task",
+      "Name of the supervising engineer only",
+      "Lock numbers assigned to padlocks"
+    ],
+    "answer": "Hazards, mitigations, PPE requirements, and emergency procedures",
+    "explanation": "A job safety plan must include identified hazards, mitigations, PPE, and response procedures. Reference: NFPA 70E 110.1(I)(1); OSHA 1910.269(c)."
+  },
+  {
+    "id": 15,
+    "question": "When verifying absence of voltage, what must the test instrument be verified on?",
+    "options": [
+      "Only on the circuit being tested",
+      "On a known live source before and after testing",
+      "Using an infrared thermometer",
+      "Using the equipment’s control panel"
+    ],
+    "answer": "On a known live source before and after testing",
+    "explanation": "The instrument’s functionality must be verified on a known live source both before and after use to ensure accuracy. Reference: NFPA 70E 120.5(7); OSHA 1910.333(b)(2)(iv)(B)."
+  },
+  {
+    "id": 16,
+    "question": "What is the Restricted Approach Boundary intended to prevent?",
+    "options": [
+      "Accidental arc flash exposure",
+      "Unintentional shock from contact with energized parts",
+      "Unauthorized personnel entry",
+      "Radiation exposure from energized equipment"
+    ],
+    "answer": "Unintentional shock from contact with energized parts",
+    "explanation": "The Restricted Approach Boundary defines the distance to prevent electrical contact and shock. Reference: NFPA 70E Table 130.4(E)(a); OSHA 1910.333(c)(3)."
+  },
+  {
+    "id": 17,
+    "question": "Which factor most influences the calculated arc flash boundary?",
+    "options": [
+      "System voltage",
+      "Available fault current and clearing time",
+      "Wire insulation type",
+      "Ambient temperature"
+    ],
+    "answer": "Available fault current and clearing time",
+    "explanation": "Incident energy and arc flash boundary primarily depend on fault current and protective device clearing time. Reference: IEEE 1584-2018 Clause 5.1; NFPA 70E 130.5(G)."
+  },
+  {
+    "id": 18,
+    "question": "When performing risk assessment, what must be evaluated for each hazard?",
+    "options": [
+      "Likelihood of occurrence and severity of injury",
+      "Duration of task only",
+      "Only the equipment condition",
+      "Worker’s prior experience"
+    ],
+    "answer": "Likelihood of occurrence and severity of injury",
+    "explanation": "Risk assessment evaluates both probability and severity to determine risk level. Reference: NFPA 70E 110.5(H)(1); ISO 31000:2018 Clause 6.4.3."
+  },
+  {
+    "id": 19,
+    "question": "Which of the following PPE items is mandatory for workers within the arc flash boundary?",
+    "options": [
+      "Arc-rated clothing and face protection",
+      "Only safety glasses",
+      "High-visibility vest",
+      "Hearing protection only"
+    ],
+    "answer": "Arc-rated clothing and face protection",
+    "explanation": "Within the arc flash boundary, workers must wear PPE rated for the incident energy exposure. Reference: NFPA 70E 130.7(C)(1); OSHA 1910.335(a)(1)(v)."
+  },
+  {
+    "id": 20,
+    "question": "How often must an electrical safety program be reviewed and updated?",
+    "options": [
+      "Annually",
+      "Every three years",
+      "After an incident or at least every three years",
+      "Only when new equipment is installed"
+    ],
+    "answer": "After an incident or at least every three years",
+    "explanation": "NFPA 70E 110.5(K) requires a review at least every three years or after incidents to ensure program effectiveness. Reference: NFPA 70E 110.5(K)."
+  },
+  {
+    "id": 21,
+    "question": "Who is responsible for verifying that employees understand the hazards involved in the task?",
+    "options": [
+      "The qualified worker performing the task",
+      "The safety department",
+      "The supervisor or person in charge",
+      "Human resources"
+    ],
+    "answer": "The supervisor or person in charge",
+    "explanation": "Supervisors must verify worker understanding of hazards and required protective measures. Reference: NFPA 70E 110.1(I)(2); OSHA 1910.269(c)(2)."
+  },
+  {
+    "id": 22,
+    "question": "Which standard defines the process for arc flash incident energy calculations?",
+    "options": [
+      "IEEE 1584",
+      "NFPA 72",
+      "NEC Article 430",
+      "IEEE 519"
+    ],
+    "answer": "IEEE 1584",
+    "explanation": "IEEE 1584 provides empirical equations and methods for estimating arc flash incident energy. Reference: IEEE 1584-2018 Clause 4.2; NFPA 70E Annex D.5."
+  },
+  {
+    "id": 23,
+    "question": "Why is 'human error' considered during a risk assessment?",
+    "options": [
+      "It affects probability of hazard occurrence",
+      "It determines PPE category",
+      "It affects available fault current",
+      "It changes voltage ratings"
+    ],
+    "answer": "It affects probability of hazard occurrence",
+    "explanation": "Human performance factors influence the likelihood of incidents and must be part of risk assessment. Reference: NFPA 70E 110.5(H)(2); IEEE Std 902 Guide for Maintenance Safety. "
+  },
+  {
+    "id": 24,
+    "question": "What should be done if an electrical hazard cannot be eliminated?",
+    "options": [
+      "Apply engineering and administrative controls followed by PPE",
+      "Proceed using standard PPE only",
+      "Outsource the task",
+      "Skip hazard assessment"
+    ],
+    "answer": "Apply engineering and administrative controls followed by PPE",
+    "explanation": "If elimination is impossible, engineering and administrative controls must be implemented before PPE use. Reference: NFPA 70E 110.5(H)(3); OSHA 1910.132(d)(1)(i)."
+  },
+  {
+    "id": 25,
+    "question": "When is a second person required during certain energized tasks?",
+    "options": [
+      "When the task involves more than 240 V or increased risk of shock",
+      "Only during night shifts",
+      "Whenever voltage is below 50 V",
+      "When an apprentice is present"
+    ],
+    "answer": "When the task involves more than 240 V or increased risk of shock",
+    "explanation": "Certain energized tasks require a safety observer for immediate assistance. Reference: NFPA 70E 130.4(G); OSHA 1910.269(l)(1)."
+  },
+  {
+    "id": 26,
+    "question": "What is the correct order for establishing an electrically safe work condition?",
+    "options": [
+      "Identify, isolate, test for absence of voltage, and ground if required",
+      "Notify, ground, isolate, test for voltage",
+      "Lockout, tagout, notify, and start work",
+      "Verify absence of voltage before isolating"
+    ],
+    "answer": "Identify, isolate, test for absence of voltage, and ground if required",
+    "explanation": "NFPA 70E 120.5 lists the sequence: identify, disconnect, verify de-energization, and ground. Reference: NFPA 70E 120.5(1–8); OSHA 1910.333(b)(2)."
+  },
+  {
+    "id": 27,
+    "question": "Which boundary requires PPE rated for arc flash when crossed?",
+    "options": [
+      "Restricted Approach Boundary",
+      "Limited Approach Boundary",
+      "Arc Flash Boundary",
+      "Flash Protection Zone"
+    ],
+    "answer": "Arc Flash Boundary",
+    "explanation": "Crossing the arc flash boundary requires arc-rated PPE to protect from thermal energy. Reference: NFPA 70E 130.5(E); OSHA 1910.335(a)(1)(v)."
+  },
+  {
+    "id": 28,
+    "question": "Why must voltage rated gloves be air tested before use each day?",
+    "options": [
+      "To detect pinholes or damage that could cause shock",
+      "To remove moisture",
+      "To verify correct glove size",
+      "To warm them for comfort"
+    ],
+    "answer": "To detect pinholes or damage that could cause shock",
+    "explanation": "Daily inspection ensures glove integrity to prevent shock hazards. Reference: OSHA 1910.137(b)(2)(ii); NFPA 70E 130.7(C)(7)(a)."
+  },
+  {
+    "id": 29,
+    "question": "Which of the following is a requirement for unqualified persons near electrical equipment?",
+    "options": [
+      "Remain outside the Limited Approach Boundary",
+      "Wear Category 4 PPE",
+      "Complete energized work permits",
+      "Perform lockout procedures"
+    ],
+    "answer": "Remain outside the Limited Approach Boundary",
+    "explanation": "Unqualified persons may not cross the Limited Approach Boundary. Reference: NFPA 70E 130.4(D)(1); OSHA 1910.332(b)(3)."
+  },
+  {
+    "id": 30,
+    "question": "What determines the voltage rating required for insulating tools?",
+    "options": [
+      "The maximum nominal system voltage",
+      "Worker’s training level",
+      "Manufacturer’s preference",
+      "Ambient humidity"
+    ],
+    "answer": "The maximum nominal system voltage",
+    "explanation": "Tool insulation must match or exceed system voltage ratings. Reference: NFPA 70E 130.7(D)(1); ASTM F1505 Standard Specification for Insulated Hand Tools."
+  },
+  {
+    "id": 31,
+    "question": "What type of control is labeling electrical equipment with arc flash information?",
+    "options": [
+      "Administrative control",
+      "Engineering control",
+      "PPE control",
+      "Elimination control"
+    ],
+    "answer": "Administrative control",
+    "explanation": "Labels inform workers of hazards and PPE requirements — an administrative measure. Reference: NFPA 70E 130.5(H); OSHA 1910.335(b)(1)."
+  },
+  {
+    "id": 32,
+    "question": "Which standard governs lockout/tagout practices for electrical equipment?",
+    "options": [
+      "OSHA 1910.147",
+      "NFPA 70E Article 430",
+      "IEEE Std 141",
+      "NEC 240.24"
+    ],
+    "answer": "OSHA 1910.147",
+    "explanation": "Lockout/tagout (control of hazardous energy) requirements are defined under OSHA 1910.147. Reference: OSHA 1910.147(c)(1); NFPA 70E 120.2."
+  },
+  {
+    "id": 33,
+    "question": "When using test leads, what condition makes them unsafe for use?",
+    "options": [
+      "Exposed conductors or damaged insulation",
+      "Flexible silicone insulation",
+      "Color coding mismatch",
+      "Excessive lead length"
+    ],
+    "answer": "Exposed conductors or damaged insulation",
+    "explanation": "Damaged insulation can expose conductive parts and create shock hazards. Reference: NFPA 70E 110.4(A)(5); OSHA 1910.334(c)(3)."
+  },
+  {
+    "id": 34,
+    "question": "What is required when multiple workers apply their locks to a single disconnecting means?",
+    "options": [
+      "Each worker must apply their personal lock and tag",
+      "One lock is sufficient if the lead worker applies it",
+      "Supervisor authorization only",
+      "A lockout checklist must be signed daily"
+    ],
+    "answer": "Each worker must apply their personal lock and tag",
+    "explanation": "Each worker must control their lockout to ensure personal safety. Reference: OSHA 1910.333(b)(2)(iii)(D); NFPA 70E 120.2(D)(3)."
+  },
+  {
+    "id": 35,
+    "question": "Why must equipment grounds be applied before beginning work on de-energized circuits?",
+    "options": [
+      "To protect against induced or stored energy voltages",
+      "To improve continuity testing accuracy",
+      "To reduce line impedance",
+      "To discharge static charge only"
+    ],
+    "answer": "To protect against induced or stored energy voltages",
+    "explanation": "Grounding ensures worker safety from induced or capacitive voltages. Reference: NFPA 70E 120.3; OSHA 1910.333(b)(2)(iv)(C)."
+  },
+  {
+    "id": 36,
+    "question": "What must be done if conditions of the job change significantly after the initial briefing?",
+    "options": [
+      "Conduct an additional job briefing",
+      "Continue under original plan",
+      "Notify management only",
+      "Reissue PPE"
+    ],
+    "answer": "Conduct an additional job briefing",
+    "explanation": "A new job briefing is required when conditions change. Reference: NFPA 70E 110.1(I)(2); OSHA 1910.269(c)(3)."
+  },
+  {
+    "id": 37,
+    "question": "What is required of test instruments used on electrical systems?",
+    "options": [
+      "Must be rated for the voltage and category of the circuit",
+      "Any multimeter is acceptable",
+      "Only analog meters are approved",
+      "No rating verification needed"
+    ],
+    "answer": "Must be rated for the voltage and category of the circuit",
+    "explanation": "Test instruments must meet appropriate CAT ratings for safety. Reference: NFPA 70E 110.4(A)(5); IEC 61010-031."
+  },
+  {
+    "id": 38,
+    "question": "How should damaged or defective PPE be handled?",
+    "options": [
+      "Remove from service until tested and replaced",
+      "Repair using electrical tape",
+      "Continue to use for non-energized work",
+      "Discard after reporting to safety officer only"
+    ],
+    "answer": "Remove from service until tested and replaced",
+    "explanation": "Damaged PPE cannot provide adequate protection and must be removed. Reference: NFPA 70E 130.7(C)(9); OSHA 1910.137(b)(2)(ii)."
+  },
+  {
+    "id": 39,
+    "question": "What type of gloves are required for 480 V circuit work?",
+    "options": [
+      "Class 00 or higher rubber insulating gloves",
+      "Cotton work gloves",
+      "Leather utility gloves only",
+      "No gloves if using insulated tools"
+    ],
+    "answer": "Class 00 or higher rubber insulating gloves",
+    "explanation": "Class 00 gloves (up to 500 V AC) or higher provide required shock protection. Reference: ASTM D120; OSHA 1910.137(a)(1)(i)."
+  },
+  {
+    "id": 40,
+    "question": "What is a 'qualified person' required to demonstrate in the field?",
+    "options": [
+      "Knowledge, skills, and ability to perform specific electrical tasks safely",
+      "Employment history exceeding five years",
+      "Completion of OSHA 10-hour course",
+      "Attendance at safety meetings"
+    ],
+    "answer": "Knowledge, skills, and ability to perform specific electrical tasks safely",
+    "explanation": "A qualified person must have verified competence and hazard awareness. Reference: NFPA 70E Article 100; OSHA 1910.332(b)(3)."
+  },
+  {
+    "id": 41,
+    "question": "What must be done if energized work is justified and approved?",
+    "options": [
+      "An energized work permit must be issued and precautions followed",
+      "No documentation needed if worker is qualified",
+      "Work can proceed without observer",
+      "Only PPE selection is required"
+    ],
+    "answer": "An energized work permit must be issued and precautions followed",
+    "explanation": "A written permit documents justification, boundaries, PPE, and approval. Reference: NFPA 70E 130.2(B); OSHA 1910.333(a)(1)."
+  },
+  {
+    "id": 42,
+    "question": "What type of control are barricades placed around energized equipment?",
+    "options": [
+      "Administrative control",
+      "Engineering control",
+      "Elimination control",
+      "PPE control"
+    ],
+    "answer": "Administrative control",
+    "explanation": "Barricades are administrative controls that restrict access and alert personnel. Reference: NFPA 70E 130.7(E); OSHA 1910.335(a)(2)."
+  },
+  {
+    "id": 43,
+    "question": "How often should voltage detectors be verified for proper operation?",
+    "options": [
+      "Before and after each use",
+      "Weekly",
+      "Monthly",
+      "Only after battery replacement"
+    ],
+    "answer": "Before and after each use",
+    "explanation": "Testing before and after each use ensures functional reliability. Reference: NFPA 70E 120.5(7); OSHA 1910.333(b)(2)(iv)(B)."
+  },
+  {
+    "id": 44,
+    "question": "Which of the following represents an engineering control?",
+    "options": [
+      "Use of remote racking equipment",
+      "Posting warning labels",
+      "Issuing safety glasses",
+      "Conducting job briefings"
+    ],
+    "answer": "Use of remote racking equipment",
+    "explanation": "Engineering controls physically separate workers from hazards. Reference: NFPA 70E 110.5(H)(3); OSHA 1910.333(a)(1)."
+  },
+  {
+    "id": 45,
+    "question": "What is the minimum approach boundary for a 480 V circuit (phase-to-phase) for a qualified person?",
+    "options": [
+      "12 inches (0.3 m)",
+      "18 inches (0.45 m)",
+      "24 inches (0.6 m)",
+      "36 inches (0.9 m)"
+    ],
+    "answer": "12 inches (0.3 m)",
+    "explanation": "Restricted approach for 480 V is 12 inches for qualified persons. Reference: NFPA 70E Table 130.4(E)(a); OSHA 1910.333(c)(2)."
+  },
+  {
+    "id": 46,
+    "question": "Why is documentation of risk assessment important?",
+    "options": [
+      "It provides evidence of compliance and aids in future evaluations",
+      "It replaces the need for PPE",
+      "It is optional unless requested by OSHA",
+      "It can be verbal if witnessed"
+    ],
+    "answer": "It provides evidence of compliance and aids in future evaluations",
+    "explanation": "Documentation ensures accountability and serves as proof of due diligence. Reference: NFPA 70E 110.5(H)(5); OSHA 1910.132(d)(2)."
+  },
+  {
+    "id": 47,
+    "question": "When is a visual inspection of electrical equipment required before work?",
+    "options": [
+      "Before every job or task involving the equipment",
+      "Only during annual audits",
+      "After equipment failure only",
+      "Once every five years"
+    ],
+    "answer": "Before every job or task involving the equipment",
+    "explanation": "Visual inspection ensures safe condition before exposure to electrical hazards. Reference: NFPA 70E 110.1(I)(1)(a); OSHA 1910.334(a)(2)."
+  },
+  {
+    "id": 48,
+    "question": "What is the main risk when using conductive ladders near electrical sources?",
+    "options": [
+      "Electric shock or electrocution",
+      "Slipping hazard",
+      "Mechanical collapse",
+      "Chemical exposure"
+    ],
+    "answer": "Electric shock or electrocution",
+    "explanation": "Metal ladders conduct electricity and can cause shock or electrocution. Reference: OSHA 1910.333(c)(3)(i); NFPA 70E 130.7(F)."
+  },
+  {
+    "id": 49,
+    "question": "What must be done if a worker receives an electrical shock, no matter how minor?",
+    "options": [
+      "Report and seek immediate medical evaluation",
+      "Continue working if feeling fine",
+      "Log it at end of shift",
+      "Reset equipment immediately"
+    ],
+    "answer": "Report and seek immediate medical evaluation",
+    "explanation": "Even minor shocks can cause delayed internal injury; reporting and medical review are required. Reference: OSHA 1904.39; NFPA 70E 110.1(H)(3)."
+  },
+  {
+    "id": 50,
+    "question": "Why must incident investigations be performed after any electrical event?",
+    "options": [
+      "To identify root causes and improve safety controls",
+      "To assign blame to personnel",
+      "For insurance purposes only",
+      "To meet production quotas"
+    ],
+    "answer": "To identify root causes and improve safety controls",
+    "explanation": "Post-incident reviews prevent recurrence and improve safety management systems. Reference: NFPA 70E 110.5(K)(3); OSHA 1904.39(a)(2)."
+  }
+]
