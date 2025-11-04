@@ -78,23 +78,41 @@ def get_last_saved_score(user_id):
     record = scores_col.find_one({"user_id": user_id}, sort=[("timestamp", -1)])
     return int(record["score"]) if record else 0
 
-def update_score(user_id, score, total_questions):
+def update_score(user_id, score_increment, total_questions_increment=0):
+    """
+    Add to the user's total score and total_questions instead of overwriting them.
+    Creates a record if it doesn't exist yet.
+    """
     timestamp = datetime.now()
+
     scores_col.update_one(
         {"user_id": user_id},
-        {"$set": {
-            "score": score,
-            "total_questions": total_questions,
-            "timestamp": timestamp
-        }},
+        {
+            "$inc": {  # increment existing values instead of overwriting
+                "score": score_increment,
+                "total_questions": total_questions_increment
+            },
+            "$set": {  # still update timestamp
+                "timestamp": timestamp
+            }
+        },
         upsert=True
     )
+
+    # --- Update Streamlit cache ---
     if "scores_cache" not in st.session_state:
         st.session_state["scores_cache"] = []
-    st.session_state["scores_cache"] = [
-        r for r in st.session_state["scores_cache"] if r.get("user_id") != user_id
-    ]
-    st.session_state["scores_cache"].append({"user_id": user_id, "score": score})
+
+    # find old cache entry if exists
+    found = False
+    for r in st.session_state["scores_cache"]:
+        if r.get("user_id") == user_id:
+            r["score"] = r.get("score", 0) + score_increment
+            found = True
+            break
+
+    if not found:
+        st.session_state["scores_cache"].append({"user_id": user_id, "score": score_increment})
 
 def load_scores_cache():
     if "scores_cache" not in st.session_state:
