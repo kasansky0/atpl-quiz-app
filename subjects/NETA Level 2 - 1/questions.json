@@ -1,0 +1,960 @@
+[
+  {
+    "id": 1,
+    "question": "Lockout/Tagout procedure",
+    "options": [
+      "Provide for periodic inspection.",
+      "Pertain to electric equipment only.",
+      "Control energy for purpose of safety.",
+      "Prevent unexpected intrusion.",
+      "Require disconnection of equipment."
+    ],
+    "answer": "Control energy for purpose of safety.",
+    "explanation": "Lockout/Tagout (LOTO) procedures are designed to control hazardous energy sources during maintenance or servicing of equipment. This ensures that machinery cannot start unexpectedly, preventing injuries. The primary purpose is to control energy for safety, not just to disconnect equipment or inspect periodically."
+  },
+  {
+    "id": 2,
+    "question": "Zero energy state refers to",
+    "options": [
+      "A power source that is locked out of servicing",
+      "A power source that is locked out and tagged for servicing",
+      "The release of all stored energy from a power source",
+      "The release of all locks and tags so that energy can be restored"
+    ],
+    "answer": "The release of all stored energy from a power source",
+    "explanation": "A zero energy state means all sources of hazardous energy—electrical, mechanical, hydraulic, pneumatic, thermal, or stored—have been isolated, disconnected, and released. This ensures the equipment cannot move, start, or release energy unexpectedly during servicing or maintenance."
+  },
+  {
+    "id": 3,
+    "question": "A circuit may be tested to determine it is de-energized by use of",
+    "options": [
+      "Ammeter",
+      "Appropriate voltage detector",
+      "Ground stick",
+      "Ohmmeter",
+      "IR tester",
+      "Light bulb"
+    ],
+    "answer": "Appropriate voltage detector",
+    "explanation": "Before working on electrical equipment, an appropriate voltage detector or tester must be used to verify that the circuit is de-energized. This step is part of establishing an electrically safe work condition per NFPA 70E, ensuring no hazardous voltage is present before contact."
+  },
+  {
+    "id": 4,
+    "question": "Lead-acid storage batteries do not include the following hazards",
+    "options": [
+      "Explosive gas",
+      "Electrical flash",
+      "Eye contamination",
+      "Skin burns",
+      "High-voltage arcing"
+    ],
+    "answer": "High-voltage arcing",
+    "explanation": "Lead-acid storage batteries present hazards such as hydrogen gas explosion, acid burns to skin and eyes, and electrical flash from short circuits. However, they operate at relatively low voltages, so high-voltage arcing is not typically a hazard associated with them."
+  },
+  {
+    "id": 5,
+    "question": "What respirator is used whenever there is not enough oxigen in a confined space or area, and where the concentration of the airborne substation that is present is immediately dangerous for life or health",
+    "options": [
+      "Air purifying",
+      "Filtering",
+      "Air supplying",
+      "None of the above",
+      "All of the above"
+    ],
+    "answer": "Air supplying",
+    "explanation": "In atmospheres that are oxygen-deficient or immediately dangerous to life or health (IDLH), an air-supplying respirator—such as a self-contained breathing apparatus (SCBA) or supplied-air respirator (SAR)—must be used. Air-purifying respirators cannot be used because they do not provide their own oxygen supply."
+  },
+  {
+    "id": 6,
+    "question": "When united portable ladder are used to access the upper landing surface, the top of the ladder shall extend",
+    "options": [
+      "To just beneath the landing",
+      "To at least one half feet above the landing",
+      "To at least 3 feet above the landing",
+      "No more than three steps above the landing",
+      "No more than 25% of the length above the landing"
+    ],
+    "answer": "To at least 3 feet above the landing",
+    "explanation": "According to OSHA 1910.23(c)(11), when a portable ladder is used to access an upper landing surface, the side rails must extend at least 3 feet (0.9 meters) above the landing. This provides a secure handhold for workers transitioning on or off the ladder."
+  },
+  {
+    "id": 7,
+    "question": "When using a straight ladder it is unsafe to climb more than",
+    "options": [
+      "The second rung from the top",
+      "75% of the total extended length",
+      "The third rung from te top",
+      "The top rung of the ladder",
+      "Above the tie-off point selected"
+    ],
+    "answer": "The third rung from te top",
+    "explanation": "For straight or extension ladders, OSHA and ANSI standards prohibit standing on or above the third rung from the top. Doing so reduces stability and increases the risk of the ladder tipping or the worker losing balance."
+  },
+  {
+    "id": 8,
+    "question": "The top step of the tie-off ladder shall",
+    "options": [
+      "Provide a 7 inch tread depth",
+      "Have a non-slip surface",
+      "Be kept free of foreign objects",
+      "Not be used as a step",
+      "All of the above"
+    ],
+    "answer": "Not be used as a step",
+    "explanation": "The top step or cap of a stepladder is not designed to support standing or stepping. OSHA 1910.23(b)(13) prohibits standing on the top step unless it is specifically designed for that purpose, as it can cause loss of balance and lead to falls."
+  },
+  {
+    "id": 9,
+    "question": "Class B fires can be extinguished by",
+    "options": [
+      "Foam, carbon dioxide, and dry chemical extinguisher",
+      "The nearest water source",
+      "Smothering with plastic, rags, or heavy cloth",
+      "Foam, carbon dioxide, dry chemical extinguishers, or water"
+    ],
+    "answer": "Foam, carbon dioxide, and dry chemical extinguisher",
+    "explanation": "Class B fires involve flammable liquids like gasoline or oil and are extinguished using foam, CO₂, or dry chemical extinguishers. Class A fires involve ordinary combustibles (wood, paper, cloth); Class C involve electrical equipment; Class D involve combustible metals; and Class K involve cooking oils and fats."
+  },
+  {
+    "id": 10,
+    "question": "OSHA requires that _____________ be trained in purpose and use of lockout/tagout",
+    "options": [
+      "designed and authorized employees",
+      "all affected employees",
+      "all management and supervisors",
+      "electrical workers",
+      "all of the above"
+    ],
+    "answer": "all affected employees",
+    "explanation": "OSHA 1910.147(c)(7) requires that all affected and authorized employees be trained in the purpose and use of lockout/tagout procedures. This ensures they understand how to recognize hazardous energy sources and safely control them during servicing or maintenance."
+  },
+  {
+    "id": 11,
+    "question": "Air purifying respirators are used",
+    "options": [
+      "Whenever there is not enough oxygen",
+      "With self-contianed breathing apparatus and supplied air source",
+      "The screen out dangerous materials and offending materials",
+      "To assure that all dangerous substances have been safely removed from the atmosphere"
+    ],
+    "answer": "The screen out dangerous materials and offending materials",
+    "explanation": "Air-purifying respirators work by filtering or absorbing harmful particles, gases, or vapors from the air before inhalation. They do not supply oxygen and should only be used in environments with adequate oxygen levels."
+  },
+  {
+    "id": 12,
+    "question": "Electrical fires are Class ________ fires",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "answer": "C",
+    "explanation": "Class C fires involve energized electrical equipment. They require non-conductive extinguishing agents such as carbon dioxide or dry chemical extinguishers to avoid electrical shock."
+  },
+  {
+    "id": 13,
+    "question": "The term stator best applies to",
+    "options": [
+      "Solenoid",
+      "Generator",
+      "Contactor",
+      "Reactor",
+      "Resistor"
+    ],
+    "answer": "Generator",
+    "explanation": "The stator is the stationary part of a generator or motor that contains the windings where voltage is induced. The rotor is the rotating part that moves within the stator’s magnetic field."
+  },
+  {
+    "id": 14,
+    "question": "A UPS system is best described as being",
+    "options": [
+      "A backup generator",
+      "A motor-generator set",
+      "A bank of large batteries",
+      "A transformer system from normal source to generator source",
+      "A system to convert ac power to dc power, then invert dc power back to ac power"
+    ],
+    "answer": "A system to convert ac power to dc power, then invert dc power back to ac power",
+    "explanation": "A UPS (Uninterruptible Power Supply) converts incoming AC power to DC to charge its batteries, then inverts the DC back to AC to provide continuous power during outages or voltage fluctuations."
+  },
+  {
+    "id": 15,
+    "question": "A resistor can be used",
+    "options": [
+      "To limit current",
+      "As a voltage divider",
+      "To increase circuit load",
+      "To generate heat",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Resistors oppose current flow, allowing them to limit current, divide voltage in a circuit, add electrical load, or intentionally produce heat as part of their normal operation."
+  },
+  {
+    "id": 16,
+    "question": "Which device may continue to be a source of harmful electrical energy after all switches and circuit breakers have been opened?",
+    "options": [
+      "Transformer",
+      "Capacitor",
+      "Resistor",
+      "Generator",
+      "Surge Arrestor"
+    ],
+    "answer": "Capacitor",
+    "explanation": "A capacitor stores electrical energy in an electric field and can retain a dangerous charge even after power is disconnected. It must be properly discharged before maintenance or handling."
+  },
+  {
+    "id": 17,
+    "question": "Can a motor become a generator without any alteration?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "answer": "Yes",
+    "explanation": "Yes. When the shaft of a motor is driven by an external mechanical force, it can generate voltage and current like a generator, since motors and generators operate on the same electromagnetic principles."
+  },
+  {
+    "id": 18,
+    "question": "A ________ trip device may be used to provide medium voltage circuit breaker tripping energy when a battery bank is not available.",
+    "options": [
+      "Shunt",
+      "AC",
+      "Capacitor",
+      "Transformer",
+      "Rectifier"
+    ],
+    "answer": "Capacitor",
+    "explanation": "A capacitor trip device stores energy from an AC source and releases it instantly to trip a medium-voltage circuit breaker when control power or a battery supply is unavailable."
+  },
+  {
+    "id": 19,
+    "question": "A transformer is a _______ operated machine",
+    "options": [
+      "Voltage",
+      "Current",
+      "Capacitate",
+      "Ratio",
+      "Magnetically"
+    ],
+    "answer": "Magnetically",
+    "explanation": "A transformer is a magnetically operated device that transfers electrical energy between circuits through electromagnetic induction, without any direct electrical connection between them."
+  },
+  {
+    "id": 20,
+    "question": "A surge arrester is principally used to",
+    "options": [
+      "Provide a limited current path to ground",
+      "Protect apparatus from abnormally high voltage",
+      "Reduce the effects of sags and surges",
+      "Correct power factors on distribution system",
+      "All of the above"
+    ],
+    "answer": "Protect apparatus from abnormally high voltage",
+    "explanation": "A surge arrester protects electrical equipment from transient overvoltages caused by lightning or switching surges by diverting excess voltage safely to ground."
+  },
+  {
+    "id": 21,
+    "question": "The capacitor of a capacitor start motor is used to",
+    "options": [
+      "Sustain system voltage",
+      "Increase voltage at start",
+      "Maintain system power factor at start",
+      "Increase the phase angle between start winding current and run winding current",
+      "None of the above"
+    ],
+    "answer": "Increase the phase angle between start winding current and run winding current",
+    "explanation": "In a capacitor start motor, the capacitor creates a phase shift between the start and run windings, producing a rotating magnetic field that provides higher starting torque."
+  },
+  {
+    "id": 22,
+    "question": "In line power reactors are used to",
+    "options": [
+      "Correct power factor",
+      "Limit high current",
+      "Offset the effects of in-line capacitor",
+      "Limit abnormal voltage magnitude",
+      "Absorb energy at time of a fault"
+    ],
+    "answer": "Limit high current",
+    "explanation": "In-line power reactors add inductive reactance to a circuit, which helps limit high inrush or fault currents and protect equipment from excessive electrical stress."
+  },
+  {
+    "id": 23,
+    "question": "The most durable contact surface material is",
+    "options": [
+      "Brass",
+      "Copper",
+      "Stainless steel",
+      "Gold",
+      "Silver"
+    ],
+    "answer": "Silver",
+    "explanation": "Silver is the most durable contact surface material because it has excellent electrical conductivity, resists corrosion, and can handle high currents without significant wear or pitting."
+  },
+  {
+    "id": 24,
+    "question": "Which metal provides the most conductive surface",
+    "options": [
+      "Copper",
+      "Brass",
+      "Silver",
+      "Steel",
+      "Gold"
+    ],
+    "answer": "Gold",
+    "explanation": "Gold provides the most conductive surface for contacts because it resists corrosion and oxidation, ensuring reliable electrical connections even under low-current or harsh environmental conditions."
+  },
+  {
+    "id": 25,
+    "question": "A solenoid does not include",
+    "options": [
+      "An iron core",
+      "Coil",
+      "Contacts",
+      "Hinged magnetic pole piece",
+      "Plunger"
+    ],
+    "answer": "Hinged magnetic pole piece",
+    "explanation": "A solenoid consists of a coil, an iron core, and a plunger that moves when energized. It does not include a hinged magnetic pole piece, which is not part of its standard design."
+  },
+  {
+    "id": 26,
+    "question": "A contact is NOT used in",
+    "options": [
+      "Control circuits",
+      "Motor control circuits",
+      "Auto transfer apparatus",
+      "Current metering circuits",
+      "Lighting circuits"
+    ],
+    "answer": "Current metering circuits",
+    "explanation": "Contacts are used to open or close electrical circuits in control, motor control, auto transfer, and lighting circuits. They are not typically used in current metering circuits, which only measure current without switching it."
+  },
+  {
+    "id": 27,
+    "question": "Which of the following terms does not apply to a generator",
+    "options": [
+      "Counter EMF",
+      "Magnetic field",
+      "Lines of flux",
+      "Commutator",
+      "None of the above"
+    ],
+    "answer": "None of the above",
+    "explanation": "All listed terms—Counter EMF, Magnetic field, Lines of flux, and Commutator—are relevant to the operation of a generator. Therefore, 'None of the above' is correct."
+  },
+  {
+    "id": 28,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 29,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 30,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 31,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 32,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 33,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 34,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 35,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 36,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 37,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 38,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 39,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 40,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 41,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 42,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 43,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 44,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 45,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 46,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 47,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 48,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 49,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 50,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 51,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 52,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 53,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 54,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 55,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 56,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 57,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 58,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 59,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 60,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 61,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 62,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 63,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 64,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 65,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 66,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 67,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 68,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 69,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 70,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 71,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 72,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 73,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 74,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 75,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 76,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 77,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 78,
+    "question": "?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  }
+]
