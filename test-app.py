@@ -283,12 +283,17 @@ if st.session_state["user"]:
                 try:
                     with open(file_path, "r", encoding="utf-8") as f:
                         data = json.load(f)
+                    questions = []
                     if isinstance(data, dict):
                         for topic, qlist in data.items():
                             if isinstance(qlist, list):
                                 questions.extend(qlist)
                     elif isinstance(data, list):
                         questions = data
+
+                    # 🔹 Shuffle questions every time a single file is selected
+                    random.shuffle(questions)
+
                 except Exception as e:
                     st.sidebar.error(f"Failed to load {selected_file}: {e}")
 
