@@ -548,5 +548,551 @@
     ],
     "answer": "May damage the insulation that was just tested",
     "explanation": "Immediately applying a solid ground after a high-potential test can cause a sudden discharge of stored energy, which may damage the insulation of the cable or winding. A controlled discharge procedure should be used instead."
+  },
+  {
+    "id": 44,
+    "question": "Cleaning solvent used when cleaning electrical insulation should have high dielectric strength, high flash point, low toxicity and be",
+    "options": [
+      "Water-based",
+      "Inexpensive",
+      "Good-smelling",
+      "Quick drying",
+      "Highly viscous"
+    ],
+    "answer": "Quick drying",
+    "explanation": "Cleaning solvents for electrical insulation should be quick drying to prevent moisture absorption and residue buildup, ensuring the insulation remains clean and non-conductive after cleaning."
+  },
+  {
+    "id": 45,
+    "question": "Corona causes tracking and discoloration of medium and high voltage bus insulation, and ionizing the surrounding area. Which of the following will most probably cause corona?",
+    "options": [
+      "Moisture on the insulation surface",
+      "Dirt on the insulation surface",
+      "Oil on the insulation surface",
+      "Small air gaps between the energized bus and the support insulation",
+      "No air gaps between the energized bus and support insulation"
+    ],
+    "answer": "Small air gaps between the energized bus and the support insulation",
+    "explanation": "Corona is most often caused by small air gaps between the energized bus and the support insulation, where the electric field ionizes the air and leads to tracking, discoloration, and insulation damage."
+  },
+  {
+    "id": 46,
+    "question": "Strip heaters should be in outdoor switchgear cubicles to",
+    "options": [
+      "Keep the bus conductor warm",
+      "Keep circuit breaker and switch mechanism warm",
+      "Prevent moisture from condensing on the bus, circuit breaker and switch insulation system",
+      "Maintain lubricant viscosity",
+      "Temperature control"
+    ],
+    "answer": "Prevent moisture from condensing on the bus, circuit breaker and switch insulation system",
+    "explanation": "Strip heaters in outdoor switchgear cubicles prevent moisture condensation on buses, circuit breakers, and insulation components, reducing the risk of corrosion and insulation breakdown."
+  },
+  {
+    "id": 47,
+    "question": "Switchgear interiors are compartmentalized for purpose of",
+    "options": [
+      "Worker safety",
+      "Dust and dirt control",
+      "Moisture control",
+      "Fault damage control",
+      "Temperature control"
+    ],
+    "answer": "Fault damage control",
+    "explanation": "Switchgear interiors are compartmentalized to provide fault damage control, limiting the effects of electrical faults to a single section and preventing damage from spreading to other components."
+  },
+  {
+    "id": 48,
+    "question": "If an infrared scan of bus insulation and connections does not detect any problem, hands on service during an outage is unnecessary",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Switchgear interiors are compartmentalized to provide fault damage control, limiting the effects of electrical faults to a single section and preventing damage from spreading to other components."
+  },
+  {
+    "id": 49,
+    "question": "To perform insulation resistance test on molded case circuit breakers that have been removed from the switchboard for testing, you must",
+    "options": [
+      "Test each terminal to ground with the breaker open",
+      "Open the breaker and test between each pole and the other poles",
+      "Close the breaker and perform the tests between each terminal and the other terminals",
+      "Perform test with the breaker open and with the breaker closed",
+      "Molded case breakers are not insulation resistance tested, because the entire case is non conductive"
+    ],
+    "answer": "Perform test with the breaker open and with the breaker closed",
+    "explanation": "When testing molded case circuit breakers for insulation resistance, tests should be performed with the breaker both open and closed to verify insulation integrity across all internal paths and between terminals."
+  },
+  {
+    "id": 50,
+    "question": "The NEC defines a motor controller as being",
+    "options": [
+      "The starter control and protective circuits and devices",
+      "The control system necessary to operate the contactor",
+      "Any switch or device normally used to start and stop a motor by making and breaking the motor circuit breaker",
+      "An adjustable drive system",
+      "A device or system employed to limit high current flow until the motor reaches full speed"
+    ],
+    "answer": "Any switch or device normally used to start and stop a motor by making and breaking the motor circuit breaker",
+    "explanation": "According to the NEC, a motor controller is any switch or device used to start and stop a motor by making and breaking the motor circuit. It includes manual, magnetic, or electronic means of controlling motor operation."
+  },
+  {
+    "id": 51,
+    "question": "Outdoor switchgear housing are vented",
+    "options": [
+      "To prevent overheating",
+      "To let heat and humidity escape",
+      "To prevent overheating and dissipate corona",
+      "All of the above",
+      "Outdoor housing should be sealed"
+    ],
+    "answer": "To let heat and humidity escape",
+    "explanation": "Outdoor switchgear housings are vented to allow heat and humidity to escape, preventing condensation buildup and maintaining proper internal environmental conditions for reliable operation."
+  },
+  {
+    "id": 52,
+    "question": "The preferred method of cleaning switchgear and motor control center interiors during a short time outage is",
+    "options": [
+      "Forced air blowing",
+      "Solvent spray and rinse",
+      "Solvent spray and forced air drying",
+      "Vacuuming through a filter and wiping with dry cloth",
+      "All of the above"
+    ],
+    "answer": "Vacuuming through a filter and wiping with dry cloth",
+    "explanation": "The preferred cleaning method during a short outage is vacuuming through a filter and wiping with a dry cloth, as it safely removes dust and debris without introducing moisture or solvent residues that could affect insulation."
+  },
+  {
+    "id": 53,
+    "question": "Bolted bus connections may be checked by use of a torque wrench or a ",
+    "options": [
+      "Low resistance ohmmeter",
+      "High voltage megohmmeter",
+      "Infrared thermometer",
+      "Clamp-on ammeter",
+      "Digital multimeter"
+    ],
+    "answer": "Low resistance ohmmeter",
+      "explanation": "Bolted bus connections can be verified using a low resistance ohmmeter to detect loose or high-resistance joints. This method identifies poor connections that could cause overheating or voltage drops."
+  },
+  {
+  "id": 54,
+  "question": "Mark by letter designation, which task should usually be performed first and which task last, during low voltage switchgear PM outage. (choose in correct order).",
+  "options": [
+    "Breaker trip unit test",
+    "Bus connect checks",
+    "Insulation system test",
+    "Current transformer test",
+    "Inspection and cleaning",
+    "Ground fault protection test",
+    "Infrared scan",
+    "Ground tests"
+  ],
+  "answer": "Insulation system test and Inspection and cleaning",
+  "explanation": "The first task is to test the insulation system to ensure it is safe, and the last is inspection and cleaning, which is done after all checks."
+  },
+  {
+    "id": 55,
+    "question": "The condition known as 'Tracking' is evidenced by the presence of",
+    "options": [
+      "Corona discharge",
+      "Carbonized streamers or trees etched into the insulation surface",
+      "A white powdery deposit along edges of organic materials",
+      "Frying noise from within energized switchgear",
+      "All of the above"
+    ],
+    "answer": "Carbonized streamers or trees etched into the insulation surface",
+    "explanation": "Tracking occurs when electrical discharges create carbonized paths on insulation surfaces, leading to permanent damage."
+  },
+  {
+    "id": 56,
+    "question": "Insulation resistance testing of control wiring (but not solid state components) should be performed at",
+    "options": [
+      "250 VDC",
+      "500 VDC",
+      "600 VDC",
+      "1000 VDC",
+      "2500 VDC"
+    ],
+    "answer": "1000 VDC",
+    "explanation": "Insulation resistance testing of control wiring is typically performed at 1000 VDC to ensure adequate insulation integrity without damaging components."
+  },
+  {
+    "id": 57,
+    "question": "One maintenance task is to assure that adequate work space is maintained around the switchboard. Per the NEC the minimum working clearance space in front of electrical equipment including housing shall",
+    "options": [
+      "Be 24'' wide",
+      "Be 30'' wide",
+      "Be 36'' wide",
+      "Allow 90'' opening of hinged doors",
+      "Second and Fourth"
+    ],
+    "answer": "Second and Fourth",
+    "explanation": "NEC 110.26 requires a minimum front working clearance of 36 inches, width at least 30 inches or the equipment width, height 6.5 ft minimum, and rear clearance 2–4 ft depending on voltage to ensure safe access around electrical equipment."
+  },
+  {
+    "id": 58,
+    "question": "Per the NEC, the phase arrangement on 3 phase switchboard busses shall be:",
+    "options": [
+      "ABC from front to back, or right to left, as viewed from the front",
+      "ABC from front to back, or right to left, or top to bottom, as viewed from the front",
+      "ABC from front to back, or right to left, or top to bottom as viewed from the rear",
+      "ABC left to right at every panel opening",
+      "ABC back to front, or left to right, or top to bottom, as viewed from the front"
+    ],
+    "answer": "ABC from front to back, or right to left, or top to bottom, as viewed from the front",
+    "explanation": "NEC requires that 3-phase switchboard bus phase arrangement be ABC from front to back, right to left, or top to bottom as viewed from the front to maintain standardization and safety."
+  },
+  {
+    "id": 59,
+    "question": "During performance of thermographic scan of similar components within the switchboard that are under similar load, at what temperature difference does NETA recommend investigation?",
+    "options": [
+      "1-2F",
+      "1-3C",
+      "2-5F",
+      "2-5C",
+      "3-5C"
+    ],
+    "answer": "1-3C",
+    "explanation": "NETA recommends investigating any temperature difference of 1-3°C between similar components under similar load during a thermographic scan, as it may indicate a developing issue."
+  },
+  {
+    "id": 60,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 61,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 62,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 63,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 64,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 65,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 66,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 67,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 68,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 69,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 70,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 71,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 72,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 73,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 74,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 75,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 76,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 77,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 78,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 79,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 80,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 81,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 82,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 83,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 84,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
+  },
+  {
+    "id": 85,
+    "question": "",
+    "options": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "answer": "",
+    "explanation": ""
   }
 ]
