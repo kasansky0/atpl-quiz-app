@@ -546,7 +546,7 @@ if st.session_state["user"]:
                             )
 
                         # ✅ Auto-save score and update last_active
-                        update_score(user_name, st.session_state.score, total_questions)
+                        update_score(user_name, 1 if correct else 0, 0)
                         update_last_active(user_name)
                         refresh_chat()
 
