@@ -759,340 +759,586 @@
   },
   {
     "id": 60,
-    "question": "",
+    "question": "On a typical 1000kVA Delta/Delta Transformer rated 13800/480V the voltage ratio is",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "28.00",
+      "28.75",
+      "29.00",
+      "20.80",
+      "38.75"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "28.75",
+    "explanation": "The voltage ratio of a transformer is determined by dividing the primary voltage by the secondary voltage. For a 13,800V to 480V Delta/Delta transformer: 13,800 ÷ 480 = 28.75. Therefore, the voltage ratio is approximately 28.75."
   },
   {
     "id": 61,
-    "question": "",
+    "question": "A liquid filled transformer which uses the natural circulation of the insulating liquid has a cooling class designation of",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "AA",
+      "OA",
+      "AA/FA",
+      "OA/FA",
+      "OA/FA/FOA"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "OA",
+    "explanation": "OA means Oil-Air cooling, where both oil and air circulate naturally. AA is for dry-type air-cooled units, AA/FA and OA/FA include forced air cooling, and OA/FA/FOA adds forced oil and forced air cooling—none of which apply to purely natural circulation."
   },
   {
     "id": 62,
-    "question": "",
+    "question": "A liquid filled transformer equipped with fans to provide supplemental air over the cooling surface of the tank has a cooling class designation of",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "AA",
+      "OA",
+      "AA/FA",
+      "OA/FA",
+      "OA/FA/OFA"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "OA/FA",
+    "explanation": "OA/FA means Oil-Air cooling with Forced Air assistance. Fans provide forced air flow while oil still circulates naturally. AA is for dry-type air-cooled units, OA uses only natural air flow, AA/FA applies to dry types, and OA/FA/OFA adds forced oil cooling, which this case does not."
   },
   {
     "id": 63,
-    "question": "",
+    "question": "One of the purposes of oil in liquid filled transformer is",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Lubricate the internal parts",
+      "Transfer heat from the windings to air",
+      "heat the transformer to prevent moisture",
+      "Clean the windings",
+      "Conduct electrial current"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Transfer heat from the windings to air",
+    "explanation": "Transformer oil acts as both an insulator and a coolant, carrying heat from windings to the tank walls for dissipation to air. It doesn’t lubricate, clean, or conduct current, and it doesn’t heat the transformer."
   },
   {
     "id": 64,
-    "question": "",
+    "question": "Dry type 12.47kV/480V wye-delta transformer can be used",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "To provide low current for meters and relays",
+      "To correct for poor power factor",
+      "To provide current for large loads",
+      "Outdoors only",
+      "Without surge arresters"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "To provide current for large loads",
+    "explanation": "A 12.47kV/480V wye-delta dry-type transformer steps down medium voltage to supply large load equipment. It’s not for metering or power factor correction, can be installed indoors or outdoors, and still requires surge protection."
   },
   {
     "id": 65,
-    "question": "",
+    "question": "For step down Power Transformers:",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "The primary windings are always connected to the high voltage system",
+      "The secondary windings are always connected to the high voltage system",
+      "Are always liquid filled",
+      "Are always postable",
+      "Are used for providing low current to meters and relays"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "The primary windings are always connected to the high voltage system",
+    "explanation": "In a step-down transformer, the primary winding connects to the high-voltage side to reduce voltage for use at the secondary. The secondary is the low-voltage side. They are not always liquid-filled or portable and are not designed for metering circuits."
   },
   {
     "id": 66,
-    "question": "",
+    "question": "The secondary windings of current transformers",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Can provide current to motor loads",
+      "Provide low currents to meters and relays proportional to the primary current being measured",
+      "Provide only ground current",
+      "Produce secondary voltages proportional to the system voltage",
+      "Can be open circuited while current is flowing through the CT primary"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Provide low currents to meters and relays proportional to the primary current being measured",
+    "explanation": "CT secondary windings output a small, proportional current for meters and relays. They cannot power loads, don’t provide voltage or ground current, and must never be open-circuited under load due to dangerous high voltage buildup."
   },
   {
     "id": 67,
-    "question": "",
+    "question": "Power transformer",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Are compartmentalized padmount type",
+      "Are used to describe power",
+      "May be connected to network protectors",
+      "Are typically 500kVA or less",
+      "Typically transmit power"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Typically transmit power",
+    "explanation": "Power transformers are used in transmission systems to transfer electrical energy between voltage levels efficiently. Padmount types are for distribution use, not transmission. 500kVA or less are distribution sizes, and they don’t just 'describe power.'"
   },
   {
     "id": 68,
-    "question": "",
+    "question": "The taps of no load tap changer on an oil filled transformer",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Can be changed while the transformer is loaded",
+      "Can be changed while transformer is energized, but not loaded",
+      "Cannot be changed while the transformer is energized",
+      "Usually have 33 step positions",
+      "Are controlled by a voltage relay"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Cannot be changed while the transformer is energized",
+    "explanation": "No-load tap changers must only be adjusted when the transformer is de-energized to avoid arcing and damage. Load tap changers can adjust under load, not no-load types. They don’t have 33 steps or automatic voltage relay control."
   },
   {
     "id": 69,
-    "question": "",
+    "question": "Which one of the following transformer types can not be used indoors unless in approved vaults",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Mineral oil filled",
+      "Dry type",
+      "Less flammable liquid filled",
+      "Cast coil",
+      "Epoxy encapsulated"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Mineral oil filled",
+    "explanation": "Mineral oil filled transformers use flammable oil, so they’re only allowed indoors if housed in approved fire-rated vaults. Dry type, cast coil, epoxy encapsulated, and less flammable liquid units can be installed indoors without such restriction."
   },
   {
     "id": 70,
-    "question": "",
+    "question": "Instrument transformers are used",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "To regulate power flow",
+      "In metering and protecting schemes",
+      "To furnish station service power",
+      "In control systems",
+      "To distribute electrical energy"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "In metering and protecting schemes",
+    "explanation": "Instrument transformers (CTs and PTs) provide scaled-down current or voltage for meters and protective relays. They don’t regulate power, supply station power, control systems, or distribute energy directly."
   },
   {
     "id": 71,
-    "question": "",
+    "question": "Sealed tanks liquid filled transformers typically include",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Dry nitrogen above the liquid",
+      "No intentional space above the liquid",
+      "Dehydrating compound in the breather",
+      "Forced air cooling",
+      "An oxygen blanket"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Dry nitrogen above the liquid",
+    "explanation": "Sealed tank transformers use dry nitrogen above the oil to prevent oxidation and moisture ingress. 'No intentional space' is incorrect because some gas space is needed. Dehydrating compounds are used in open-breathing transformers, not sealed. Forced air cooling is a separate cooling method, and an oxygen blanket would promote oxidation, not prevent it."
   },
   {
     "id": 72,
-    "question": "",
+    "question": "The standard angular displacement between the referenced phases of a wye-delta connected three phase transformer is",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "180",
+      "120",
+      "60",
+      "30",
+      "0"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "30",
+    "explanation": "A wye-delta transformer introduces a 30° phase shift between primary (wye) and secondary (delta) voltages. 0° would be for wye-wye or delta-delta, 60°, 120°, and 180° are not standard displacements for this connection type."
   },
   {
     "id": 73,
-    "question": "",
+    "question": "The output of transformer is measured in",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Voltage",
+      "BIL",
+      "Temperature rise",
+      "Percent impedance",
+      "kVA"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "kVA",
+    "explanation": "Transformer output is rated in kVA, representing the apparent power it can supply. Voltage is a characteristic, BIL is insulation rating, temperature rise shows heating, and percent impedance relates to voltage drop under load—not the output itself."
   },
   {
     "id": 74,
-    "question": "",
+    "question": "Transformer polarity",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Add or substructs from output voltage",
+      "Add or substructs from kVA rating",
+      "Should always be additive",
+      "Is of no concern in three phase system",
+      "Is of concern when multiple sets of primary and secondary windings are interconnected"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Is of concern when multiple sets of primary and secondary windings are interconnected",
+    "explanation": "Transformer polarity determines the relative instantaneous direction of voltages in primary and secondary windings. It matters when paralleling transformers or connecting multiple windings, to avoid phase opposition and circulating currents. It does not affect kVA rating directly, and it is not irrelevant in three-phase systems."
   },
   {
     "id": 75,
-    "question": "",
+    "question": "15000 volt cable marked (labeled) MV-90/220 mils has an insulation level of",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "90%",
+      "100%",
+      "120%",
+      "133%",
+      "150%"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "133%",
+    "explanation": "The insulation level percentage is calculated by dividing the insulation thickness by the standard thickness for the voltage class. Here, the cable has 220 mils insulation at 15 kV, while standard 15 kV insulation is 165 mils (approx.). 220 ÷ 165 ≈ 1.33, or 133%. Other percentages are incorrect as they do not match this calculation."
   },
   {
     "id": 76,
-    "question": "",
+    "question": "Given the same length of each, which of the following has the lowest resistance",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "500MCM copper cable",
+      "350MCM aluminum cable",
+      "1/4 by 6 aluminum bus",
+      "1/4 by 6 copper bus",
+      "1/2 by 2 copper bus"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "1/4 by 6 copper bus",
+    "explanation": "Resistance is inversely proportional to cross-sectional area and depends on material resistivity (copper < aluminum). A 1/4 by 6 copper bus has the largest cross-sectional area among copper options. Fastest way: compare material first (copper lower than aluminum), then compare areas—largest area wins."
   },
   {
     "id": 77,
-    "question": "",
+    "question": "The shielf in the medium voltage power cable",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Provides physical protection for the cable insulation",
+      "Must never be grounded",
+      "Eliminates areas of higher stress concentration along the cable run",
+      "Is made of semi conductive material",
+      "Is required in all 5/15kVA cables"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Eliminates areas of higher stress concentration along the cable run",
+    "explanation": "The cable shield (usually semi-conductive) smooths the electric field, reducing localized stress and preventing insulation breakdown. It is not for physical protection, it must be grounded, it is not required on all MV cables, and while often semi-conductive, its main purpose is stress control."
   },
   {
     "id": 78,
-    "question": "",
+    "question": "The support insulators in buses must provide electrical insulation and",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Cooling to the bus conductors",
+      "Heating to the bus conductors",
+      "Prevent corrosion to the bus conductors",
+      "Prevent movement of the bus conductors during through-fault conditions",
+      "Prevent contamination to the insulation"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Prevent movement of the bus conductors during through-fault conditions",
+    "explanation": "Support insulators electrically isolate the bus while mechanically securing it. They must withstand electromagnetic forces during faults to prevent conductor movement. They do not cool, heat, prevent corrosion, or stop contamination directly."
   },
   {
     "id": 79,
-    "question": "",
+    "question": "Nonshielded 15kV power cable can be used",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Only in conduit",
+      "To splice the shielded cable",
+      "To connect the primary switch to the transformer in a unit substation",
+      "For any power circuit",
+      "To connect to panel voltmeter"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "To connect the primary switch to the transformer in a unit substation",
+    "explanation": "Nonshielded 15kV cable is suitable for short connections where electric field stress is low, such as between a primary switch and transformer in a substation. It is not for general circuits, conduit-only applications, splicing shields, or low-voltage panel connections."
   },
   {
     "id": 80,
-    "question": "",
+    "question": "Shielded power cable must",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Include electric stress relief at terminations and splices",
+      "Be insulted from grounded surfaces",
+      "Be terminated inside inclosures",
+      "Be used to prevent magnetic field",
+      "Never be spliced"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Include electric stress relief at terminations and splices",
+    "explanation": "Shielded power cables concentrate electric stress at terminations and splices, so stress relief devices are required to prevent insulation failure. While insulation, enclosures, and proper grounding are important, the key requirement is electric stress control. They can be spliced properly and do not prevent magnetic fields."
   },
   {
     "id": 81,
-    "question": "",
+    "question": "The semi-conductive material in a shielded power cable",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Fills in the voids between the conductor and the insulation and the shield",
+      "Decreases the resistance of the conductor",
+      "Increases the resistance of the insulation",
+      "Replaces the insulation",
+      "Prevents moisture from entering the cable"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Fills in the voids between the conductor and the insulation and the shield",
+    "explanation": "The semi-conductive layer smooths the electric field by filling voids between conductor, insulation, and shield, reducing stress points. It does not change conductor resistance, replace insulation, increase insulation resistance, or prevent moisture directly."
   },
   {
     "id": 82,
-    "question": "",
+    "question": "Switchgear control wiring is typically type",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "THHN",
+      "SIS",
+      "THW",
+      "RH",
+      "VC"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "SIS",
+    "explanation": "SIS (Service Instrumentation Shielded) cable is commonly used for switchgear control circuits because it is flexible, shielded, and suitable for instrumentation/control wiring. THHN and THW are general-purpose power conductors, RH is heating cable, and VC is a type of jacketed cable for power, not control."
   },
   {
     "id": 83,
-    "question": "",
+    "question": "The ampere rating of 1/4 by 4 inches copper bus bar is",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "250A",
+      "500A",
+      "1000A",
+      "2000A",
+      "2500A"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "1000A",
+    "explanation": "Ampacity of a bus bar depends on its cross-sectional area and material. A 1/4 inch by 4 inch copper bus has a cross-section of 1 sq.in., which typically carries about 1000A under normal conditions. Smaller sizes carry less, and larger sizes carry more."
   },
   {
     "id": 84,
-    "question": "",
+    "question": "Medium voltage cable typically used for underground rural distribution installation is known as",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Interlocked armor cable",
+      "Jacketed power cable",
+      "Belted cable",
+      "Strand shielded cable",
+      "Concentric neutral cable"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "Concentric neutral cable",
+    "explanation": "Concentric neutral cable is widely used in rural underground distribution because it provides a grounded neutral by wrapping neutral wires around the insulation. Other types like interlocked armor, jacketed, belted, or strand shielded cables are used for specific mechanical protection or insulation purposes but not typically for rural underground distribution."
   },
   {
     "id": 85,
-    "question": "",
+    "question": "Aluminum bus bars",
     "options": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Provide better conductivity than copper bars",
+      "Have a higher melting point than the copper bars",
+      "Are more easily plated than copper bars",
+      "Provide properties identical to those of copper",
+      "None of the above"
     ],
-    "answer": "",
-    "explanation": ""
+    "answer": "None of the above",
+    "explanation": "Aluminum has lower conductivity than copper, a lower melting point, is harder to plate, and does not have identical properties to copper. Therefore, none of the listed statements are correct."
+  },
+  {
+    "id": 86,
+    "question": "A typical medium voltage power cable might include PVC",
+    "options": [
+      "Semiconductor",
+      "Insulation",
+      "Jacketing",
+      "Shielding",
+      "None of the above"
+    ],
+    "answer": "Jacketing",
+    "explanation": "PVC (Polyvinyl Chloride) is commonly used as the outer jacket of medium voltage cables to provide mechanical protection and environmental resistance. The insulation may be XLPE or EPR, shielding is usually metallic or semi-conductive, and PVC is not used for the semiconductor layer."
+  },
+  {
+    "id": 87,
+    "question": "For bare copper bars, the current carried continuously shall not exceed _____ amperes per square inch of cross section of the conductor",
+    "options": [
+      "2000",
+      "1500",
+      "1250",
+      "1000",
+      "750"
+    ],
+    "answer": "1000",
+    "explanation": "Bare copper bus bars are rated for continuous current of 1000A per square inch of cross-sectional area. \n\nTo calculate the current rating: \n1. Determine the cross-sectional area of the copper bar in square inches (width × thickness). \n2. Multiply the area by 1000A/in². \n\nExample: a 0.25 in × 4 in bus has area 1 in² → 1 × 1000A = 1000A continuous rating."
+  },
+  {
+    "id": 88,
+    "question": "For bare aluminum bars, the current carried continuously should not exceed _____ amperes per square inch of cross section of the conductor",
+    "options": [
+      "300",
+      "700",
+      "1000",
+      "1250",
+      "1500"
+    ],
+    "answer": "700",
+    "explanation": "Bare aluminum bus bars are rated for continuous current of 700A per square inch of cross-sectional area. \n\nTo calculate the current rating: \n1. Determine the cross-sectional area of the aluminum bar (width × thickness in inches). \n2. Multiply the area by 700 A/in². \n\nExample: a 0.5 in × 2 in aluminum bar has area 1 in² → 1 × 700A = 700A continuous rating."
+  },
+  {
+    "id": 89,
+    "question": "The temperature rating of an insulated conductor is",
+    "options": [
+      "The maximum temperature it can withstand over a prolonged period of time",
+      "Determined by material properties",
+      "Its temperature rise above ambient rating when carrying its maximum rated ampacity",
+      "None of the above"
+    ],
+    "answer": "The maximum temperature it can withstand over a prolonged period of time",
+    "explanation": "The temperature rating specifies the maximum continuous operating temperature the insulation can safely handle without degrading. While material properties influence this, the rating itself defines the long-term thermal limit, not just temperature rise or other factors."
+  },
+  {
+    "id": 90,
+    "question": "What type of trip device is commonly used to trip open a medium voltage circuit breaker, where a battery source is not available?",
+    "options": [
+      "Capacitor",
+      "Series",
+      "Shunt",
+      "Vacuum",
+      "AC coil"
+    ],
+    "answer": "Capacitor",
+    "explanation": "A capacitor trip device (CTD) is used when no external DC battery source is available. It stores energy in a capacitor, which discharges rapidly to trip the breaker when needed. This provides reliable tripping power without a dedicated battery system. The fastest way to identify this is to note that 'capacitor' indicates stored electrical energy, just like a battery replacement."
+  },
+  {
+    "id": 91,
+    "question": "A 480V circuit breaker has a 1600A frame and 800A sensors. The setting levels include LT=1.1X, ST=2X, and Instantaneous=6X. What is the maximum current rating of this circuit breaker.",
+    "options": [
+      "1760",
+      "1600",
+      "880",
+      "800",
+      "727"
+    ],
+    "answer": "800",
+    "explanation": "The **frame rating (1600A)** represents the maximum mechanical size and capacity of the breaker, but the **sensor rating (800A)** determines its actual maximum continuous current rating. The settings LT=1.1X, ST=2X, and Inst=6X control trip timing and protection but do not increase the continuous ampere rating. \n\n**Calculation:**\n- Continuous rating = sensor size = 800A.\n- LT (long-time) setting = 1.1 × 800A = 880A, but this is the trip delay threshold, not a continuous rating.\n\n✅ **Fastest way to find the answer:** Look for the **sensor rating**, not the frame or setting multipliers — the sensor defines the breaker’s continuous ampere rating."
+  },
+  {
+    "id": 92,
+    "question": "Which of the following devices is not rated to interrupt load current?",
+    "options": [
+      "Load breaker air switch",
+      "Vacuum switch",
+      "Air circuit breaker",
+      "Disconnect switch",
+      "Oil circuit breaker"
+    ],
+    "answer": "Disconnect switch",
+    "explanation": "A **disconnect switch** (also called an isolator) is designed **only to open or close a circuit when no significant current is flowing** — it provides a visible means of isolation but **is not rated to interrupt load current**. Interrupting load current with a disconnect can cause arcing and equipment damage. \n\n**Calculation / Fastest way to determine:**\n- If the device name includes **“breaker”** or **“switch”** designed for load (like load-break switch), it **can interrupt current**.\n- If it’s only called a **disconnect** or **isolator**, it’s **for isolation only**, not load interruption."
+  },
+  {
+    "id": 93,
+    "question": "What may occur if a circuit breaker with a 25,000A interrupting ratings is opened during a 50,000 fault?",
+    "options": [
+      "The circuit breaker will not attempt to open",
+      "The circuit breaker will itself fault",
+      "The circuit breaker will clear the fault without damage",
+      "The contact of the circuit breaker will become polished",
+      "This situation can never occur"
+    ],
+    "answer": "The circuit breaker will itself fault",
+    "explanation": "A **circuit breaker’s interrupting rating** is the maximum fault current it can safely interrupt **without failing or exploding**. If a breaker rated for 25,000A is subjected to a 50,000A fault, the fault current **exceeds its capability**, causing severe arcing, contact destruction, and possibly an internal explosion — meaning **the breaker itself will fault**. \n\n**Fastest way to determine:** Compare the available fault current to the breaker’s interrupting rating:  \n→ If **Fault Current > Interrupting Rating**, the breaker **cannot safely interrupt** and will **fail**."
+  },
+  {
+    "id": 94,
+    "question": "Per the NEC, the overcurrent rating of a circuit breaker or a fuse switch that supplies continuous and non-continuous feeder loads shall",
+    "options": [
+      "Be rated 125% of continuous load",
+      "Be rated equal to the sum of 100% of the continuous load plus 60% of the non-continuous load",
+      "Be rated non less than the non-continuous load plus 125% of the continuous load",
+      "Be rated non less than 125% of the sum of the continuous and non-continuous load",
+      "Be rated no greater than the sum of the continuous and non continuous load"
+    ],
+    "answer": "Be rated non less than the non-continuous load plus 125% of the continuous load",
+    "explanation": "According to **NEC Article 215.3** and **NEC 210.20(A)**, overcurrent protection for feeders and branch circuits must be rated **not less than 125% of the continuous load plus 100% of the non-continuous load**. This ensures that circuit breakers and fuses do not trip under normal continuous operation.\n\n**Formula:**  \nOvercurrent device rating ≥ (1.25 × Continuous Load) + (1.0 × Non-Continuous Load)\n\n**Example:**  \nIf continuous load = 80A and non-continuous load = 20A,  \n→ Rating = (1.25 × 80) + (1 × 20) = 120A.  \nSo, the next standard size breaker would be **125A**.\n\n**Fastest way to find:**  \nMultiply continuous load by **1.25**, then simply **add the non-continuous load**."
+  },
+  {
+    "id": 95,
+    "question": "Wherever low voltage circuit protect against short-circuit fault is the only consideration, a _____ circuit breaker is typically selected",
+    "options": [
+      "Thermal overload",
+      "Long time protected",
+      "Ground fault",
+      "fused",
+      "magnetic or instantaneous"
+    ],
+    "answer": "magnetic or instantaneous",
+    "explanation": "A **magnetic or instantaneous circuit breaker** trips instantly when a high fault current (short-circuit) is detected. It operates using an **electromagnetic mechanism** that responds to current magnitude rather than time, making it ideal when **short-circuit protection** is the only requirement.\n\n**Why others are wrong:**\n- **Thermal overload:** protects against long-term overload, not short-circuits.\n- **Long time protected:** designed for continuous overloads, not instant faults.\n- **Ground fault:** protects against earth leakage, not short-circuit faults.\n- **Fused:** provides similar protection but isn’t adjustable or reusable like breakers.\n\n**Fastest way to identify:**\nIf the question mentions **“short-circuit only”** → look for **instantaneous or magnetic** type breaker.\n\n**Calculation concept:**\nThe trip occurs almost instantly when the current exceeds a set multiple of rated current — typically **8× to 12× In (rated current)** for instantaneous trip breakers.\n\nExample: For a 100A breaker, instantaneous trip ≈ 800A–1200A."
+  },
+  {
+    "id": 96,
+    "question": "Standard medium voltage interrupter switches should be",
+    "options": [
+      "Stored energy operated",
+      "Motor operated",
+      "Closing coil operated",
+      "Non-load breaker",
+      "Hook stick operated"
+    ],
+    "answer": "Stored energy operated",
+    "explanation": "Medium voltage interrupter switches are typically **stored energy operated** to ensure rapid and reliable opening and closing under load. The stored energy mechanism allows consistent operation regardless of operator strength. Motor or coil operation is slower or auxiliary. Hook stick operation is manual and unsafe for standard rated interrupters. Non-load breakers cannot interrupt full load current.\n\n**Fastest way to identify:** Any standard MV switch designed for load and fault interruption uses **stored energy** for reliability and speed."
+  },
+  {
+    "id": 97,
+    "question": "Circuit breakers commonly found in motor controllers having motor-starter overload relays are what type?",
+    "options": [
+      "Thermal overload",
+      "High interrupting capacity",
+      "Molded case with high interrupted rating fuse",
+      "Thermal magnetic",
+      "Drawout"
+    ],
+    "answer": "Thermal magnetic",
+    "explanation": "Motor controllers typically use **thermal-magnetic circuit breakers**, which combine a **thermal element** for overload protection and a **magnetic element** for short-circuit protection. \n\n**Why others are wrong:**\n- **Thermal overload:** only protects against sustained overloads, not instantaneous faults.\n- **High interrupting capacity:** describes capability, not type.\n- **Molded case with fuse:** is a different protection method.\n- **Drawout:** refers to physical mounting, not protection type.\n\n**Fastest way to identify:** Motor starters need **overload + short-circuit protection** → choose **thermal-magnetic breakers**."
+  },
+  {
+    "id": 98,
+    "question": "A low voltage non automatic circuit breaker type switching and protective device with integral timing-limiting fuse is called a",
+    "options": [
+      "Bolted pressure switch",
+      "Service protector",
+      "Network protector",
+      "H.D. fuse switch",
+      "Starter or controller"
+    ],
+    "answer": "Service protector",
+    "explanation": "A **service protector** combines a low-voltage circuit breaker with a **timing-limiting fuse** to protect service entrances and feeders. It is **non-automatic**, meaning it requires manual reset, and provides coordinated protection for both overcurrent and short-circuit conditions.\n\n**Why others are wrong:**\n- **Bolted pressure switch:** manual disconnect, not fuse-integrated.\n- **Network protector:** used in networked secondary systems.\n- **H.D. fuse switch:** fuse and switch, but typically industrial and not a circuit breaker.\n- **Starter/controller:** controls motors, not a service protective device.\n\n**Fastest way to identify:** Any **low-voltage breaker + integral timing fuse** → **service protector**."
+  },
+  {
+    "id": 99,
+    "question": "What low voltage device is heavy duty and withdrawable, with special relaying designed to permit paralleling of the outputs of a number of transformers, and fuses which are designed to open slowly under extremely heavy currents?",
+    "options": [
+      "Bolted pressure switch",
+      "Automatic transfer switch",
+      "Service protector",
+      "Network protector",
+      "Interrupter switch"
+    ],
+    "answer": "Network protector",
+    "explanation": "A **network protector** is a heavy-duty, withdrawable device used in low-voltage secondary networks. It has **special relaying** to allow multiple transformers to operate in parallel and **fuses that open slowly** under high currents to prevent unnecessary tripping. \n\n**Why others are wrong:**\n- **Bolted pressure switch:** manual operation, no paralleling control.\n- **Automatic transfer switch:** switches between power sources, not for paralleling transformers.\n- **Service protector:** protects individual feeders, not multiple transformer outputs.\n- **Interrupter switch:** simply interrupts current, no specialized relaying.\n\n**Fastest way to identify:** Keywords like **paralleling outputs** and **slow-opening fuses** indicate **network protector**."
+  },
+  {
+    "id": 100,
+    "question": "A disconnect switch",
+    "options": [
+      "Interrupts rated load only",
+      "May or may not include fuses",
+      "Is a safety switch",
+      "Is used for isolation purposes",
+      "All of the above"
+    ],
+    "answer": "Is used for isolation purposes",
+    "explanation": "A **disconnect switch** is primarily used to **isolate electrical equipment** for maintenance or safety. It is not designed to interrupt load current safely, though some may include fuses. Its main purpose is to provide a visible, manual means of disconnecting power.\n\n**Fastest way to identify:** If the function described is **manual isolation and safety during maintenance**, it is a **disconnect switch**."
+  },
+  {
+    "id": 101,
+    "question": "Typically the large current limiting fuses integral to many 600V class power air circuit breakers are to",
+    "options": [
+      "Provide overload protection",
+      "Provide instantaneous clearing of high current faults",
+      "Meet higher interrupting current requirements",
+      "Provide for faster clearing time of phase faults",
+      "Meet design standards for backup protection"
+    ],
+    "answer": "Meet higher interrupting current requirements",
+    "explanation": "Large current-limiting fuses in 600V power air circuit breakers are used to **increase the breaker’s interrupting capacity**, allowing it to safely interrupt higher fault currents than the breaker alone. They do not primarily provide overload protection or faster fault clearing, though they help limit let-through energy.\n\n**Fastest way to identify:** Look for **current-limiting fuse** → main purpose is **higher interrupting rating**, not overload protection."
+  },
+  {
+    "id": 102,
+    "question": "Although all ratings of an interrupter or load break switch or of a circuit breaker are important, some ratings are more important than others. If we rank maximum voltage and continuously duty ampere as two of three ranked 'most important', which of these other ratings would also be considered most important",
+    "options": [
+      "Interrupting capabilities",
+      "Fault closing",
+      "Impulse withstand voltage",
+      "60Hz withstand voltage",
+      "Interrupting time"
+    ],
+    "answer": "Interrupting capabilities",
+    "explanation": "The **interrupting capability** (or interrupting rating) specifies the maximum fault current a device can safely interrupt without damage. Along with maximum voltage and continuous ampere rating, it is one of the most critical ratings for ensuring safety and reliability of the switch or breaker. Other ratings like fault closing, impulse withstand, or 60Hz voltage are important but secondary.\n\n**Fastest way to identify:** If the question is about **what happens during a fault**, the answer is **interrupting capability**."
+  },
+  {
+    "id": 103,
+    "question": "Per ANSI/IEEE, the preferred nominal voltage ratings for low voltage AC power circuit breakers are",
+    "options": [
+      "120/208 and 277/480",
+      "250 and 480",
+      "250 and 600",
+      "240, 480 and 600",
+      "600"
+    ],
+    "answer": "240, 480 and 600",
+    "explanation": "ANSI/IEEE standards specify **240V, 480V, and 600V** as the preferred nominal voltages for low-voltage AC power circuit breakers. These ratings match common industrial and commercial systems. Other options represent either secondary distribution voltages or non-preferred ratings.\n\n**Fastest way to identify:** Look for the **standard LV three-phase voltages** in industrial applications → 240V, 480V, 600V."
+  },
+  {
+    "id": 104,
+    "question": "A medium voltage circuit breaker that include a blow out coil or a puffer tube is known as",
+    "options": [
+      "Vacuum breaker",
+      "Magnetic air breaker",
+      "SF6 breaker",
+      "Oil circuit breaker",
+      "All of the above"
+    ],
+    "answer": "Magnetic air breaker",
+    "explanation": "A **magnetic air breaker** uses a **blow-out coil or puffer tube** to extinguish the arc by forcing air through the arc zone, rapidly cooling and elongating it. \n\n**Why others are wrong:**\n- **Vacuum breaker:** uses vacuum to quench the arc.\n- **SF6 breaker:** uses sulfur hexafluoride gas for arc quenching.\n- **Oil circuit breaker:** uses oil to quench the arc.\n\n**Fastest way to identify:** Keywords **'blow out coil'** or **'puffer tube'** indicate **air-blast or magnetic air circuit breaker**."
   }
 ]
