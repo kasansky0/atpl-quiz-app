@@ -219,7 +219,7 @@ if st.session_state["user"]:
     # -----------------------------
     # LOAD QUESTIONS
     # -----------------------------
-    st.markdown(f"### 👤Hi, {user_name}<br>", unsafe_allow_html=True)
+    st.markdown(f"### 👤 Hi, {user_name}<br>", unsafe_allow_html=True)
 
     def load_questions(path):
         questions = []
