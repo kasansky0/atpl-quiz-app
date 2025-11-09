@@ -1532,5 +1532,640 @@
     ],
     "answer": "Phase balance relays",
     "explanation": "Loss of phase (phase failure) occurs when one phase of a three-phase supply is lost, which can cause motors to overheat or run inefficiently. Phase balance relays detect significant imbalance between phases and trip to protect the motor. \n\n- Phase balance relays: Correct, as they monitor phase current imbalance and provide loss-of-phase protection.\n- Undervoltage relays: Incorrect, they respond to low voltage conditions but do not detect a missing phase.\n- Line fuses: Incorrect, fuses may blow on overcurrent but cannot detect phase loss unless it results in overcurrent.\n- Instantaneous current devices: Incorrect, they respond to high currents, not phase imbalance.\n- Overload heaters: Incorrect, these respond to sustained overcurrent, not phase loss."
+  },
+  {
+    "id": 120,
+    "question": "A kWh meter measures",
+    "options": [
+      "Watts",
+      "Hours of consumption",
+      "Reactive power",
+      "Volt-amperes",
+      "None of the above"
+    ],
+    "answer": "None of the above",
+    "explanation": "A kWh (kilowatt-hour) meter measures **energy consumption**, which is the product of power (in kilowatts) and time (in hours). It does not measure any of the listed quantities directly. \n\n- Watts: Incorrect, watts represent instantaneous power; a kWh meter measures accumulated energy over time, not instantaneous power.\n- Hours of consumption: Incorrect, the meter doesn’t track time alone; it measures energy (kW × h).\n- Reactive power: Incorrect, reactive power is measured in kVARh by a different type of meter (kVARh meter).\n- Volt-amperes: Incorrect, that represents apparent power (kVA), not energy consumed.\n- None of the above: Correct, because a kWh meter measures **energy (kilowatt-hours)**, which is not directly listed among the options."
+  },
+  {
+    "id": 121,
+    "question": "An ammeter transfer switch always",
+    "options": [
+      "Includes break before make contacts",
+      "Includes make before break contacts",
+      "De-energizes CT without interruptions",
+      "Selects the ammeter to be fed",
+      "Maintains a ground (CO) on the phase wires not then connected to the meter"
+    ],
+    "answer": "Includes make before break contacts",
+    "explanation": "An ammeter transfer switch is used to connect a single ammeter to multiple current transformer (CT) circuits for monitoring different phases or feeders. It must ensure that the CT circuit is **never open-circuited**, as opening a CT secondary under load can produce dangerously high voltages. \n\n- Includes make before break contacts: Correct, because the switch design ensures the new CT connection is made before the previous one is broken, preventing an open circuit and maintaining CT continuity.\n- Includes break before make contacts: Incorrect, this would momentarily open the CT circuit, causing high voltage and potential damage or safety hazard.\n- De-energizes CT without interruptions: Incorrect, CTs are never de-energized in normal operation; they must always remain closed through a load or short circuit path.\n- Selects the ammeter to be fed: Incorrect, the switch selects **which CT** feeds the same ammeter, not the ammeter itself.\n- Maintains a ground (CO) on the phase wires not then connected to the meter: Incorrect, grounding unused CT secondaries this way is not part of the switch’s function; proper shorting links are used instead."
+  },
+  {
+    "id": 122,
+    "question": "A panel ammeter on a 4160V circuit that is operating at 0.8 power factor is fed by 200/5 current transformer. The ammeter full scale reading should be",
+    "options": [
+      "4.0A",
+      "5.0A",
+      "200A",
+      "160A",
+      "36A"
+    ],
+    "answer": "200A",
+    "explanation": "A panel ammeter fed by a CT reads the primary line current scaled by the CT ratio. A 200/5 CT means 200 A on the primary corresponds to 5 A on the secondary (full scale of the meter). \n\nFormula and calculation:\n- CT ratio form: Primary_full_scale / Secondary_full_scale = 200 / 5 = 40\n- Secondary current (I_s) = Primary current (I_p) × (Secondary_full_scale / Primary_full_scale) = I_p × (5/200) = I_p / 40\n- To find the primary current that corresponds to the ammeter full-scale (5 A secondary):\n  Primary_full_scale = (Primary_full_scale / Secondary_full_scale) × Secondary_reading = 40 × 5 A = 200 A\n\nNote: Power factor and system voltage (0.8 PF, 4160 V) do not change the CT scaling — the ammeter measures current directly (not real power). Thus PF and voltage are irrelevant for determining the ammeter full-scale current.\n\nWhy the other choices are incorrect:\n- 4.0 A: Incorrect — this is a possible relay pickup or a secondary setting but is a secondary current, not the primary full-scale reading.\n- 5.0 A: Incorrect — this is the CT secondary full-scale current, not the primary (line) current; 5 A secondary corresponds to 200 A primary for a 200/5 CT.\n- 160 A: Incorrect — this would be correct for a different CT ratio or tap (for example if the effective multiplier were 40×4 = 160 A), but not for a 200/5 CT with standard 5 A meter full-scale.\n- 36 A: Incorrect — no CT ratio or simple scaling given matches 36 A for the stated CT; this value is unrelated to a 200/5 CT full-scale.\n\nConclusion: The ammeter full-scale (primary) reading = CT primary rating = **200 A** for a 200/5 CT. "
+  },
+  {
+    "id": 123,
+    "question": "A wattmeter measures",
+    "options": [
+      "Current magnitude time voltage magnitude",
+      "Current magnitude times voltage magnitude times % power factor",
+      "System energy usage",
+      "Current magnitude plus voltage magnitude",
+      "The sum of all connected currents, with voltage reference, over a specified time increment"
+    ],
+    "answer": "Current magnitude times voltage magnitude times % power factor",
+    "explanation": "A wattmeter measures **real power (P)** in a circuit, which is given by the formula:\n\nP = V × I × cos(φ)\n\nwhere:\n- V = voltage (in volts)\n- I = current (in amperes)\n- cos(φ) = power factor (the cosine of the phase angle between current and voltage)\n\nThus, the wattmeter measures the **product of current magnitude, voltage magnitude, and power factor**, which represents the actual useful power (in watts) being consumed.\n\nWhy the correct answer is right:\n✅ **Current magnitude × voltage magnitude × % power factor** — This correctly represents the formula for real power measured by a wattmeter.\n\nWhy the other options are wrong:\n- ❌ **Current magnitude time voltage magnitude** — This represents **apparent power (VA)**, not real power. It ignores the phase angle (power factor) and would be correct for a volt-ampere meter, not a wattmeter.\n- ❌ **System energy usage** — Energy (measured in kWh) is **power integrated over time**, which is measured by an **energy meter (watt-hour meter)**, not a wattmeter.\n- ❌ **Current magnitude plus voltage magnitude** — Adding current and voltage has no physical meaning in power measurement; they are different quantities and cannot be summed.\n- ❌ **The sum of all connected currents, with voltage reference, over a specified time increment** — This describes a complex measurement more similar to an **energy analyzer** or **demand meter**, not a basic wattmeter.\n\nTherefore, the correct explanation is that a wattmeter measures the **instantaneous real power**, calculated as the product of voltage, current, and the cosine of the phase angle (power factor)."
+  },
+  {
+    "id": 124,
+    "question": "A d'Arsonval movement",
+    "options": [
+      "Is found in digital meters",
+      "Is a moving iron meter",
+      "Utilizes a moving coil",
+      "Provides LED display",
+      "Includes solid state construction"
+    ],
+    "answer": "Utilizes a moving coil",
+    "explanation": "The d'Arsonval movement is a **type of analog meter mechanism** that operates on the principle of a **moving coil in a magnetic field**. When current flows through the coil, it creates a magnetic field that interacts with the permanent magnet, producing torque that moves the pointer over a calibrated scale. This type of movement is used in **analog ammeters, voltmeters, and galvanometers**.\n\n✅ **Why the correct answer is right:**\n- **Utilizes a moving coil** — This is the fundamental principle of the d'Arsonval movement. The coil, suspended in a magnetic field, moves proportionally to the current flowing through it. It provides accurate and smooth readings for DC measurements.\n\n❌ **Why the others are wrong:**\n- **Is found in digital meters** — Incorrect. Digital meters use electronic circuits and analog-to-digital converters, not mechanical moving coil mechanisms.\n- **Is a moving iron meter** — Incorrect. Moving iron meters work on a different principle, using the attraction or repulsion of a soft iron piece by an electromagnetic field, and are typically used for AC measurement.\n- **Provides LED display** — Incorrect. A d'Arsonval movement has a **mechanical pointer and analog scale**, not an LED or digital display.\n- **Includes solid state construction** — Incorrect. Solid-state devices use semiconductor components with no moving parts. The d'Arsonval movement is **electromechanical**, not solid state.\n\n➡️ **Summary:** The d'Arsonval movement is an **electromechanical analog meter movement** that **uses a moving coil** in a magnetic field to indicate current or voltage, making option **'Utilizes a moving coil'** the correct answer."
+  },
+  {
+    "id": 125,
+    "question": "Taut band suspension",
+    "options": [
+      "Connects the meter movement to jewel bearings",
+      "Offers less turning friction",
+      "Is used in digital meters only",
+      "Eliminates need of control spring",
+      "None of the above"
+    ],
+    "answer": "Offers less turning friction",
+    "explanation": "A taut band suspension is a **type of suspension system** used in precision analog meter movements (such as galvanometers, voltmeters, and ammeters). Instead of jewel bearings and pivots, it uses two **thin metal ribbons (bands)** to support the moving coil. This design significantly **reduces friction**, improves sensitivity, and increases mechanical durability.\n\n✅ **Why the correct answer is right:**\n- **Offers less turning friction** — Correct. Taut band suspension replaces the pivot and jewel bearing system, minimizing mechanical friction and allowing the meter pointer to move more smoothly and accurately, especially at low current levels.\n\n❌ **Why the others are wrong:**\n- **Connects the meter movement to jewel bearings** — Incorrect. The taut band system **eliminates** the need for jewel bearings altogether. It suspends the moving coil directly with metal bands.\n- **Is used in digital meters only** — Incorrect. Digital meters use electronic circuits and displays; they **do not** have moving mechanical parts. Taut band suspensions are used in **analog meters**.\n- **Eliminates need of control spring** — Incorrect. While the taut bands themselves provide both **mechanical support** and **restoring torque** similar to control springs, they don’t completely eliminate the need for restoring tension — they **replace** it with an integrated function, not remove it.\n- **None of the above** — Incorrect, since one statement (less turning friction) is true.\n\n➡️ **Summary:** Taut band suspension is used in **high-precision analog meters** to reduce friction and improve movement sensitivity, making **'Offers less turning friction'** the correct answer."
+  },
+  {
+    "id": 126,
+    "question": "A moving coil (d'Arsonval movement) meter will operate on",
+    "options": [
+      "DC current only",
+      "AC current only",
+      "AC or DC current",
+      "Rectified AC current",
+      "First and Fourth"
+    ],
+    "answer": "First and Fourth",
+    "explanation": "A moving coil or d'Arsonval meter movement is designed to respond to **direct current (DC)** because the deflection of the coil depends on the **direction of current flow** through it. If alternating current (AC) were applied directly, the coil would rapidly oscillate with the changing current direction, producing no steady deflection. However, by adding a **rectifier**, AC can be converted into pulsating DC, allowing the meter to indicate an approximate value of the AC quantity.\n\n✅ **Why the correct answer is right:**\n- **First and Fourth (DC current only and Rectified AC current)** — Correct. The d'Arsonval movement can directly operate on **DC**, and it can also operate on **AC that has been rectified** (converted to DC) using diodes. This is how analog AC voltmeters and ammeters with moving coil mechanisms work.\n\n❌ **Why the others are wrong:**\n- **DC current only** — Incomplete. While the movement does operate on DC, this choice alone ignores the fact that it can also measure AC after rectification.\n- **AC current only** — Incorrect. Direct AC reverses direction every half cycle, causing the coil to move back and forth rapidly, resulting in **no useful reading**.\n- **AC or DC current** — Incorrect. It cannot handle raw AC; it needs rectification first.\n- **Rectified AC current** — Incomplete. It’s correct that it can measure rectified AC, but the movement also operates directly on DC, making this only partly correct.\n\n➡️ **Summary:** A d'Arsonval movement operates on **DC directly** and on **rectified AC** through an added rectifier circuit. Therefore, the correct answer is **'First and Fourth'**."
+  },
+  {
+    "id": 127,
+    "question": "Analog voltmeters:",
+    "options": [
+      "Include a series connected high resistance",
+      "Are low impedance devices",
+      "Provide +2% accuracy at best",
+      "Include full voltage rated operating coils",
+      "Include DC movement only"
+    ],
+    "answer": "Include a series connected high resistance",
+    "explanation": "Analog voltmeters are designed to measure voltage without significantly affecting the circuit being tested. To achieve this, they must draw **very little current**, which is done by connecting a **high resistance in series** with the meter’s internal movement (often a d’Arsonval movement). This limits current flow through the sensitive coil and allows accurate voltage readings.\n\n✅ **Why the correct answer is right:**\n- **Include a series connected high resistance** — Correct. The internal coil of a meter is sensitive and designed for small currents (often microamperes). A high series resistance ensures the current through the meter corresponds correctly to the applied voltage while protecting the coil from excessive current.\n\n❌ **Why the others are wrong:**\n- **Are low impedance devices** — Incorrect. Voltmeters are designed to have **high impedance** to avoid loading the circuit. A low impedance would cause significant current draw and distort the measurement.\n- **Provide +2% accuracy at best** — Incorrect. While some analog meters have about ±2% accuracy, this is not a defining characteristic. Accuracy depends on design and class of instrument (some are ±1% or better).\n- **Include full voltage rated operating coils** — Incorrect. The meter’s movement is designed for very low voltage (often a few hundred millivolts), not full rated voltage. The **series resistor** drops the remaining voltage.\n- **Include DC movement only** — Incorrect. While many analog voltmeters use DC d’Arsonval movements, **AC analog voltmeters** exist and include a **rectifier** circuit before the DC movement.\n\n➡️ **Summary:** Analog voltmeters work by limiting current through a **series high resistance** to accurately measure voltage without affecting the circuit, making **‘Include a series connected high resistance’** the correct answer."
+  },
+  {
+    "id": 128,
+    "question": "The most important use of electro dynamometer instruments is as an",
+    "options": [
+      "Ammeter",
+      "Voltmeter",
+      "Ohmmeter",
+      "Wattmeter",
+      "Milliamp meter"
+    ],
+    "answer": "Wattmeter",
+    "explanation": "Electrodynamometer instruments operate based on the **interaction between two magnetic fields**—one produced by a fixed coil (current coil) and the other by a moving coil (potential coil). This interaction produces a deflecting torque proportional to the **product of current, voltage, and the cosine of the phase angle between them**, which corresponds to **true power (watts)**. Therefore, their most significant and accurate application is as **wattmeters**.\n\n✅ **Why the correct answer is right:**\n- **Wattmeter** — Correct. The electrodynamometer is ideally suited for measuring **true power** (both AC and DC) because its deflection depends on the **instantaneous product of voltage and current**. It accurately measures power even with phase differences between voltage and current.\n\n❌ **Why the others are wrong:**\n- **Ammeter** — Incorrect. While an electrodynamometer could technically measure current, it is **not practical** for this purpose due to its complexity, size, and higher cost compared to simpler moving-iron or moving-coil ammeters.\n- **Voltmeter** — Incorrect. Similarly, it can be used as a voltmeter, but other types (like moving-coil voltmeters with resistors) are **more accurate and economical** for voltage measurement.\n- **Ohmmeter** — Incorrect. Ohmmeters measure resistance using **a power source and current measurement**, not an electrodynamic principle. Electrodynamometers are not used for resistance testing.\n- **Milliamp meter** — Incorrect. Measuring very small currents requires **high sensitivity**, which moving-coil galvanometers handle better. Electrodynamometer instruments are not optimized for such low-current applications.\n\n➡️ **Summary:** The **electrodynamometer instrument** is primarily used as a **wattmeter** because it measures the **true power (VIcosθ)** in both AC and DC circuits accurately, making **‘Wattmeter’** the correct answer."
+  },
+  {
+    "id": 129,
+    "question": "Shunts",
+    "options": [
+      "Are connected in series with meter movements",
+      "Are typically high resistance devices",
+      "Are low resistance devices connected in parallel with a meter movement",
+      "Are used in AC voltage measurements",
+      "Are used in DC voltage measurement"
+    ],
+    "answer": "Are low resistance devices connected in parallel with a meter movement",
+    "explanation": "A **shunt** is a **precision low-resistance device** connected **in parallel** with the movement of a meter (typically a moving-coil or d’Arsonval movement) to allow the meter to measure **large currents** without damaging the delicate coil. The shunt bypasses most of the current while allowing a small, proportional amount to flow through the meter movement for measurement.\n\n✅ **Why the correct answer is right:**\n- **Are low resistance devices connected in parallel with a meter movement** — Correct. Shunts provide an alternate low-resistance path for current, ensuring the meter measures only a small fraction of the total current. This allows a small-current meter to read large DC currents accurately.\n\n❌ **Why the others are wrong:**\n- **Are connected in series with meter movements** — Incorrect. Series connections are used for **voltmeter multipliers**, not for shunts. A shunt must be **parallel** to divide current, not voltage.\n- **Are typically high resistance devices** — Incorrect. Shunts must be **very low resistance** to carry most of the current and minimize voltage drop across them.\n- **Are used in AC voltage measurements** — Incorrect. Shunts are designed mainly for **DC current measurement**. AC current measurements require special considerations (e.g., compensated shunts or current transformers).\n- **Are used in DC voltage measurement** — Incorrect. Shunts are not used for voltage measurement. For DC voltage, **series resistors (multipliers)** are used instead.\n\n➡️ **Formula for current measurement using a shunt:**\nIf \\( I_m \\) is the current through the meter movement, \\( R_m \\) is the movement resistance, \\( R_s \\) is the shunt resistance, and \\( I \\) is the total current:\n\n\\[ I = I_m \\left( 1 + \\frac{R_m}{R_s} \\right) \\]\n\nThis relationship allows calibration of the meter to read the **total current** flowing in the circuit.\n\n➡️ **Summary:** Shunts are **low-resistance precision devices** connected **in parallel** with a meter movement to extend its current range, making **‘Are low resistance devices connected in parallel with a meter movement’** the correct answer."
+  },
+  {
+    "id": 130,
+    "question": "An electro dynamometer single phase instrument that is used to measure power factor or phase angle",
+    "options": [
+      "Includes both startor and rotor coils",
+      "Includes two separate coils mounted on the same shaft and set at an angle with each other",
+      "Includes a moving coil connected in series with a resistor across the line, a moving coil connected in series with reactor across the line",
+      "Has no zero or rest position when de-energized",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "Single-phase electrodynamometer instruments used for **power factor or phase angle measurement** are designed to measure the **phase difference between voltage and current**. They use two separate coils whose interaction produces a deflection proportional to the cosine of the phase angle.\n\n✅ **Why the correct answer is right:**\n- **Includes both stator and rotor coils** — Correct. One coil is fixed (stator) and the other is movable (rotor), creating the magnetic interaction needed for deflection.\n- **Includes two separate coils mounted on the same shaft and set at an angle with each other** — Correct. This arrangement allows measurement of **power factor** by mechanically resolving the phase angle between current and voltage components.\n- **Includes a moving coil connected in series with a resistor across the line, a moving coil connected in series with reactor across the line** — Correct. This method produces a voltage proportional to the in-phase and quadrature components of current, enabling phase angle measurement.\n- **Has no zero or rest position when de-energized** — Correct. These instruments are designed such that the pointer position depends entirely on applied voltage and current; they do not return to zero automatically.\n\n❌ **Why the individual statements alone are incomplete:**\n- Each component alone describes part of the measurement mechanism. Only **‘All of the above’** accurately describes the complete electrodynamometer power factor instrument.\n\n➡️ **Summary:** Single-phase electrodynamometer instruments for **power factor or phase angle measurement** use a combination of **stator and rotor coils, angled coil arrangements, series resistor/reactor connections**, and operate without a zero-rest position. Therefore, the correct answer is **‘All of the above’**."
+  },
+  {
+    "id": 131,
+    "question": "A voltmeter requires 50 microamperes and 1 volt to read at full scale. What series resistance will be required when the source voltage is 300 volts",
+    "options": [
+      "0.00005 / 300",
+      "300 / 0.00005",
+      "1.0000 / 50",
+      "299 / 1.0",
+      "299 / 0.00005"
+    ],
+    "answer": "299 / 0.00005",
+    "explanation": "To calculate the series resistance required for a voltmeter:\n\n1. **Given:**\n   - Full scale current of the meter: I_m = 50 µA = 0.00005 A\n   - Voltage required to drive the meter full scale: V_m = 1 V\n   - Source voltage: V_s = 300 V\n\n2. **Internal resistance of the meter:**\n   \\[ R_m = \\frac{V_m}{I_m} = \\frac{1}{0.00005} = 20000 \\Omega \\]\n\n3. **Series resistance needed to extend the range to 300 V:**\n   The total voltage is dropped across **R_series + R_meter**. Series resistance R_s is calculated as:\n\n   \\[ R_s = \\frac{V_s - V_m}{I_m} = \\frac{300 - 1}{0.00005} = \\frac{299}{0.00005} \\]\n\n4. **Explanation of answer:**\n   - **299 / 0.00005** correctly represents the series resistance needed to allow a 1 V, 50 µA meter to measure 300 V.\n\n❌ **Why the other options are wrong:**\n- 0.00005 / 300 — Incorrect, this divides current by voltage, giving an extremely small value.\n- 300 / 0.00005 — Incorrect, this would correspond to a meter full-scale voltage of 300 V, not 1 V.\n- 1.0000 / 50 — Incorrect, divides voltage by 50, not by the actual full-scale current (in amperes).\n- 299 / 1.0 — Incorrect, this ignores the small current and would produce a resistance in ohms that is far too low.\n\n➡️ **Summary:** To extend a 1 V, 50 µA voltmeter to read 300 V, the **series resistance required is (299 V) / (50 µA) = 299 / 0.00005 Ω**, making **‘299 / 0.00005’** the correct answer."
+  },
+  {
+    "id": 132,
+    "question": "Linear analog instrument scales are characteristic of",
+    "options": [
+      "DC, permanent magnet, moving coil instruments",
+      "AC or DC crossed coil instruments",
+      "Moving iron instruments",
+      "Double element instruments",
+      "All of the above"
+    ],
+    "answer": "DC, permanent magnet, moving coil instruments",
+    "explanation": "Linear scale means that the **deflection of the pointer is directly proportional to the current or voltage applied**. This characteristic is most closely associated with **DC permanent magnet moving coil (PMMC) instruments**, because the torque generated is directly proportional to the current through the coil, resulting in a straight-line scale.\n\n✅ **Why the correct answer is right:**\n- **DC, permanent magnet, moving coil instruments** — Correct. These instruments have a linear relationship between input current/voltage and pointer deflection, making their scales **uniform and easy to read**.\n\n❌ **Why the others are wrong:**\n- **AC or DC crossed coil instruments** — Incorrect. Crossed-coil instruments are typically used for power measurement; their scale is generally **non-linear** due to the multiplication of current and voltage vectors.\n- **Moving iron instruments** — Incorrect. Moving iron instruments operate on **magnetic attraction or repulsion**, which is proportional to the **square of the current**, resulting in a **non-linear scale**.\n- **Double element instruments** — Incorrect. Double element instruments (like two-coil wattmeters) measure **power or energy**, and their scale is **not necessarily linear**, as it depends on the interaction between coils.\n- **All of the above** — Incorrect, because only PMMC instruments provide truly **linear scales**.\n\n➡️ **Summary:** Linear analog scales are a key feature of **DC permanent magnet moving coil instruments**, making **‘DC, permanent magnet, moving coil instruments’** the correct answer."
+  },
+  {
+    "id": 133,
+    "question": "An indicating AC voltmeter of 0.5% accuracy class and having a full scale rang of 150V should, when new, be within",
+    "options": [
+      "7.5V at full scale",
+      "3.0 volts at full scale",
+      "0.75 volts at full scale, and 0.375 volts at half scale",
+      "0.75 volts at full scale, and 1.5 volts at half scale, and 1.875 volts at quarter scale",
+      "0.75 volts at any point on the scale"
+    ],
+    "answer": "0.75 volts at any point on the scale",
+    "explanation": "Accuracy class of a meter defines the **maximum permissible error** as a percentage of full-scale value, regardless of the point on the scale. \n\nGiven:\n- Accuracy class = 0.5%\n- Full-scale voltage = 150 V\n\nMaximum permissible error:\n\\[ \nError_{max} = (Accuracy\\ class) \\times (Full\\ scale) = 0.5\\% \\times 150V = 0.005 \\times 150 = 0.75V \n\\]\n\n✅ **Why the correct answer is right:**\n- **0.75 volts at any point on the scale** — Correct. The 0.5% accuracy class applies to the **entire scale**, meaning the reading at any point should be within ±0.75 V of the true value.\n\n❌ **Why the other options are wrong:**\n- 7.5V at full scale — Incorrect. This would correspond to 5% accuracy (much larger than 0.5%).\n- 3.0 volts at full scale — Incorrect. This would correspond to 2% accuracy.\n- 0.75 volts at full scale, and 0.375 volts at half scale — Incorrect. Accuracy class applies to **full scale**, not proportionally to the scale reading.\n- 0.75 volts at full scale, and 1.5 volts at half scale, and 1.875 volts at quarter scale — Incorrect. This is inconsistent; the error does **not increase** at lower scale readings for class-based accuracy meters.\n\n➡️ **Summary:** For a 0.5% class, full-scale 150V AC voltmeter, the **maximum permissible error is 0.75 V at any scale point**, making **‘0.75 volts at any point on the scale’** the correct answer."
+  },
+  {
+    "id": 134,
+    "question": "Demand is",
+    "options": [
+      "The average value of power or related quantity over a specified period of time",
+      "The highest kW value that occurred during the month",
+      "The highest kVAR usage that occurred over the specified period of time",
+      "A record of system power factor at an industrial plant",
+      "Expressed in kilowatt-hours"
+    ],
+    "answer": "The average value of power or related quantity over a specified period of time",
+    "explanation": "In electrical systems, **demand** refers to the **average rate at which electrical energy is consumed** over a specified interval, typically 15, 30, or 60 minutes. It is used to determine load requirements and billing in industrial and commercial settings.\n\n✅ **Why the correct answer is right:**\n- **The average value of power or related quantity over a specified period of time** — Correct. Demand is measured as the **average power** (kW, kVA, or kVAR) over a defined time interval, not instantaneous power or total energy.\n\n❌ **Why the other options are wrong:**\n- **The highest kW value that occurred during the month** — Incorrect. This describes **peak demand**, which is a single maximum value, not the average demand.\n- **The highest kVAR usage that occurred over the specified period of time** — Incorrect. This describes **peak reactive power**, not average demand.\n- **A record of system power factor at an industrial plant** — Incorrect. Power factor is a ratio of real to apparent power and is not synonymous with demand.\n- **Expressed in kilowatt-hours** — Incorrect. Energy (kWh) is total consumption, while demand is a **rate of energy usage** (kW, kVA) over a time period.\n\n➡️ **Summary:** Demand measures the **average power over a specified interval**, making **‘The average value of power or related quantity over a specified period of time’** the correct answer."
+  },
+  {
+    "id": 135,
+    "question": "Bridges are used to measure",
+    "options": [
+      "Watts",
+      "Amperes",
+      "Millivolts",
+      "Reactance",
+      "Resistance"
+    ],
+    "answer": "Resistance",
+    "explanation": "Electrical bridges, such as **Wheatstone bridges**, are instruments used to **measure unknown resistances** by balancing two legs of a circuit. They compare a known resistance with an unknown resistance to determine its value accurately.\n\n✅ **Why the correct answer is right:**\n- **Resistance** — Correct. Bridges are designed specifically to measure resistive elements with high precision, often in ohms, milliohms, or kiloohms.\n\n❌ **Why the other options are wrong:**\n- **Watts** — Incorrect. Power is measured using **wattmeters** or calculated from voltage and current, not by a bridge.\n- **Amperes** — Incorrect. Current is measured using **ammeters** or shunts, not bridges.\n- **Millivolts** — Incorrect. Voltage is measured using **voltmeters**; bridges measure resistance indirectly, not voltage directly.\n- **Reactance** — Incorrect. Reactance (capacitive or inductive) is measured with **AC bridges** designed for inductance or capacitance, but in general, a bridge refers to resistance measurement.\n\n➡️ **Summary:** Bridges are primarily used for **resistance measurement**, making **‘Resistance’** the correct answer."
+  },
+  {
+    "id": 136,
+    "question": "The red indicating lamp on a medium voltage switchboard indicated that a circuit breaker is closed and the DC system is on. What else does the lamp indicate?",
+    "options": [
+      "Nothing",
+      "The circuit breaker closing coil circuit is complete and the breaker is ready to open if a relay operates",
+      "The circuit breaker trip coil circuit is complete and that the circuit breaker is ready to open if a relay operates.",
+      "The DC voltage is too low",
+      "The last trip was caused by a relay operation"
+    ],
+    "answer": "The circuit breaker trip coil circuit is complete and that the circuit breaker is ready to open if a relay operates.",
+    "explanation": "On a medium voltage switchboard, the **red indicating lamp** typically signals that a **circuit breaker is closed** and the **DC control system is energized**. In addition to this, it also indicates that the **circuit breaker trip coil is energized and ready**. This ensures that if a protective relay operates, the breaker can immediately trip to isolate the fault.\n\n✅ **Why the correct answer is right:**\n- **The circuit breaker trip coil circuit is complete and that the circuit breaker is ready to open if a relay operates** — Correct. A red lamp not only indicates breaker closed status but also verifies that the **trip coil circuit is complete**, meaning the breaker can be tripped remotely by protective relays.\n\n❌ **Why the others are wrong:**\n- **Nothing** — Incorrect. The red lamp conveys multiple pieces of status information, not nothing.\n- **The circuit breaker closing coil circuit is complete and the breaker is ready to open if a relay operates** — Incorrect. The closing coil energizes the breaker to close; it is the **trip coil** that opens the breaker when a relay operates.\n- **The DC voltage is too low** — Incorrect. The lamp indicates normal voltage and closed breaker, not a low DC condition.\n- **The last trip was caused by a relay operation** — Incorrect. The lamp does not provide historical information about prior trips; it only shows current status.\n\n➡️ **Summary:** The red indicating lamp shows the **breaker is closed, the DC system is energized, and the trip coil is complete**, ready to open the breaker if a protective relay operates, making the correct answer **‘The circuit breaker trip coil circuit is complete and that the circuit breaker is ready to open if a relay operates.’**"
+  },
+  {
+    "id": 137,
+    "question": "The main function of the station battery is to provide",
+    "options": [
+      "Power for all indicating lamps",
+      "Lights for the control room if the AC power is lost",
+      "Emergency power to one or more of the circuits",
+      "Power to the circuit breaker trip circuits",
+      "Power to the switchgear heaters"
+    ],
+    "answer": "Power to the circuit breaker trip circuits",
+    "explanation": "The **station battery** in a substation or switchgear system provides a reliable **DC source** that operates **critical control circuits**, especially the **trip and close circuits of circuit breakers**. This ensures that breakers can be operated even if AC power fails, maintaining system safety and reliability.\n\n✅ **Why the correct answer is right:**\n- **Power to the circuit breaker trip circuits** — Correct. The battery supplies DC power to trip coils, enabling breakers to open under fault conditions regardless of AC availability.\n\n❌ **Why the others are wrong:**\n- **Power for all indicating lamps** — Incorrect. Lamps are usually powered from auxiliary AC or DC sources, not the main station battery.\n- **Lights for the control room if the AC power is lost** — Incorrect. Emergency lighting is separate from the main station battery and may have its own backup supply.\n- **Emergency power to one or more of the circuits** — Incorrect. While the battery provides power to control circuits in emergencies, its main function is specifically **trip/close circuits**, not general emergency power.\n- **Power to the switchgear heaters** — Incorrect. Heaters are AC powered to prevent condensation; they are not connected to the station battery.\n\n➡️ **Summary:** The station battery ensures **reliable operation of circuit breaker trip circuits**, which is essential for system protection, making **‘Power to the circuit breaker trip circuits’** the correct answer."
+  },
+  {
+    "id": 138,
+    "question": "The station battery charger provides voltage and current to maintain the battery voltage and",
+    "options": [
+      "Nothing else",
+      "To carry the normal DC indicating lamp and relay bus loads",
+      "To provide power to trip circuit breakers when the normal power is lost",
+      "Maintain power to capacitative trip devices",
+      "Provide power to switchgear heaters"
+    ],
+    "answer": "To carry the normal DC indicating lamp and relay bus loads",
+    "explanation": "The **station battery charger** serves two main functions: \n1. **Maintaining the battery voltage** at the proper level.\n2. **Supplying the normal DC loads** of the station, such as **indicating lamps and relay circuits**.\n\nThis ensures that the battery remains fully charged and the DC control system operates continuously under normal conditions, without discharging the battery unnecessarily.\n\n✅ **Why the correct answer is right:**\n- **To carry the normal DC indicating lamp and relay bus loads** — Correct. The charger keeps the battery at proper voltage while supplying steady current to DC loads like relays and indicator lamps.\n\n❌ **Why the others are wrong:**\n- **Nothing else** — Incorrect. The charger does more than maintain battery voltage; it also supports normal DC loads.\n- **To provide power to trip circuit breakers when the normal power is lost** — Incorrect. The charger does **not** supply power during AC power loss; the battery itself provides emergency power for trip circuits.\n- **Maintain power to capacitative trip devices** — Incorrect. Capacitative trip devices draw from the battery directly; the charger only maintains battery voltage.\n- **Provide power to switchgear heaters** — Incorrect. Heaters are typically powered from AC, not the DC battery system.\n\n➡️ **Summary:** The station battery charger maintains battery voltage **and supplies normal DC loads** like indicating lamps and relays, making **‘To carry the normal DC indicating lamp and relay bus loads’** the correct answer."
+  },
+  {
+    "id": 139,
+    "question": "Circuit breaker trip unit receive electrical power from batteries, current sensors and",
+    "options": [
+      "Capacitative trip devices",
+      "Emergency generators",
+      "Battery charger",
+      "House power",
+      "Nothing else"
+    ],
+    "answer": "Capacitative trip devices",
+    "explanation": "Circuit breaker trip units require a reliable power source to operate the breaker under fault conditions. In addition to **batteries** and signals from **current sensors (CTs)**, some trip units use **capacitive trip devices** that store electrical energy, which can release a rapid pulse to energize the trip coil when needed. This ensures fast and dependable tripping even if the main DC supply has a momentary interruption.\n\n✅ **Why the correct answer is right:**\n- **Capacitative trip devices** — Correct. These devices store energy and provide it to the breaker trip coil during a fault condition, supplementing batteries and CT inputs.\n\n❌ **Why the others are wrong:**\n- **Emergency generators** — Incorrect. Generators supply AC power to the system but do not directly provide the energy needed for instantaneous breaker tripping.\n- **Battery charger** — Incorrect. The charger maintains battery voltage but does not supply the trip coil directly during operation.\n- **House power** — Incorrect. Normal AC power does not feed the trip unit directly; it is only used to charge batteries.\n- **Nothing else** — Incorrect. Trip units do receive supplemental energy from **capacitative devices**.\n\n➡️ **Summary:** Circuit breaker trip units receive power from **batteries, current sensors, and capacitative trip devices**, making **‘Capacitative trip devices’** the correct answer."
+  },
+  {
+    "id": 140,
+    "question": "The following gas is generated by a station battery while charging",
+    "options": [
+      "Air",
+      "Nitrogen",
+      "Oxygen",
+      "Ozone",
+      "Hydrogen"
+    ],
+    "answer": "Hydrogen",
+    "explanation": "When a **station battery (usually lead-acid type)** is being charged, **electrolysis of water** in the electrolyte occurs. This process generates **hydrogen gas at the negative plate** and **oxygen gas at the positive plate**. Hydrogen is the primary concern because it is **highly flammable** and can accumulate in confined spaces.\n\n✅ **Why the correct answer is right:**\n- **Hydrogen** — Correct. Hydrogen is the gas most commonly produced during battery charging and poses a safety risk if not properly ventilated.\n\n❌ **Why the others are wrong:**\n- **Air** — Incorrect. Air is not generated by electrolysis; it is the surrounding atmosphere.\n- **Nitrogen** — Incorrect. Nitrogen is not produced by lead-acid batteries.\n- **Oxygen** — Partially correct, as oxygen is generated at the positive plate, but in practice, **hydrogen is the main gas of concern** and the answer expected in protective device contexts.\n- **Ozone** — Incorrect. Ozone is not produced during normal battery charging.\n\n➡️ **Summary:** Charging a lead-acid station battery produces **hydrogen gas** at the negative plate, making **‘Hydrogen’** the correct answer."
+  },
+  {
+    "id": 141,
+    "question": "A substation battery is rated 100 ampere hours. Which of the following statement is TRUE",
+    "options": [
+      "The battery will supply 100 amperes for 100 hours, at full rated voltage",
+      "The battery will deliver 1.0 amperes for 100 hours at no less than 76% of its rated voltage",
+      "The battery will deliver 100 amperes for 100 hours at no less than 76% of its rated voltage",
+      "With a 2.0 ampere load, the battery voltage will become zero after 50 hours",
+      "The battery can not supply more than 100 amperes"
+    ],
+    "answer": "The battery will deliver 1.0 amperes for 100 hours at no less than 76% of its rated voltage",
+    "explanation": "A battery rated at **100 ampere-hours (Ah)** indicates it can supply **100 amperes for 1 hour, or 1 ampere for 100 hours**, **at a specified minimum voltage**, typically about **76% of its nominal voltage** (standard for lead-acid batteries). This rating is based on practical usage under typical discharge conditions, not the theoretical maximum.\n\n✅ **Why the correct answer is right:**\n- **The battery will deliver 1.0 amperes for 100 hours at no less than 76% of its rated voltage** — Correct. This reflects the standard **ampere-hour rating**: current × time = capacity, with the battery maintaining at least **76% of nominal voltage** until fully discharged.\n\n❌ **Why the other options are wrong:**\n- **The battery will supply 100 amperes for 100 hours, at full rated voltage** — Incorrect. This would imply **10,000 Ah**, which is far beyond the 100 Ah rating. Not realistic.\n- **The battery will deliver 100 amperes for 100 hours at no less than 76% of its rated voltage** — Incorrect. Same as above; the capacity is too high by 100×.\n- **With a 2.0 ampere load, the battery voltage will become zero after 50 hours** — Incorrect. A 100 Ah battery delivering 2 A would last **100 / 2 = 50 hours**, but the voltage would not drop to zero; it would drop to the **end-of-discharge voltage (~76%)**.\n- **The battery cannot supply more than 100 amperes** — Incorrect. While 100 A is well above typical rated loads, batteries can supply **higher short-term currents**, limited by design. The 100 Ah rating does not define the maximum instantaneous current.\n\n➡️ **Summary:** The **ampere-hour rating** defines how long a battery can supply a given current while maintaining a minimum acceptable voltage. For a 100 Ah battery, delivering **1 A for 100 hours at ≥76% nominal voltage** is correct, making **‘The battery will deliver 1.0 amperes for 100 hours at no less than 76% of its rated voltage’** the correct answer."
+  },
+  {
+    "id": 142,
+    "question": "Six 12V, 100 AH, batteries are connected in series, to form a bank of batteries. What is the bank rated?",
+    "options": [
+      "12V 100AH",
+      "12V 600AH",
+      "72V 100AH",
+      "72V 600AH",
+      "2V 100AH"
+    ],
+    "answer": "72V 100AH",
+    "explanation": "When batteries are connected **in series**, the **voltages add up** while the **ampere-hour (AH) rating remains the same** as a single battery.\n\nGiven:\n- Individual battery voltage = 12 V\n- Individual battery capacity = 100 AH\n- Number of batteries in series = 6\n\n**Series connection calculation:**\n- Total voltage: \\( V_{total} = 6 \times 12V = 72V \\)\n- Total capacity: \\( AH_{total} = 100 AH \\) (same as individual battery)\n\n✅ **Why the correct answer is right:**\n- **72V 100AH** — Correct. Series connection sums the voltages, keeping the AH constant.\n\n❌ **Why the others are wrong:**\n- **12V 100AH** — Incorrect. This represents a single battery, not the series bank.\n- **12V 600AH** — Incorrect. AH does not add in series; this would only be true for **parallel** connection.\n- **72V 600AH** — Incorrect. AH remains the same in series; only voltage adds.\n- **2V 100AH** — Incorrect. Voltage does not decrease to 2V; each battery is 12V, and series adds voltage.\n\n➡️ **Summary:** Series connection adds **voltages** and keeps **AH the same**, so six 12V, 100 AH batteries in series form a **72V, 100 AH** battery bank."
+  },
+  {
+    "id": 143,
+    "question": "Six batteries are parallel connected to form a bank of batteires. If each battery is rated 2V, 100AH, what is the battery bank rated?",
+    "options": [
+      "12V 100AH",
+      "12V 600AH",
+      "72V 100AH",
+      "72V 600AH",
+      "2V 600AH"
+    ],
+    "answer": "2V 600AH",
+    "explanation": "When batteries are connected **in parallel**, the **voltages remain the same** while the **ampere-hour (AH) ratings add up**.\n\nGiven:\n- Individual battery voltage = 2V\n- Individual battery capacity = 100 AH\n- Number of batteries in parallel = 6\n\n**Parallel connection calculation:**\n- Total voltage: \\( V_{total} = 2V \\) (remains the same)\n- Total capacity: \\( AH_{total} = 6 \times 100 AH = 600 AH \\)\n\n✅ **Why the correct answer is right:**\n- **2V 600AH** — Correct. Parallel connection keeps the voltage constant while summing the AH.\n\n❌ **Why the others are wrong:**\n- **12V 100AH** — Incorrect. This would require series connection to increase voltage.\n- **12V 600AH** — Incorrect. Series increases voltage, not capacity.\n- **72V 100AH** — Incorrect. Series of 36 batteries would give 72V; not applicable here.\n- **72V 600AH** — Incorrect. Mixing series and parallel could achieve this, but six 2V batteries in parallel do not reach 72V.\n\n➡️ **Summary:** Parallel connection adds **capacities** and keeps **voltage the same**, so six 2V, 100 AH batteries in parallel form a **2V, 600 AH** battery bank."
+  },
+  {
+    "id": 144,
+    "question": "The amount of current a particular type of cell can deliver is determined by",
+    "options": [
+      "The surface area of its plates",
+      "Its rated specific gravity",
+      "Its liquid volume",
+      "Its acid type",
+      "Its voltage rating"
+    ],
+    "answer": "The surface area of its plates",
+    "explanation": "The surface area of the plates determines how much chemical reaction can occur at one time, which directly affects how much current the cell can deliver. Larger plates mean more active material and greater current capacity. Specific gravity only indicates the state of charge, not current capacity. Liquid volume affects the cell’s energy capacity and cooling but not its instantaneous current output. Acid type determines the chemical system but not the current output within that system. Voltage rating depends on the cell’s chemistry, not its ability to supply current."
+  },
+  {
+    "id": 145,
+    "question": "Why can't an induction relay be used in DC controls",
+    "options": [
+      "The time delay would be too long",
+      "The generated disc torque is too strong",
+      "Direct current circuits produce a constant magnetic flux",
+      "Direct current would produce strong eddy current in the disc",
+      "The relay would not reset"
+    ],
+    "answer": "Direct current circuits produce a constant magnetic flux",
+    "explanation": "An induction relay operates based on the interaction of alternating magnetic fields, which produce a rotating magnetic flux that turns the aluminum disc. In DC circuits, the current is constant, so the magnetic flux does not alternate — meaning no torque is generated and the relay cannot operate. The time delay and eddy current options are incorrect because they rely on the existence of alternating flux. The relay’s inability to reset is unrelated; it simply would never actuate in the first place."
+  },
+  {
+    "id": 146,
+    "question": "A galvanometer measures",
+    "options": [
+      "Temperature",
+      "Very small amounts of current",
+      "Large amounts of current",
+      "Minute voltage",
+      "State of battery charge"
+    ],
+    "answer": "Very small amounts of current",
+    "explanation": "A galvanometer is a very sensitive instrument designed to detect and measure tiny currents, typically in the microampere range. It works by deflecting a needle in proportion to the current flowing through its coil. It cannot measure temperature or battery charge directly. It also cannot handle large currents without a shunt, and while it can indirectly indicate small voltages when configured as a voltmeter, its primary purpose is to measure very small currents."
+  },
+  {
+    "id": 147,
+    "question": "DC generator must include slip rings",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "A DC generator does not use slip rings; it uses a commutator instead. The commutator converts the alternating current (AC) induced in the armature windings into direct current (DC) at the output terminals. Slip rings, on the other hand, are used in AC machines (like alternators) to transfer AC voltage from the rotating coil to the external circuit. Therefore, the statement is false."
+  },
+  {
+    "id": 148,
+    "question": "An assembly of capacitors and inductors is principally utilized with a DC generator to",
+    "options": [
+      "Smooth out the ripple",
+      "Provide surge protection",
+      "Produce the electromagnetic field",
+      "Convert the direct current to a pulsating direct current",
+      "Eliminate the need of commutating poles"
+    ],
+    "answer": "Smooth out the ripple",
+    "explanation": "The correct answer is 'Smooth out the ripple' because inductors and capacitors are used together as filters to reduce voltage fluctuations and smooth the DC output of a generator. They store and release energy to counteract variations, providing a steadier DC voltage. 'Provide surge protection' is incorrect because surge protection devices, not filters, handle spikes. 'Produce the electromagnetic field' is done by field windings, not LC assemblies. 'Convert the direct current to a pulsating direct current' is the opposite of what filters do—they eliminate pulsations. 'Eliminate the need of commutating poles' is wrong because commutating poles correct armature reaction, not ripple."
+  },
+  {
+    "id": 149,
+    "question": "A thermocouple",
+    "options": [
+      "Having a 1.0 amp current flow, provides a resistance that varies with temperature variations",
+      "Produces a voltage when subjected to heat",
+      "Is an AC device",
+      "Is used to provide mechanical tension or torque",
+      "Senses current flow and magnitude in windings through capacitate coupling"
+    ],
+    "answer": "Produces a voltage when subjected to heat",
+    "explanation": "The correct answer is 'Produces a voltage when subjected to heat' because a thermocouple operates based on the Seebeck effect—when two dissimilar metals are joined and exposed to temperature differences, a small voltage is generated proportional to the temperature difference. The first option is incorrect because resistance varying with temperature describes a thermistor, not a thermocouple. 'Is an AC device' is wrong since thermocouples work with DC voltage output. 'Is used to provide mechanical tension or torque' relates to mechanical sensors, not thermocouples. 'Senses current flow and magnitude in windings through capacitive coupling' describes current transformers or capacitive sensors, not thermocouples."
+  },
+  {
+    "id": 150,
+    "question": "The generator device that mechanically changes the alternating current generated in the armature coil to a direct current is called a",
+    "options": [
+      "Slip ring assembly",
+      "Shunt winding",
+      "Field winding",
+      "Commutator",
+      "Exciter"
+    ],
+    "answer": "Commutator",
+    "explanation": "The correct answer is 'Commutator' because in a DC generator, the commutator mechanically rectifies the alternating current (AC) induced in the armature into direct current (DC) by reversing connections of the coil to the external circuit at the correct moment. 'Slip ring assembly' is incorrect because slip rings are used in AC machines to transfer current without changing its direction. 'Shunt winding' and 'Field winding' refer to the stationary coils that create the magnetic field, not the rectifying device. 'Exciter' is a separate generator or system used to provide DC to the field winding of larger machines, not to convert AC to DC."
+  },
+  {
+    "id": 151,
+    "question": "A fuel cell",
+    "options": [
+      "Is a new term for battery",
+      "Converts light energy to electrical energy",
+      "Converts a substance into a material that is suitable for combustion engine use",
+      "Chemically converts a substance into electrical energy without the use of combustion",
+      "Converts mechanical energy into electrical energy"
+    ],
+    "answer": "Chemically converts a substance into electrical energy without the use of combustion",
+    "explanation": "The correct answer is 'Chemically converts a substance into electrical energy without the use of combustion' because a fuel cell generates electricity through an electrochemical reaction, typically between hydrogen and oxygen, producing water and heat as byproducts. Unlike combustion, this process does not involve burning fuel. 'Is a new term for battery' is incorrect because a fuel cell continuously produces power as long as fuel and oxidant are supplied, while a battery stores energy. 'Converts light energy to electrical energy' describes a solar cell. 'Converts a substance into a material suitable for combustion engine use' refers to fuel refining, not electricity generation. 'Converts mechanical energy into electrical energy' describes a generator, not a fuel cell."
+  },
+  {
+    "id": 152,
+    "question": "A DGA test measures",
+    "options": [
+      "Dielectric strength",
+      "Gasses present",
+      "Water content",
+      "Specific gravity",
+      "Viscosity"
+    ],
+    "answer": "Gasses present",
+    "explanation": "The correct answer is 'Gasses present' because a DGA (Dissolved Gas Analysis) test detects and measures gases dissolved in transformer oil, such as hydrogen, methane, acetylene, ethylene, and carbon monoxide. The types and quantities of these gases indicate possible faults like overheating, arcing, or insulation breakdown inside a transformer. 'Dielectric strength' measures the oil’s ability to withstand voltage without breaking down. 'Water content' tests for moisture in the oil, which affects insulation but is not part of DGA. 'Specific gravity' indicates oil density relative to water, and 'viscosity' measures the oil’s flow resistance — neither relates to fault gas detection. DGA specifically focuses on analyzing fault gases to assess transformer health."
+  },
+  {
+    "id": 153,
+    "question": "The gas blanket in the transformer should only include",
+    "options": [
+      "Air",
+      "H2O",
+      "Hydrogen",
+      "Acetylene",
+      "Nitrogen"
+    ],
+    "answer": "Nitrogen",
+    "explanation": "The correct answer is 'Nitrogen' because transformers with a conservator or gas blanket system are typically filled with **dry, inert nitrogen gas**. Nitrogen prevents oxidation of the transformer oil and minimizes moisture and oxygen contamination, protecting insulation and extending transformer life. \n\n❌ **Why the others are wrong:**\n- **Air** — Contains oxygen, which can oxidize the oil and degrade insulation.\n- **H2O (water vapor)** — Moisture is harmful; it reduces dielectric strength and accelerates insulation aging.\n- **Hydrogen** — Hydrogen is a fault gas generated inside the transformer, not used as a protective blanket.\n- **Acetylene** — Acetylene indicates arcing faults and is highly flammable; it is never used as a protective gas.\n\n➡️ **Summary:** Only **inert nitrogen gas** is safe and effective for the transformer gas blanket."
+  },
+  {
+    "id": 154,
+    "question": "The pour point of a liquid equates to its",
+    "options": [
+      "Interfacial tension",
+      "Refractive index",
+      "Viscosity",
+      "Specific gravity",
+      "None of the above"
+    ],
+    "answer": "None of the above",
+    "explanation": "The correct answer is 'None of the above' because the **pour point** of a liquid is the **lowest temperature at which it will still flow**. It is a measure of flowability in cold conditions, not directly related to interfacial tension, refractive index, viscosity, or specific gravity. \n\n❌ **Why the others are wrong:**\n- **Interfacial tension** — Measures the surface tension between two liquids or a liquid and a gas, unrelated to flow temperature.\n- **Refractive index** — Measures how light bends in the liquid, unrelated to pour point.\n- **Viscosity** — Measures resistance to flow at a given temperature but does not define the minimum temperature for flow.\n- **Specific gravity** — Measures density relative to water, unrelated to the temperature at which a liquid ceases to flow.\n\n➡️ **Summary:** Pour point is a **temperature property**, defining the lowest temperature a liquid can flow, which is not represented by any of the listed options."
+  },
+  {
+    "id": 155,
+    "question": "Interfacial tension",
+    "options": [
+      "Is measured to detect metals in oil",
+      "Is measured in mgKOH/gm",
+      "Is measured in dynes/cm",
+      "Determines the resistivity of oil",
+      "Principally detects particles in the oil"
+    ],
+    "answer": "Is measured in dynes/cm",
+    "explanation": "The correct answer is 'Is measured in dynes/cm' because **interfacial tension (IFT)** quantifies the **force per unit length at the interface between two liquids**, typically oil and water. It is expressed in **dynes per centimeter**. \n\n❌ **Why the others are wrong:**\n- **Is measured to detect metals in oil** — IFT does not detect metals; metals are detected by spectroscopic or chemical tests.\n- **Is measured in mgKOH/gm** — This unit measures **acid number**, not interfacial tension.\n- **Determines the resistivity of oil** — Resistivity is measured in ohm-cm, unrelated to IFT.\n- **Principally detects particles in the oil** — Particle content is measured by particle counters, not interfacial tension.\n\n➡️ **Summary:** Interfacial tension indicates the cleanliness and chemical stability of oil, and its unit is **dynes/cm**."
+  },
+  {
+    "id": 156,
+    "question": "Typically, liquid filled circuit breakers that are installed inside of public buildings are filled with",
+    "options": [
+      "Mineral oil",
+      "Askarel",
+      "Silicone",
+      "SF6",
+      "High fire point liquids"
+    ],
+    "answer": "Mineral oil",
+    "explanation": "The correct answer is 'Mineral oil' because **indoor liquid-filled circuit breakers** commonly use **mineral oil** as the insulating and arc-quenching medium. Mineral oil is readily available, provides good dielectric strength, and is suitable for typical indoor applications.\n\n❌ **Why the others are not used:**\n- **Askarel** — A PCB-based dielectric fluid that is toxic and banned in many countries; not used in modern indoor installations.\n- **Silicone** — Used in specialized high-voltage or outdoor applications, but less common indoors due to cost and compatibility issues.\n- **SF6** — A gaseous dielectric used in gas-insulated switchgear (GIS), not in liquid-filled indoor breakers.\n- **High fire point liquids** — While safer, these are specialized and not typically used in standard indoor liquid-filled breakers.\n\n➡️ **Summary:** Mineral oil is the standard, safe, and effective liquid for indoor circuit breakers, while other options are either hazardous, specialized, or gaseous alternatives."
+  },
+  {
+    "id": 157,
+    "question": "The gas or gasses that might principally be used for purpose of electrical insulation in breakers, bus work, and switchgear include",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Sulfur hexafluoride",
+      "Air",
+      "Hydrogen",
+      "Third and Fourth",
+      "First, Second and Third"
+    ],
+    "answer": "Third and Fourth",
+    "explanation": "The correct answer is 'Third and Fourth' because **Sulfur hexafluoride (SF6)** and **air** are the primary gases used for electrical insulation in switchgear, breakers, and buswork. SF6 is widely used due to its excellent dielectric properties and arc-quenching ability. Air is used in air-insulated switchgear (AIS) and some lower-voltage indoor applications.\n\n❌ **Why the others are not used:**\n- **Nitrogen** — Sometimes used as a protective or blanketing gas but not primarily for electrical insulation in typical breakers.\n- **Oxygen** — Conductive and reactive, not suitable for insulation; can support arcing.\n- **Hydrogen** — Not used as an insulating medium; mainly occurs as a fault gas in transformers.\n- **First, Second and Third** — Includes oxygen, which is not suitable.\n\n➡️ **Summary:** Only **SF6 and air** are standard gases for insulation purposes in electrical equipment."
+  },
+  {
+    "id": 158,
+    "question": "Which property test is not applicable to silicone insulating liquid",
+    "options": [
+      "Interfacial tension",
+      "Fire point",
+      "Specific gravity",
+      "Water content",
+      "Neutralization number"
+    ],
+    "answer": "Interfacial tension",
+    "explanation": "The correct answer is 'Interfacial tension' because **interfacial tension testing is specific to mineral oils**, where it indicates the cleanliness and chemical stability of the oil. Silicone insulating liquids have different chemical properties and do not rely on IFT measurements for quality assessment.\n\n❌ **Why the others are used:**\n- **Fire point** — Important for safety, as it indicates the temperature at which the liquid can ignite.\n- **Specific gravity** — Measures density, useful for verifying fluid composition.\n- **Water content** — Critical for insulation performance, as moisture reduces dielectric strength.\n- **Neutralization number** — Indicates acidity or degradation of the silicone liquid, important for longevity and reliability.\n\n➡️ **Summary:** Interfacial tension is irrelevant for silicone liquids; other tests are meaningful for safety and performance assessment."
+  },
+  {
+    "id": 159,
+    "question": "Which property of an insulating liquid determines whether free water will be found above or below the insulating liquid",
+    "options": [
+      "Water content",
+      "Specific gravity",
+      "Viscosity",
+      "Interfacial tension",
+      "Pour point"
+    ],
+    "answer": "Specific gravity",
+    "explanation": "The correct answer is 'Specific gravity' because **specific gravity (SG) determines the relative density of the insulating liquid compared to water**. Water, being denser than most insulating oils, will settle below the liquid if the oil's SG is lower than 1. If the oil has a higher SG, water may float. \n\n❌ **Why the others are wrong:**\n- **Water content** — Indicates how much water is dissolved in the oil but does not determine its position relative to the oil.\n- **Viscosity** — Affects flow and movement but not whether water floats or sinks.\n- **Interfacial tension** — Indicates oil cleanliness and chemical stability, not water position.\n- **Pour point** — Refers to the lowest temperature the oil will flow; it does not influence water layering.\n\n➡️ **Summary:** Specific gravity dictates whether water will float on or sink below insulating liquids."
+  },
+  {
+    "id": 160,
+    "question": "Which insulating medium most readily absorbs and hold a large quantity of moisture",
+    "options": [
+      "Mineral oil",
+      "High temperature hydrocarbon fluids (R-Temp)",
+      "Silicone",
+      "Polychlorinated Biphenyl",
+      "SF6"
+    ],
+    "answer": "Silicone",
+    "explanation": "The correct answer is 'Silicone' because **silicone insulating liquids are polar and can absorb significant amounts of moisture** compared to mineral oils, PCBs, or SF6. This property can impact dielectric performance if not properly managed.\n\n❌ **Why the others are less suitable:**\n- **Mineral oil** — Hydrophobic and absorbs very little water.\n- **High temperature hydrocarbon fluids (R-Temp)** — Better thermal stability than mineral oil but still relatively hydrophobic.\n- **Polychlorinated Biphenyl (PCB)** — Very low moisture solubility.\n- **SF6** — A gas, so it does not absorb water in the same way liquids do.\n\n➡️ **Summary:** Silicone liquids hold more moisture than other insulating media, which must be considered in design and maintenance."
+  },
+  {
+    "id": 161,
+    "question": "The substance known as DBPC is commonly added to insulating oil to",
+    "options": [
+      "Inhibit moisture absorption",
+      "Slow the rate of oxidation",
+      "Increase nitrogen absorption",
+      "Absorb moisture",
+      "Serve as a detergent"
+    ],
+    "answer": "Slow the rate of oxidation",
+    "explanation": "The correct answer is 'Slow the rate of oxidation' because **DBPC (Dibutyl para-cresol)** is an antioxidant additive used in insulating oils to prevent the oil from oxidizing. Oxidation can lead to sludge formation, acid buildup, and deterioration of the dielectric properties of the oil.\n\n❌ **Why the others are wrong:**\n- **Inhibit moisture absorption** — DBPC does not prevent water from entering the oil.\n- **Increase nitrogen absorption** — DBPC does not affect gas absorption properties.\n- **Absorb moisture** — DBPC is not a desiccant.\n- **Serve as a detergent** — It does not clean or suspend sludge; it only slows oxidation.\n\n➡️ **Summary:** DBPC is specifically used as an antioxidant to **extend the life and stability of insulating oil**."
+  },
+  {
+    "id": 162,
+    "question": "Liquid samples that were drawn when the liquid was below 32F",
+    "options": [
+      "Are not suitable for an IFT test",
+      "Provide less than correct dielectric breakdown values",
+      "Have abnormal specific gravity",
+      "May not reveal free water",
+      "All of the above"
+    ],
+    "answer": "May not reveal free water",
+    "explanation": "The correct answer is 'May not reveal free water' because when insulating liquids are sampled below 32°F (0°C), **any water present may be frozen**, preventing it from separating out and being detected as free water in the sample. \n\n❌ **Why the others are wrong:**\n- **Are not suitable for an IFT test** — Interfacial tension can still be measured accurately at low temperatures.\n- **Provide less than correct dielectric breakdown values** — Low temperature can affect viscosity but typically does not significantly alter dielectric breakdown measurements.\n- **Have abnormal specific gravity** — Specific gravity changes very little with freezing; it does not become abnormal.\n- **All of the above** — Incorrect because only the detection of free water is directly affected.\n\n➡️ **Summary:** Free water may be undetectable in frozen samples, so testing should be done at temperatures above freezing."
+  },
+  {
+    "id": 163,
+    "question": "If the specific gravity of the transformer insulating liquid is more than 1.0, the sample should be drawn from the",
+    "options": [
+      "Top",
+      "Middle",
+      "Bottom",
+      "Conservator",
+      "None of the above"
+    ],
+    "answer": "Top",
+    "explanation": "The correct answer is 'Top' because if the insulating liquid has a **specific gravity greater than 1.0**, it is **denser than water**. Water, being less dense than the oil in this case, would settle at the bottom. Drawing the sample from the top ensures that the liquid sampled is representative and free from water contamination.\n\n❌ **Why the others are wrong:**\n- **Middle** — The middle may contain some water if the liquid is stratified.\n- **Bottom** — The bottom may contain free water and sediments, leading to inaccurate test results.\n- **Conservator** — While it contains oil, it may not represent the density distribution in the main tank.\n- **None of the above** — Incorrect because the top is the correct sampling point.\n\n➡️ **Summary:** Always draw from the **top of the tank** when the liquid is denser than water to avoid contamination from water or sediments."
+  },
+  {
+    "id": 164,
+    "question": "Samples should not be drawn from",
+    "options": [
+      "Energized transformer",
+      "Energized instrument transformer",
+      "Some instruments transformer",
+      "Energized oil breakers",
+      "First and Second",
+      "Second and Third"
+    ],
+    "answer": "Second and Third",
+    "explanation": "The correct answer is 'Second and Third' because **drawing oil samples from energized instrument transformers or some instrument transformers is unsafe and can lead to electrical hazards**. These transformers are often high voltage and have small volumes, making sampling dangerous.\n\n❌ **Why the others are wrong:**\n- **Energized transformer** — While generally precautions are required, standard large transformers can be safely sampled using proper procedures and sampling ports.\n- **Energized oil breakers** — Can be sampled safely through designed test ports following safety procedures.\n- **First and Second** — Only partially correct; both energized transformer and energized instrument transformer is not the fully accepted answer.\n\n➡️ **Summary:** Avoid sampling from **energized instrument transformers and some smaller instrument transformers** due to safety risks."
+  },
+  {
+    "id": 165,
+    "question": "Samples should not be drawn from apparatus having",
+    "options": [
+      "A negative pressure at the outlet",
+      "A positive pressure at the outlet",
+      "No nitrogen blanket",
+      "No sample device",
+      "A hermetically sealed compartment"
+    ],
+    "answer": "A negative pressure at the outlet",
+    "explanation": "The correct answer is 'A negative pressure at the outlet' because **drawing a sample under negative pressure (vacuum) can draw in air or contaminants**, which would compromise the sample and potentially introduce moisture or oxygen into the insulating liquid.\n\n❌ **Why the others are wrong:**\n- **A positive pressure at the outlet** — Can be managed safely; oil flows outward, minimizing contamination risk.\n- **No nitrogen blanket** — While a nitrogen blanket is desirable, the lack of it does not automatically prevent sampling if other precautions are taken.\n- **No sample device** — Makes sampling difficult, but not inherently unsafe; alternative safe methods could be used.\n- **A hermetically sealed compartment** — Sampling is possible with proper taps or valves; not inherently prohibitive.\n\n➡️ **Summary:** Negative pressure creates **risk of contamination**, so samples should not be drawn under vacuum conditions."
+  },
+  {
+    "id": 166,
+    "question": "Liquid samples for dissolved gas analysis should be collected in",
+    "options": [
+      "Amber bottles",
+      "Jars",
+      "Cans",
+      "Thief tubes",
+      "Oil sample cups",
+      "None of the above"
+    ],
+    "answer": "None of the above",
+    "explanation": "The correct answer is 'None of the above' because **dissolved gas analysis (DGA) requires airtight, gas-tight containers**, such as **vacuum-sealed glass bottles with no headspace**, to prevent gases from escaping or air from entering. Standard amber bottles, jars, cans, thief tubes, or oil sample cups cannot ensure this tight seal, so they are not suitable for accurate DGA.\n\n❌ **Why the listed options are wrong:**\n- **Amber bottles, jars, cans, oil sample cups** — Not gas-tight; allow gas exchange with air.\n- **Thief tubes** — Used for oil sampling but not for precise DGA because they introduce air and cannot be sealed perfectly.\n\n➡️ **Summary:** Proper DGA samples require **special gas-tight bottles** to maintain dissolved gases for accurate analysis; none of the listed options meet this requirement."
+  },
+  {
+    "id": 167,
+    "question": "Water content is not an important property of silicone liquid",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "True",
+    "explanation": "The correct answer is 'True' because **silicone insulating liquids are highly hydrophobic and can absorb significant moisture without a large effect on dielectric performance**. Unlike mineral oils, where water content critically affects insulation, silicone liquids are less sensitive to moisture.\n\n❌ **Why 'False' is wrong:**\n- Moisture content is important for mineral oils but **less critical for silicone liquids**, so water content is not a primary property to monitor.\n\n➡️ **Summary:** Silicone liquids are tolerant of dissolved water, making water content **less critical** than in other insulating oils."
+  },
+  {
+    "id": 168,
+    "question": "Neutralization number is measured in",
+    "options": [
+      "PPM maximum",
+      "KOH/gm",
+      "KV/0.10 inch",
+      "Dynes/CM, minimum",
+      "% at 25C"
+    ],
+    "answer": "KOH/gm",
+    "explanation": "The correct answer is 'KOH/gm' because the **neutralization number (or acid number)** indicates the acidity of insulating oil and is expressed as the **milligrams of potassium hydroxide (KOH) required to neutralize one gram of oil**.\n\n❌ **Why the others are wrong:**\n- **PPM maximum** — Typically used for water content measurements.\n- **KV/0.10 inch** — Used for dielectric breakdown voltage.\n- **Dynes/CM, minimum** — Used for interfacial tension measurements.\n- **% at 25C** — Not a standard unit for neutralization number.\n\n➡️ **Summary:** Neutralization number is always expressed in **mg KOH per gram of oil** to quantify oil acidity."
   }
 ]
