@@ -138,7 +138,7 @@ if "last_active" not in st.session_state:
 # AUTO-SET USER (no login)
 # -----------------------------
 if "user" not in st.session_state or st.session_state["user"] is None:
-    st.session_state["user"] = "Dude"
+    st.session_state["user"] = "Welcome!"
     st.session_state["score"] = 0
     st.session_state["questions_loaded"] = []
     st.session_state["total_questions"] = 0
@@ -219,7 +219,7 @@ if st.session_state["user"]:
     # -----------------------------
     # LOAD QUESTIONS
     # -----------------------------
-    st.markdown(f"### 👤 Hi, {user_name}<br>", unsafe_allow_html=True)
+    st.markdown(f"### 👤 {user_name}<br>", unsafe_allow_html=True)
 
     def load_questions(path):
         questions = []
