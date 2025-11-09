@@ -1340,5 +1340,197 @@
     ],
     "answer": "Magnetic air breaker",
     "explanation": "A **magnetic air breaker** uses a **blow-out coil or puffer tube** to extinguish the arc by forcing air through the arc zone, rapidly cooling and elongating it. \n\n**Why others are wrong:**\n- **Vacuum breaker:** uses vacuum to quench the arc.\n- **SF6 breaker:** uses sulfur hexafluoride gas for arc quenching.\n- **Oil circuit breaker:** uses oil to quench the arc.\n\n**Fastest way to identify:** Keywords **'blow out coil'** or **'puffer tube'** indicate **air-blast or magnetic air circuit breaker**."
+  },
+  {
+    "id": 105,
+    "question": "What type of protection does a CO relay typically provide",
+    "options": [
+      "Overvoltage",
+      "Undervoltage",
+      "Overcurrent",
+      "Over temperature",
+      "Phase balance"
+    ],
+    "answer": "Overcurrent",
+    "explanation": "A CO (Current Operated) relay is designed to detect excessive current and provide protection against overcurrent conditions such as short circuits or overloads. \n\n- Overvoltage: Incorrect, because CO relays respond to current, not voltage. Overvoltage protection requires a voltage relay.\n- Undervoltage: Incorrect, as CO relays cannot sense voltage drop; undervoltage relays are used for this purpose.\n- Over temperature: Incorrect, CO relays do not monitor temperature; thermal relays handle temperature protection.\n- Phase balance: Incorrect, because CO relays do not detect imbalance between phases; phase-failure or phase-sequence relays are used for phase issues."
+  },
+  {
+    "id": 106,
+    "question": "A device number 51 is connected to a 200/5 CT and is set on tap 4. With a pickup of 4.0A and time dial settings of 0.5, at what primary CT current will the relay begin to operate",
+    "options": [
+      "200A",
+      "160A",
+      "40A",
+      "4A",
+      "0.5A"
+    ],
+    "answer": "160A",
+    "explanation": "Device 51 is an inverse-time overcurrent relay. The CT ratio is 200/5, meaning 200A primary corresponds to 5A secondary. \n\nThe relay is set on tap 4 with a pickup of 4A secondary. To find the primary current at which it operates, use the CT ratio: \n\nPrimary current = (CT primary rating / CT secondary rating) × Relay pickup\nPrimary current = (200 / 5) × 4 = 40 × 4 = 160A\n\n- 200A: Incorrect, this is the CT primary rating, not the relay pickup.\n- 40A: Incorrect, this is the factor from CT ratio but does not include the pickup setting.\n- 4A: Incorrect, this is the secondary pickup current, not the primary.\n- 0.5A: Incorrect, this is the time dial setting, not related to primary current."
+  },
+  {
+    "id": 107,
+    "question": "Which of the following loads or devices may be protected from damage due to over long low voltage conditions by an under voltage relay",
+    "options": [
+      "Transformers",
+      "Circuit breakers",
+      "Motors",
+      "Meters",
+      "Resistive heating"
+    ],
+    "answer": "Motors",
+    "explanation": "An under voltage (UV) relay protects equipment that can be damaged or operate inefficiently during prolonged low voltage conditions. \n\n- Motors: Correct, because prolonged low voltage can cause motors to draw excessive current, overheat, and get damaged; a UV relay disconnects them in such cases.\n- Transformers: Incorrect, they are generally not damaged by low voltage but may have reduced output; overcurrent or temperature protection is more relevant.\n- Circuit breakers: Incorrect, they are protective devices themselves and are not the primary equipment UV relays protect.\n- Meters: Incorrect, low voltage does not typically damage meters; they may just read incorrectly.\n- Resistive heating: Incorrect, resistive loads continue to operate at lower voltage but at lower power; they are not generally damaged by low voltage."
+  },
+  {
+    "id": 108,
+    "question": "When relays compare the sum difference or interaction between two or more currents or between a voltage and a current",
+    "options": [
+      "The current must plot in the same quadrant",
+      "The relative direction of the current must be known",
+      "The CT ratio is not relevant",
+      "A logging power factor exist",
+      "All relay inputs must be in phase"
+    ],
+    "answer": "The relative direction of the current must be known",
+    "explanation": "For relays that operate based on the algebraic sum or difference of currents or on current-voltage interactions (e.g., differential relays or directional relays), the relative direction (polarity) of the currents must be known to ensure correct operation. \n\n- The current must plot in the same quadrant: Incorrect, the phasor location varies depending on system conditions; the relay only needs to know relative direction.\n- The CT ratio is not relevant: Incorrect, CT ratios must be properly considered to scale currents correctly.\n- A lagging power factor exist: Incorrect, the existence of a lagging power factor is not a requirement for these relays.\n- All relay inputs must be in phase: Incorrect, currents or voltages may not be in phase; only the relative direction/polarity matters."
+  },
+  {
+    "id": 109,
+    "question": "A dash pot is used",
+    "options": [
+      "To provide overcurrent protection",
+      "To provide instantaneous tripping",
+      "To provide time delay",
+      "For voltage control",
+      "None of the above"
+    ],
+    "answer": "To provide time delay",
+    "explanation": "A dashpot is a mechanical device filled with viscous fluid that resists motion, commonly used in relays to provide a deliberate time delay before the relay operates. \n\n- To provide overcurrent protection: Incorrect, dashpots do not sense current; overcurrent relays do.\n- To provide instantaneous tripping: Incorrect, dashpots deliberately slow down operation rather than make it instantaneous.\n- For voltage control: Incorrect, dashpots do not monitor or control voltage.\n- None of the above: Incorrect, because the primary function of a dashpot is to provide a time delay."
+  },
+  {
+    "id": 110,
+    "question": "A latching relay",
+    "options": [
+      "May be mechanically held",
+      "May be magnetically held",
+      "Typically includes an unlatching or reset coil",
+      "Is often used in protection schemes",
+      "All of the above"
+    ],
+    "answer": "All of the above",
+    "explanation": "A latching relay is designed to maintain its position after being actuated, either mechanically or magnetically, until a separate unlatching or reset action occurs. \n\n- May be mechanically held: Correct, some latching relays use a mechanical latch to maintain contact position.\n- May be magnetically held: Correct, magnetic latching relays use magnetic forces to maintain their state without continuous power.\n- Typically includes an unlatching or reset coil: Correct, to return the relay to its original state, a separate coil is often used.\n- Is often used in protection schemes: Correct, latching relays are widely used in protection circuits where the relay state must be retained after a trip.\n- All of the above: Correct, because all the previous statements accurately describe latching relays."
+  },
+  {
+    "id": 111,
+    "question": "The device that includes an element of nonlinear resistance that exhibits relatively high resistance at low voltage (and current) and a much lower resistance at high voltage and current, is a",
+    "options": [
+      "Solenoid voltage relay",
+      "Fuse",
+      "Expulsion type arrester",
+      "Valve type arrester",
+      "Spark gap"
+    ],
+    "answer": "Valve type arrester",
+    "explanation": "A valve type arrester (also called a metal-oxide varistor arrester) contains nonlinear resistive elements that have very high resistance at normal voltages and drop to very low resistance when voltage rises above a threshold, thereby diverting surge currents. \n\n- Solenoid voltage relay: Incorrect, this is a control/protection relay and does not have nonlinear resistance.\n- Fuse: Incorrect, a fuse melts under overcurrent but does not provide nonlinear voltage-dependent resistance.\n- Expulsion type arrester: Incorrect, it relies on arc quenching and does not have a nonlinear resistive element.\n- Spark gap: Incorrect, it conducts only when voltage exceeds a gap but does not have gradual nonlinear resistance characteristics.\n- Valve type arrester: Correct, it exhibits the described voltage-current characteristics due to its nonlinear resistive elements."
+  },
+  {
+    "id": 112,
+    "question": "Protection against high current surge is typically achieved by use of",
+    "options": [
+      "An instantaneous current relay",
+      "Phase balance relay",
+      "Arrester",
+      "Current limiting fuses",
+      "Equipment maximum voltage rating"
+    ],
+    "answer": "Current limiting fuses",
+    "explanation": "Current limiting fuses are specifically designed to protect equipment from high-magnitude, short-duration current surges by interrupting the fault current very quickly, limiting the energy let through. \n\n- An instantaneous current relay: Incorrect, while it trips quickly on overcurrent, it may not interrupt extremely high surge currents as effectively as a fuse.\n- Phase balance relay: Incorrect, it detects phase imbalances, not high current surges.\n- Arrester: Incorrect, surge arresters protect against overvoltage, not overcurrent.\n- Equipment maximum voltage rating: Incorrect, this is a design limit, not an active protective device.\n- Current limiting fuses: Correct, as they actively limit current surges and protect equipment from damage."
+  },
+  {
+    "id": 113,
+    "question": "Even though operating and time characteristics very between different fuses types and constructions, fuses are intended operate at their ampere rating",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": "False",
+    "explanation": "Fuses are designed to protect equipment from overcurrent, but they do not operate exactly at their ampere rating. The ampere rating indicates the maximum continuous current a fuse can carry without blowing. Fuses have time-current characteristics, meaning they may tolerate currents above their rating for short durations and only operate when the overcurrent persists or is severe enough. Therefore, they do not operate strictly at their nominal ampere rating."
+  },
+  {
+    "id": 114,
+    "question": "The protective device that basically compares inputs to outputs is knows as",
+    "options": [
+      "Overload relay",
+      "Differential relay",
+      "Directional overcurrent relay",
+      "Phase balance relay",
+      "Second and fourth above"
+    ],
+    "answer": "Differential relay",
+    "explanation": "A differential relay operates by comparing the current entering and leaving a protected zone. If there is a difference (due to a fault within the zone), the relay operates. \n\n- Overload relay: Incorrect, it protects against sustained overcurrent but does not compare input and output currents.\n- Differential relay: Correct, it directly compares input and output currents to detect internal faults.\n- Directional overcurrent relay: Incorrect, it responds to overcurrent in a particular direction but does not perform input-output comparison.\n- Phase balance relay: Incorrect, it detects imbalance between phases, not input-output current differences.\n- Second and fourth above: Incorrect, because only the differential relay (second option) matches the description."
+  },
+  {
+    "id": 115,
+    "question": "Directional relays are typically used",
+    "options": [
+      "On radial feeders",
+      "To prevent the motoring of generator",
+      "To protect busses",
+      "In tie lines between two supply substations",
+      "Second and fourth above"
+    ],
+    "answer": "Second and fourth above",
+    "explanation": "Directional relays operate based on the direction of power or current flow. They are commonly used:\n\n- To prevent the motoring of a generator: Correct, a directional relay can detect reverse power flow that could cause a generator to motoring mode, preventing damage.\n- In tie lines between two supply substations: Correct, directional relays ensure that faults are cleared in the correct direction when two sources are connected, avoiding unnecessary tripping.\n\n- On radial feeders: Incorrect, directionality is not needed since power flows in only one direction.\n- To protect busses: Incorrect, bus protection typically uses differential relays, not directional relays.\n\nTherefore, the correct choice is **Second and fourth above**."
+  },
+  {
+    "id": 116,
+    "question": "Fault pressure devices typically protect",
+    "options": [
+      "Oil circuit breakers",
+      "Transformers",
+      "Outdoor switchgear",
+      "Chiller motor",
+      "Air blast breakers"
+    ],
+    "answer": "Transformers",
+    "explanation": "Fault pressure devices, such as Buchholz relays, are installed on oil-filled transformers to detect the buildup of gas or pressure caused by internal faults (like short circuits or insulation failures) and operate to prevent catastrophic damage. \n\n- Oil circuit breakers: Incorrect, they may have their own trip mechanisms but are not primarily protected by fault pressure devices.\n- Transformers: Correct, these devices are specifically designed for oil-filled transformers.\n- Outdoor switchgear: Incorrect, they are generally air-insulated and do not use fault pressure devices.\n- Chiller motor: Incorrect, motors are not oil-filled and do not use fault pressure protection.\n- Air blast breakers: Incorrect, these rely on air for arc quenching, not fault pressure detection."
+  },
+  {
+    "id": 117,
+    "question": "A current limiting fuse",
+    "options": [
+      "Opens circuits in less than 1/4 cycle when certain current magnitudes are reached",
+      "Restricts circuit current flow to its ampere rating",
+      "Restricts current flow by internal resistive and/or inductive elements",
+      "Cannot sustain moderate overloads",
+      "Emits ionized gases upon operating"
+    ],
+    "answer": "Opens circuits in less than 1/4 cycle when certain current magnitudes are reached",
+    "explanation": "A current limiting fuse is designed to interrupt very high fault currents extremely quickly, typically in less than 1/4 of a cycle, to limit the energy let-through and protect equipment. \n\n- Restricts circuit current flow to its ampere rating: Incorrect, the fuse does not maintain continuous current at its rating; it interrupts overcurrent.\n- Restricts current flow by internal resistive and/or inductive elements: Incorrect, current limiting is achieved by rapid melting and arc quenching, not internal resistive or inductive components.\n- Cannot sustain moderate overloads: Incorrect, current limiting fuses can carry moderate overloads for a limited time depending on their time-current characteristics.\n- Emits ionized gases upon operating: Incorrect, this describes expulsion-type fuses; current limiting fuses operate mainly by rapid melting and arc interruption."
+  },
+  {
+    "id": 118,
+    "question": "Thermal devices typically provide",
+    "options": [
+      "Short circuit protection",
+      "Overload protection",
+      "Loss of phase protection",
+      "Voltage protection",
+      "All of the above"
+    ],
+    "answer": "Overload protection",
+    "explanation": "Thermal devices, such as bimetallic overload relays, respond to prolonged overcurrent conditions that cause heating, and they operate to protect equipment from damage due to sustained overloads. \n\n- Short circuit protection: Incorrect, thermal devices are too slow to respond to high-magnitude short circuits; instantaneous devices like fuses or magnetic relays are used.\n- Overload protection: Correct, thermal devices are specifically designed for this purpose.\n- Loss of phase protection: Incorrect, phase loss requires phase-failure or phase-sensing relays, not thermal devices.\n- Voltage protection: Incorrect, thermal devices do not sense voltage."
+  },
+  {
+    "id": 119,
+    "question": "Loss of phase protection for motors may be provided by",
+    "options": [
+      "Phase balance relays",
+      "Undervoltage relays",
+      "Line fuses",
+      "Instantaneous current devices",
+      "Overload heaters"
+    ],
+    "answer": "Phase balance relays",
+    "explanation": "Loss of phase (phase failure) occurs when one phase of a three-phase supply is lost, which can cause motors to overheat or run inefficiently. Phase balance relays detect significant imbalance between phases and trip to protect the motor. \n\n- Phase balance relays: Correct, as they monitor phase current imbalance and provide loss-of-phase protection.\n- Undervoltage relays: Incorrect, they respond to low voltage conditions but do not detect a missing phase.\n- Line fuses: Incorrect, fuses may blow on overcurrent but cannot detect phase loss unless it results in overcurrent.\n- Instantaneous current devices: Incorrect, they respond to high currents, not phase imbalance.\n- Overload heaters: Incorrect, these respond to sustained overcurrent, not phase loss."
   }
 ]
