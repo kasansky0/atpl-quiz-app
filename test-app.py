@@ -157,7 +157,7 @@ def is_user_online(user_doc):
 # -----------------------------
 # STREAMLIT UI
 # -----------------------------
-st.set_page_config(page_title="ATPL Practice Quiz", layout="wide")
+st.set_page_config(page_title="NETA Practice Quiz", layout="wide")
 
 if "user" not in st.session_state:
     st.session_state["user"] = None
