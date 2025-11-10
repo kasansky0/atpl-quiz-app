@@ -164,9 +164,6 @@ if "user" not in st.session_state:
 if "last_active" not in st.session_state:
     st.session_state["last_active"] = datetime.now()
 
-
-st.write("Session ID:", st.session_state["session_id"])
-
 # -----------------------------
 # AUTO-SET USER (no login)
 # -----------------------------
