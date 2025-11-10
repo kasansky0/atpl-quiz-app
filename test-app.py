@@ -8,6 +8,32 @@ from pymongo import MongoClient
 import uuid
 
 
+if "score" not in st.session_state:
+    st.session_state["score"] = 0
+
+if "questions_loaded" not in st.session_state:
+    st.session_state["questions_loaded"] = []
+
+if "answered" not in st.session_state:
+    st.session_state["answered"] = []
+
+if "choices" not in st.session_state:
+    st.session_state["choices"] = []
+
+if "feedback" not in st.session_state:
+    st.session_state["feedback"] = []
+
+if "q_index" not in st.session_state:
+    st.session_state["q_index"] = 0
+
+if "last_active" not in st.session_state:
+    st.session_state["last_active"] = datetime.now()
+
+if "session_id" not in st.session_state:
+    st.session_state["session_id"] = str(uuid.uuid4())
+    st.session_state["session_start"] = datetime.now()
+
+
 # -----------------------------
 # CSS
 #------------------------------
@@ -35,7 +61,15 @@ MONGO_URI = st.secrets["MONGO_URI"]
 DB_NAME = st.secrets["DB_NAME"]  # <--- ADD THIS
 client = MongoClient(MONGO_URI)
 
-
+# Electricity / power / NETA Level 2 themed fun names
+ELECTRIC_NAMES = [
+    "Circuit Wizard", "Voltage Viking", "Amp Ace", "Ohm Explorer",
+    "Current Commander", "Transformer Guru", "Power Surge",
+    "Breaker Buddy", "Relay Ranger", "Capacitor Captain",
+    "Generator Genius", "Insulator Hero", "Conductor Ninja",
+    "Switch Master", "Load Lord", "Grid Guardian", "Watt Warrior",
+    "Resistor Rider", "Fusible Friend", "Energy Eagle"
+]
 
 # -----------------------------
 # MONGO CONNECTION
@@ -58,41 +92,37 @@ def get_last_saved_score(user_id):
     record = scores_col.find_one({"user_id": user_id}, sort=[("timestamp", -1)])
     return int(record["score"]) if record else 0
 
-def update_score(user_id, score_increment, total_questions_increment=0):
+def update_score(user_name, score_increment, total_questions_increment=0):
     """
     Add to the user's total score and total_questions instead of overwriting them.
     Creates a record if it doesn't exist yet.
+    Also logs session info (unique session ID) in MongoDB.
     """
     timestamp = datetime.now()
+    session_id = st.session_state.get("session_id")
 
+    # --- Update scores collection ---
     scores_col.update_one(
-        {"user_id": user_id},
+        {"user_name": user_name, "session_id": session_id},
         {
-            "$inc": {  # increment existing values instead of overwriting
+            "$inc": {
                 "score": score_increment,
                 "total_questions": total_questions_increment
             },
-            "$set": {  # still update timestamp
-                "timestamp": timestamp
+            "$set": {
+                "last_update": timestamp
             }
         },
         upsert=True
     )
 
-    # --- Update Streamlit cache ---
+    # --- Update Streamlit session cache ---
     if "scores_cache" not in st.session_state:
         st.session_state["scores_cache"] = []
 
-    # find old cache entry if exists
-    found = False
-    for r in st.session_state["scores_cache"]:
-        if r.get("user_id") == user_id:
-            r["score"] = r.get("score", 0) + score_increment
-            found = True
-            break
-
-    if not found:
-        st.session_state["scores_cache"].append({"user_id": user_id, "score": score_increment})
+# --- Update Streamlit cache ---
+if "scores_cache" not in st.session_state:
+    st.session_state["scores_cache"] = []
 
 def load_scores_cache():
     if "scores_cache" not in st.session_state:
@@ -134,11 +164,15 @@ if "user" not in st.session_state:
 if "last_active" not in st.session_state:
     st.session_state["last_active"] = datetime.now()
 
+
+st.write("Session ID:", st.session_state["session_id"])
+
 # -----------------------------
 # AUTO-SET USER (no login)
 # -----------------------------
 if "user" not in st.session_state or st.session_state["user"] is None:
-    st.session_state["user"] = "Welcome!"
+    random_name = random.choice(ELECTRIC_NAMES)
+    st.session_state["user"] = f"Welcome, {random_name}!"
     st.session_state["score"] = 0
     st.session_state["questions_loaded"] = []
     st.session_state["total_questions"] = 0
@@ -314,11 +348,8 @@ if st.session_state["user"]:
     if "nav_action" not in st.session_state:
         st.session_state.nav_action = None
 
-    col1, col2 = st.columns(2)
-    with col1:
-        if st.button("⬅️ Previous Question"):
-            st.session_state.nav_action = "prev"
-    with col2:
+    col = st.columns(1)[0]
+    with col:
         if st.button("➡️ Next Question"):
             st.session_state.nav_action = "next"
 
@@ -373,9 +404,27 @@ if st.session_state["user"]:
                                 f"Explanation: {current_q.get('explanation', 'No explanation.')}"
                             )
 
-                        # ✅ Auto-save score and update last_active
+                        # ✅ Update score and last active
                         update_score(user_name, 1 if correct else 0, 0)
                         update_last_active(user_name)
+
+                        # Save the answer to MongoDB in a single session document
+                        scores_col.update_one(
+                            {"session_id": st.session_state["session_id"], "user_name": user_name},
+                            {"$push": {
+                                "answers": {
+                                    "question_index": st.session_state.q_index,
+                                    "question_text": current_q.get("question"),
+                                    "selected_choice": choice,
+                                    "correct": correct,
+                                    "timestamp": datetime.now()
+                                }
+                            },
+                                "$set": {"last_update": datetime.now()}},
+                            upsert=True
+                        )
+
+
 
                     else:
                         st.info("You already submitted this question. Click Next to continue.")
