@@ -2374,5 +2374,551 @@
   ],
   "answer": "Test each phase separately using the 2-channel set",
   "explanation": "✅ **Correct – Test each phase separately:** A 47 relay is a phase sequence undervoltage relay. Using a 2-channel test set, you can simulate voltages on each phase individually to verify that the relay responds correctly to undervoltage conditions and correct phase sequence.\n\n❌ **Why others are wrong:**\n- **Open Delta:** Only partially energizes the relay and may not test all phases.\n- **Series:** Connecting in series does not simulate correct phase sequence or undervoltage conditions.\n- **By shorting two phases:** This is unsafe and does not represent normal operation.\n- **By bypassing the relay:** This does not test the relay at all."
+  },
+  {
+  "id": 185,
+  "question": "What does 'Demand' mean in electrical testing and power systems?",
+  "options": [
+    "The total amount of energy consumed over a period of time",
+    "The average power used by a system during off-peak hours",
+    "The maximum rate at which electrical energy is consumed during a specified period",
+    "The total connected load of a facility",
+    "The minimum power required to operate essential equipment"
+  ],
+  "answer": "The maximum rate at which electrical energy is consumed during a specified period",
+  "explanation": "✅ **Correct – The maximum rate at which electrical energy is consumed during a specified period:** In electrical testing and power systems, *demand* refers to the highest rate at which power is used by a facility over a defined time interval, typically measured in kilowatts (kW) or kilovolt-amperes (kVA). Utilities monitor demand to determine peak loading and billing rates.\n\n❌ **Why others are wrong:**\n- **Total energy consumed:** That defines *energy usage* (kWh), not demand.\n- **Average power during off-peak hours:** That refers to *average load*, not demand.\n- **Total connected load:** This is *installed capacity*, not actual usage or rate.\n- **Minimum power required:** This describes *base load*, not demand."
+  },
+  {
+  "id": 186,
+  "question": "A space heater is rated at 120V and 10A. What is its resistance (R)?",
+  "options": [
+    "1.2 Ω",
+    "12 Ω",
+    "24 Ω",
+    "60 Ω",
+    "120 Ω"
+  ],
+  "answer": "12 Ω",
+  "explanation": "✅ **Correct – 12 Ω:** Using Ohm’s Law, R = V / I = 120V ÷ 10A = 12 Ω.\n\n❌ **Why others are wrong:**\n- **1.2 Ω:** Would result in 100A of current (too high for a 120V, 10A heater).\n- **24 Ω:** Would draw only 5A, half the rated current.\n- **60 Ω:** Would draw 2A, far too low for a space heater.\n- **120 Ω:** Would draw just 1A, incorrect for a 10A-rated heater."
+  },
+  {
+  "id": 187,
+  "question": "What is the unit of Interfacial Tension (IFT)?",
+  "options": [
+    "Ohms",
+    "Joules per second",
+    "Dynes per centimeter",
+    "Volts per meter",
+    "Newtons per second"
+  ],
+  "answer": "Dynes per centimeter",
+  "explanation": "✅ **Correct – Dynes per centimeter (dyn/cm):** Interfacial tension (IFT) measures the force per unit length existing at the interface between two immiscible liquids, such as oil and water. It indicates the cleanliness and condition of insulating oil — higher IFT generally means cleaner oil with fewer contaminants.\n\n❌ **Why others are wrong:**\n- **Ohms:** Unit of electrical resistance, not surface or interfacial tension.\n- **Joules per second:** Measures power (watts), unrelated to tension.\n- **Volts per meter:** Unit of electric field strength, not applicable to fluid interface.\n- **Newtons per second:** Represents a rate of force change, not a static interfacial property."
+  },
+  {
+  "id": 188,
+  "question": "Which insulating liquid can absorb and hold more moisture — Mineral oil or Silicone?",
+  "options": [
+    "Mineral oil",
+    "Silicone",
+    "Both absorb the same amount",
+    "Neither absorbs water",
+    "Depends on temperature only"
+  ],
+  "answer": "Silicone",
+  "explanation": "✅ **Correct – Silicone:** Silicone insulating liquid has a much higher affinity for moisture and can absorb and retain a larger quantity of water compared to mineral oil. Despite this, its electrical properties remain relatively stable even when moisture is present.\n\n❌ **Why others are wrong:**\n- **Mineral oil:** Absorbs far less water; excessive moisture quickly reduces its dielectric strength.\n- **Both absorb the same amount:** Incorrect — silicone’s molecular structure allows more water retention.\n- **Neither absorbs water:** False — both are hygroscopic to some degree.\n- **Depends on temperature only:** Temperature affects absorption rate, but silicone inherently absorbs more regardless of temperature."
+  },
+  {
+  "id": 189,
+  "question": "How can you test a current transformer (CT) if the CT is installed inside a transformer tank?",
+  "options": [
+    "Perform primary injection test through the transformer bushings",
+    "Open the transformer tank and test the CT directly",
+    "Disconnect the CT secondary leads and perform a polarity test only",
+    "Perform secondary excitation and ratio tests from the terminal block",
+    "Use a megger to check insulation resistance of the transformer windings"
+  ],
+  "answer": "Perform secondary excitation and ratio tests from the terminal block",
+  "explanation": "✅ **Correct – Perform secondary excitation and ratio tests from the terminal block:** When a CT is mounted inside a transformer tank, it is not physically accessible. Therefore, testing is done from the CT’s secondary terminals, performing excitation (saturation), ratio, and polarity tests using a CT test set.\n\n❌ **Why others are wrong:**\n- **Perform primary injection test through the transformer bushings:** Not practical or safe — transformer winding impedance interferes with test current.\n- **Open the transformer tank and test the CT directly:** Unsafe, impractical, and would void oil seal integrity.\n- **Disconnect the CT secondary leads and perform a polarity test only:** Polarity test alone doesn’t verify ratio or excitation performance.\n- **Use a megger to check insulation resistance of the transformer windings:** That tests insulation, not CT accuracy or condition."
+  },
+  {
+  "id": 190,
+  "question": "Which relay provides motor phase fault protection — a balance relay or an undervoltage relay?",
+  "options": [
+    "Undervoltage relay",
+    "Phase balance relay",
+    "Overcurrent relay",
+    "Thermal overload relay",
+    "Differential relay"
+  ],
+  "answer": "Phase balance relay",
+  "explanation": "✅ **Correct – Phase balance relay:** A phase balance relay (ANSI device 46) protects motors from phase faults such as phase loss, unbalance, or reversal. It detects unequal currents between phases, which can indicate an open phase or short circuit condition.\n\n❌ **Why others are wrong:**\n- **Undervoltage relay (27):** Protects against low voltage on all phases, not phase imbalance.\n- **Overcurrent relay (50/51):** Responds to excessive current, not necessarily unbalanced conditions.\n- **Thermal overload relay (49):** Protects against overheating due to overload, not specific to phase loss.\n- **Differential relay (87):** Detects internal faults by comparing current entering and leaving a circuit, typically used in transformers or large machines, not for motor phase balance."
+  },
+  {
+  "id": 191,
+  "question": "If one transformer in a three-phase transformer bank becomes faulty, what happens to the total kW capacity of the bank?",
+  "options": [
+    "Remains the same",
+    "Drops to 75% of rated capacity",
+    "Drops to 57.7% of rated capacity",
+    "Drops to 50% of rated capacity",
+    "Drops to 33% of rated capacity"
+  ],
+  "answer": "Drops to 57.7% of rated capacity",
+  "explanation": "✅ **Correct – Drops to 57.7% of rated capacity:** When one transformer in a three-phase bank fails, the system can operate in an *open-delta* configuration. In this mode, the bank continues to supply three-phase power but only at about **57.7% (≈ 1/√3)** of its original kVA or kW rating.\n\n❌ **Why others are wrong:**\n- **Remains the same:** False — one transformer is missing, so capacity must decrease.\n- **75% of rated capacity:** Too high; open-delta cannot sustain that much load.\n- **50% of rated capacity:** Underestimates the remaining capability — actual is ~57.7%.\n- **33% of rated capacity:** Would imply only one transformer working in single-phase mode, which isn’t the case in open-delta operation."
+  },
+  {
+  "id": 192,
+  "question": "Megger test voltage for 13.4kV equipment?",
+  "options": [
+    "1 kV @ 1 GΩ",
+    "2.5 kV @ 5 GΩ",
+    "5 kV @ 10 GΩ",
+    "10 kV @ 5 GΩ",
+    "0.5 kV @ 0.5 GΩ"
+  ],
+  "answer": "2.5 kV @ 5 GΩ",
+  "explanation": "✅ **Correct – 2.5 kV @ 5 GΩ:** For 13.4 kV class medium voltage equipment, a typical field insulation resistance (Megger) test uses 2.5 kV DC. The expected insulation resistance is usually **5 GΩ or higher**. This voltage is high enough to test insulation integrity without over-stressing the equipment.\n\n❌ **Why others are wrong:**\n- **1 kV @ 1 GΩ:** Too low, may not reveal insulation weaknesses in 13.4 kV equipment.\n- **5 kV @ 10 GΩ:** Higher than typical field test; could be used for factory or commissioning tests, but not standard field test.\n- **10 kV @ 5 GΩ:** Excessively high for field testing; could damage insulation.\n- **0.5 kV @ 0.5 GΩ:** Far too low, inadequate for detecting insulation faults at 13.4 kV."
+  },
+  {
+  "id": 193,
+  "question": "What does it mean when the red light on the breaker is on?",
+  "options": [
+    "Breaker is open",
+    "Breaker is closed",
+    "Breaker has tripped",
+    "DC voltage is low",
+    "Breaker is ready to close"
+  ],
+  "answer": "Breaker is closed",
+  "explanation": "✅ **Correct – Breaker is closed:** On most medium voltage switchgear, a red indicator light shows that the breaker contacts are **closed** and the circuit is energized.\n\n❌ **Why others are wrong:**\n- **Breaker is open:** Usually indicated by a green or no light.\n- **Breaker has tripped:** Often indicated by a separate trip indicator or alarm.\n- **DC voltage is low:** Would be shown on a DC voltage indicator, not the breaker light.\n- **Breaker is ready to close:** The red light specifically indicates the breaker is already **closed**, not just ready."
+  },
+  {
+  "id": 194,
+  "question": "An interrupter switch can be operated by:",
+  "options": [
+    "Manual operation",
+    "Motor operation",
+    "Stored energy (spring)",
+    "All of the above",
+    "None of the above"
+  ],
+  "answer": "All of the above",
+  "explanation": "✅ **Correct – All of the above:** Interrupter switches can interrupt current using manual, motor, or stored energy operation.\n\n❌ **Why others are wrong:**\n- **Manual only:** Ignores motor and stored energy methods.\n- **Motor only:** Ignores manual and spring mechanisms.\n- **Stored energy only:** Ignores manual and motor operation.\n- **None of the above:** Incorrect, since these switches are designed to operate by at least one of these methods."
+  },
+  {
+  "id": 195,
+  "question": "A TTR (Transformer Turns Ratio) test set has a null indicator. What can you adjust using the null indicator?",
+  "options": [
+    "Excitation voltage",
+    "Turns ratio",
+    "Phase shift",
+    "Load current",
+    "Temperature compensation"
+  ],
+  "answer": "Turns ratio",
+  "explanation": "✅ **Correct – Turns ratio:** The null indicator on a TTR is used to adjust and detect the correct voltage ratio, allowing precise measurement of the transformer's turns ratio.\n\n❌ **Why others are wrong:**\n- **Excitation voltage:** The test set applies excitation, but the null indicator doesn’t adjust it.\n- **Phase shift:** Phase shift is not what the null indicator sets; it only detects voltage balance.\n- **Load current:** TTR tests are performed under no-load conditions; load current isn’t controlled.\n- **Temperature compensation:** Null indicators do not adjust for temperature effects; they only indicate voltage balance for turns ratio measurement."
+  },
+  {
+  "id": 196,
+  "question": "Which component is NOT typically found on a power factor test set?",
+  "options": [
+    "UST (Voltage supply transformer)",
+    "Guard module",
+    "High voltage set",
+    "Capacitance meter (C meter)",
+    "Inductance meter (L meter)"
+  ],
+  "answer": "Inductance meter (L meter)",
+  "explanation": "✅ **Correct – Inductance meter (L meter):** Power factor test sets are used to measure insulation power factor and capacitance of transformers, cables, and other equipment. They typically include a voltage supply transformer (UST), a guard module to eliminate leakage, a high voltage source, and a capacitance meter (C meter). An inductance meter (L meter) is not part of a standard power factor test set.\n\n❌ **Why others are wrong:**\n- **UST:** Essential for providing controlled voltage to the test object.\n- **Guard module:** Used to eliminate stray leakage currents during testing.\n- **High voltage set:** Necessary to apply test voltage to insulation.\n- **Capacitance meter (C meter):** Measures capacitance as part of the test; integral to power factor measurement."
+  },
+  {
+  "id": 197,
+  "question": "A circuit has a phase angle of 15.4° and apparent power (VA) of 120 VA. What is the reactive power (VAR)?",
+  "options": [
+    "32 VAR",
+    "31.8 VAR",
+    "28 VAR",
+    "34 VAR",
+    "30 VAR"
+  ],
+  "answer": "31.8 VAR",
+  "explanation": "✅ **Correct – 31.8 VAR:** Reactive power (Q) is calculated using Q = VA × sin(θ). Here, VA = 120 and θ = 15.4°.\n\nCalculation:\n- sin(15.4°) ≈ 0.265\n- Q = 120 × 0.265 ≈ 31.8 VAR\n\n❌ **Why others are wrong:**\n- **32 VAR:** Slight rounding difference, not precise.\n- **28 VAR:** Underestimates reactive power.\n- **34 VAR:** Overestimates reactive power.\n- **30 VAR:** Slightly low; not the correct calculation.\n\nThis formula is standard for converting apparent power and phase angle to reactive power."
+  },
+  {
+  "id": 198,
+  "question": "In a delta-connected system, if the phase current is 100 A, what is the line current?",
+  "options": [
+    "100 A",
+    "173 A",
+    "57.7 A",
+    "200 A",
+    "150 A"
+  ],
+  "answer": "173 A",
+  "explanation": "✅ **Correct – 173 A:** In a delta system, the line current (IL) is related to the phase current (IP) by IL = √3 × IP.\n\nCalculation:\n- IL = √3 × 100 ≈ 1.732 × 100 ≈ 173 A\n\n❌ **Why others are wrong:**\n- **100 A:** This is the phase current, not the line current.\n- **57.7 A:** This corresponds to open-delta capacity (not line current calculation).\n- **200 A:** Arbitrary, too high.\n- **150 A:** Arbitrary, not derived from the correct formula.\n\nThis relationship is standard for three-phase delta connections."
+  },
+  {
+  "id": 199,
+  "question": "During an infrared (IR) scan, which factor can influence the temperature readings?",
+  "options": [
+    "Emissivity of the surface",
+    "Ambient temperature",
+    "Distance from the object",
+    "Wind or air movement",
+    "All of the above"
+  ],
+  "answer": "All of the above",
+  "explanation": "✅ **Correct – All of the above:** Infrared scanning measures surface temperatures, but the readings can be affected by multiple factors:\n- **Emissivity:** Surfaces emit infrared radiation differently depending on material.\n- **Ambient temperature:** Surrounding temperature can influence IR readings.\n- **Distance from object:** Too far reduces accuracy.\n- **Wind or air movement:** Can cool surfaces, giving lower readings.\n\n❌ **Why the others alone are not enough:** Each individual factor affects readings, but only considering one doesn’t account for the combined influences on IR measurements."
+  },
+  {
+  "id": 200,
+  "question": "Switch temperature readings show 38°C, 42°C, and 48°C on phases A, B, and C respectively. What should you suggest to the customer?",
+  "options": [
+    "No action needed; temperatures are normal",
+    "Monitor the switch and check again in a few months",
+    "Investigate the high temperature on Phase C and take corrective action",
+    "Replace the switch immediately",
+    "Increase the load on Phase A to balance temperatures"
+  ],
+  "answer": "Investigate the high temperature on Phase C and take corrective action",
+  "explanation": "✅ **Correct – Investigate Phase C:** Phase C is running noticeably hotter than A and B. This indicates a possible loose connection, overload, or internal fault. Immediate investigation is recommended to prevent damage or failure.\n\n❌ **Why others are wrong:**\n- **No action needed:** False – 48°C is higher than the other phases and could indicate a problem.\n- **Monitor only:** Risky – the issue might worsen if not addressed.\n- **Replace immediately:** Overkill – investigation should precede replacement.\n- **Increase load on Phase A:** Incorrect – adding load could worsen imbalance and is not a proper corrective action."
+  },
+  {
+  "id": 201,
+  "question": "How many connection points does a low-resistance (4-wire/kelvin) meter typically have?",
+  "options": [
+    "2 points – simple two-wire connection",
+    "3 points – for voltage sensing and current",
+    "4 points – two for current, two for voltage",
+    "6 points – three current, three voltage",
+    "8 points – for dual measurement setup"
+  ],
+  "answer": "4 points – two for current, two for voltage",
+  "explanation": "✅ **Correct – 4 points:** A low-resistance (Kelvin) meter uses a 4-wire configuration to eliminate the effect of lead and contact resistance. Two wires carry the test current, and two separate wires sense the voltage drop across the resistor.\n\n❌ **Why others are wrong:**\n- **2 points:** Only provides a simple measurement, lead resistance affects accuracy.\n- **3 points:** Not standard; you need separate current and voltage paths.\n- **6 points:** Too many; unnecessary for standard low-resistance measurements.\n- **8 points:** Only used for specialized dual setups, not typical."
+  },
+  {
+  "id": 202,
+  "question": "A low-voltage megger (600V) has 3 connection points: +, -, and ______?",
+  "options": [
+    "Earth / Ground",
+    "Neutral",
+    "Load",
+    "Phase B",
+    "Current terminal"
+  ],
+  "answer": "Earth / Ground",
+  "explanation": "✅ **Correct – Earth / Ground:** Low-voltage megger testers typically have three terminals: positive (+), negative (-), and a ground/earth terminal. The ground terminal is used to reference the insulation test to earth potential.\n\n❌ **Why others are wrong:**\n- **Neutral:** Not a standard megger connection; megger tests insulation to ground, not neutral specifically.\n- **Load:** Not applicable; megger is testing insulation, not directly the load.\n- **Phase B:** Megger does not require phase-specific labeling; it’s used on conductors to ground.\n- **Current terminal:** There isn’t a separate current terminal; current flows through the + and - leads."
+  },
+  {
+  "id": 203,
+  "question": "Induction disk relay. The ends of the winding on the electromagnet are brought to terminals to permit connection of an external device. What is the type of the relay?",
+  "options": [
+    "Electromechanical induction disk relay",
+    "Solid-state relay",
+    "Static relay",
+    "Overcurrent digital relay",
+    "Buchholz relay"
+  ],
+  "answer": "Electromechanical induction disk relay",
+  "explanation": "✅ **Correct – Electromechanical induction disk relay:** The description matches a classic electromechanical induction disk relay, where the disk rotates due to electromagnetic forces and the winding terminals are available for connection to external circuits.\n\n❌ **Why others are wrong:**\n- **Solid-state relay:** Has no moving disk and uses semiconductor components.\n- **Static relay:** Electronic, no rotating parts.\n- **Overcurrent digital relay:** Fully digital, measures current using microprocessor logic; no induction disk.\n- **Buchholz relay:** Gas-actuated oil relay for transformers, unrelated to induction disks."
+  },
+  {
+  "id": 204,
+  "question": "Primary voltage = 230V, primary windings = 400, secondary windings = 200. What is the secondary voltage?",
+  "options": [
+    "115V",
+    "230V",
+    "460V",
+    "100V",
+    "200V"
+  ],
+  "answer": "115V",
+  "explanation": "✅ **Correct – 115V:** The voltage of a transformer is proportional to the turns ratio. Using the formula V₂ = V₁ × (N₂ / N₁):\n\nV₂ = 230 × (200 / 400) = 230 × 0.5 = 115V.\n\n❌ **Why others are wrong:**\n- **230V:** This is the primary voltage, not stepped-down.\n- **460V:** Would imply stepping up voltage instead of down.\n- **100V / 200V:** Incorrect based on the given turns ratio."
+  },
+  {
+  "id": 205,
+  "question": "What is the purpose of the series reactance in a power system?",
+  "options": [
+    "Limit short-circuit current",
+    "Increase system voltage",
+    "Reduce power factor",
+    "Act as a surge protector",
+    "Measure current flow"
+  ],
+  "answer": "Limit short-circuit current",
+  "explanation": "✅ **Correct – Limit short-circuit current:** Series reactors (reactances) are added in series with transmission lines or transformers to limit the magnitude of fault currents during short-circuits, preventing damage to equipment.\n\n❌ **Why others are wrong:**\n- **Increase system voltage:** Reactance drops voltage under load, it doesn’t increase voltage.\n- **Reduce power factor:** While reactance can influence phase angle, its primary purpose is not to reduce power factor.\n- **Act as a surge protector:** Surge arresters, not series reactance, protect against voltage surges.\n- **Measure current flow:** Current measurement is done using CTs, not series reactors."
+  },
+  {
+  "id": 206,
+  "question": "Industrial power network: which of the following is NOT a typical connection scheme?",
+  "options": [
+    "Primary/secondary selective",
+    "Loop (ring) connection",
+    "Radial connection",
+    "Mesh network",
+    "Dual feed connection"
+  ],
+  "answer": "Mesh network",
+  "explanation": "✅ **Correct – Mesh network:** In industrial power systems, mesh networks are not typically used due to complexity and protection coordination issues. Common schemes are primary/secondary selective, loop (ring), radial, and dual feed.\n\n❌ **Why others are wrong:**\n- **Primary/secondary selective:** Common in substations to ensure selective supply and backup.\n- **Loop (ring) connection:** Often used to improve reliability and allow maintenance without interrupting loads.\n- **Radial connection:** Simple and widely used for smaller industrial feeders.\n- **Dual feed connection:** Provides redundancy, frequently implemented in critical loads."
+  },
+  {
+  "id": 207,
+  "question": "Ground fault protection primary purpose:",
+  "options": [
+    "To protect personnel and save lives",
+    "To detect low magnitude ground fault currents for equipment protection",
+    "To prevent phase-to-phase faults",
+    "To maintain system voltage balance",
+    "To improve power factor"
+  ],
+  "answer": "To protect personnel and save lives",
+  "explanation": "✅ **Correct – To protect personnel and save lives:** The primary purpose of ground fault protection is human safety. It quickly detects fault currents flowing to ground and trips the circuit to prevent electric shock hazards.\n\n❌ **Why others are wrong:**\n- **To detect low magnitude ground fault currents for equipment protection:** This is secondary; equipment protection is a secondary benefit, not the primary goal.\n- **To prevent phase-to-phase faults:** Ground fault protection does not address phase-to-phase faults; overcurrent or differential protection does.\n- **To maintain system voltage balance:** Not the function of ground fault protection; voltage unbalance is handled differently.\n- **To improve power factor:** Ground fault protection does not affect power factor."
+  },
+  {
+  "id": 208,
+  "question": "During a step voltage test from 20 kV to 25 kV, leakage current changes from 0.5 μA to 4 μA. What should you tell the customer?",
+  "options": [
+    "Cable is likely faulty",
+    "Check the connection for corona or partial discharge",
+    "Inspect the stress cone termination",
+    "All of the above",
+    "No action needed"
+  ],
+  "answer": "All of the above",
+  "explanation": "✅ **Correct – All of the above:** The increasing leakage current indicates potential insulation issues. It could be a faulty cable, corona at the connections, or stress cone problems. Each of these should be checked to determine the root cause.\n\n❌ **Why others are wrong individually:**\n- **Cable is likely faulty:** May be true, but the issue could also be at the termination or connections.\n- **Check the connection for corona or partial discharge:** Important, but alone does not rule out cable defects.\n- **Inspect the stress cone termination:** Also important, but by itself doesn’t cover all possible causes.\n- **No action needed:** Incorrect, leakage current increase is a sign of potential insulation issues that need investigation."
+  },
+  {
+  "id": 209,
+  "question": "What factors can influence a ground resistance test?",
+  "options": [
+    "Less than 3 feet test rod",
+    "Not the same soil in the test zone",
+    "Poor connections or corroded clamps",
+    "Nearby metallic objects or buried utilities",
+    "All of the above"
+  ],
+  "answer": "All of the above",
+  "explanation": "✅ **Correct – All of the above:** All listed factors can influence the accuracy of a ground resistance test. Short test rod spacing, varying soil resistivity, poor connections, and interference from nearby metallic objects or buried utilities can each distort readings.\n\n❌ **Why the other options alone are wrong:**\n- **Less than 3 feet test rod:** Only covers spacing; ignores other errors.\n- **Not the same soil in the test zone:** Only addresses soil resistivity differences.\n- **Poor connections or corroded clamps:** Connection issues alone do not account for spacing or soil variation.\n- **Nearby metallic objects or buried utilities:** Interference alone does not cover all other influences."
+  },
+  {
+  "id": 210,
+  "question": "A resistor connected to neutral, rated 400A for 10 seconds. How can you test it?",
+  "options": [
+    "Use a multimeter to measure resistance directly (e.g., 40Ω or 400Ω)",
+    "Test only with a ground tester",
+    "Apply full rated current for 10 seconds",
+    "Check using an open delta configuration",
+    "Use a clamp-on ammeter while in service"
+  ],
+  "answer": "Use a multimeter to measure resistance directly (e.g., 40Ω or 400Ω)",
+  "explanation": "✅ **Correct – Use a multimeter to measure resistance directly:** Since there is no delta/phase information and the resistor is rated for a specific current and duration, the practical way to verify it is by measuring its ohmic value with a multimeter.\n\n❌ **Why the others are wrong:**\n- **Test only with a ground tester:** This only checks continuity to ground, not the actual resistor value.\n- **Apply full rated current for 10 seconds:** Dangerous and not recommended for a routine test.\n- **Check using an open delta configuration:** Not applicable because this is a single resistor on the neutral, not part of a transformer delta.\n- **Use a clamp-on ammeter while in service:** Won’t give the resistance value and may expose personnel to high current risk."
+  },
+  {
+  "id": 211,
+  "question": "What is the main advantage of the vacuum bottle breaker?",
+  "options": [
+    "Smaller size and lighter weight compared to oil or air breakers",
+    "Lower maintenance due to liquid insulation",
+    "Higher current carrying capacity than SF6 breakers",
+    "Longer arc duration for high fault currents",
+    "Requires no control circuitry"
+  ],
+  "answer": "Smaller size and lighter weight compared to oil or air breakers",
+  "explanation": "✅ **Correct – Smaller size and lighter weight:** Vacuum breakers extinguish arcs in a vacuum, allowing for compact designs and reduced weight compared to traditional oil or air-insulated breakers.\n\n❌ **Why the others are wrong:**\n- **Lower maintenance due to liquid insulation:** Vacuum breakers do not use liquid insulation.\n- **Higher current carrying capacity than SF6 breakers:** SF6 breakers generally handle higher ratings, vacuum breakers are limited by design.\n- **Longer arc duration for high fault currents:** Vacuum breakers actually have very short arc duration, which is an advantage.\n- **Requires no control circuitry:** Like all circuit breakers, vacuum breakers still need control circuits for operation."
+  },
+  {
+  "id": 212,
+  "question": "What is the dielectric absorption ratio?",
+  "options": [
+    "The ratio of insulation resistance after 1 minute to resistance after 30 seconds",
+    "The ratio of voltage to current in a capacitor",
+    "The percentage of leakage current in insulation",
+    "The ratio of power factor at different temperatures",
+    "The difference between AC and DC resistance"
+  ],
+  "answer": "The ratio of insulation resistance after 1 minute to resistance after 30 seconds",
+  "explanation": "✅ **Correct – Dielectric absorption ratio:** The dielectric absorption ratio (DAR) is calculated by measuring insulation resistance at two time intervals (typically 30 seconds and 1 minute). It helps detect deterioration of insulation due to moisture or contamination.\n\n❌ **Why the others are wrong:**\n- **The ratio of voltage to current in a capacitor:** This describes capacitive reactance, not DAR.\n- **The percentage of leakage current in insulation:** Leakage current is related but not the ratio defining DAR.\n- **The ratio of power factor at different temperatures:** This is for temperature effect on insulation, not DAR.\n- **The difference between AC and DC resistance:** Not related to dielectric absorption, it is a different test."
+  },
+  {
+  "id": 213,
+  "question": "Sync motor PF relay tripped. Why?",
+  "options": [
+    "Motor operating at leading power factor",
+    "Motor operating at lagging power factor",
+    "Overcurrent in the motor",
+    "Under voltage at motor terminals",
+    "Phase loss in supply"
+  ],
+  "answer": "Motor operating at leading power factor",
+  "explanation": "✅ **Correct – Leading power factor:** Synchronous motors can operate at leading power factor when over-excited. If the motor exceeds the set PF threshold, the power factor relay trips to protect the system.\n\n❌ **Why others are wrong:**\n- **Motor operating at lagging power factor:** Typically normal for inductive loads; PF relay trips are set for leading or low lagging conditions, not normal lag.\n- **Overcurrent in the motor:** Overcurrent would trigger an overcurrent relay, not a PF relay.\n- **Under voltage at motor terminals:** Would trigger an undervoltage relay, not PF relay.\n- **Phase loss in supply:** Causes other protective devices to trip, like phase failure or under/overvoltage relays."
+  },
+  {
+  "id": 214,
+  "question": "Which fuse is not a low voltage fuse by UL standards? (L, J, RK, L5, etc)",
+  "options": [
+    "L",
+    "J",
+    "RK",
+    "L5",
+    "Class R"
+  ],
+  "answer": "L5",
+  "explanation": "✅ **Correct – L5:** UL defines L, J, and RK series fuses as low voltage fuses. L5 is **not a standard UL low voltage fuse designation**.\n\n❌ **Why others are wrong:**\n- **L:** Standard low voltage fuse for branch circuits.\n- **J:** Standard low voltage fuse with fast-acting characteristics.\n- **RK:** Standard low voltage fuse with higher interrupting rating.\n- **Class R:** Standard low voltage fuse with back-up / full-range protection.\n\n**Fuse letters explained:**\n- **L:** Low voltage general-purpose fuse.\n- **J:** Fast-acting fuse for overload protection.\n- **RK:** Rugged fuse with high interrupting capacity.\n- **L5:** Not defined as a standard UL low voltage fuse.\n- **Class R:** Replacement-type fuse with full-range overload and short-circuit protection."
+  },
+  {
+  "id": 215,
+  "question": "A breaker contact resistance is measured at 40 micro-ohms. When tested with fuses installed, the reading increases to 40 + 25% (about 50 micro-ohms) or up to 60 micro-ohms. What does this indicate?",
+  "options": [
+    "The measurement is acceptable; fuses add small additional resistance",
+    "The breaker has a loose contact and must be serviced",
+    "The fuse is open and needs replacement",
+    "The test leads are defective",
+    "The current injection is too low"
+  ],
+  "answer": "The measurement is acceptable; fuses add small additional resistance",
+  "explanation": "✅ **Correct – Acceptable variation due to fuses:** A breaker with 40 µΩ contact resistance may show an increase when tested with fuses in place because the **fuse elements and connections contribute additional micro-ohms**. A 25–50% rise (up to around 60 µΩ) is normal and acceptable within tolerance.\n\n❌ **Why others are wrong:**\n- **Loose contact:** Would cause erratic or much higher readings, not a consistent small rise.\n- **Fuse open:** Would result in no continuity or extremely high resistance.\n- **Defective leads:** Would affect all tests, not only those with fuses.\n- **Low current injection:** Would give unstable or inaccurate readings, not a consistent percentage increase.\n\n**Summary:** Fuse resistance adds a small, predictable increase to contact resistance readings, typically up to 25–50% depending on fuse type and size."
+  },
+  {
+  "id": 216,
+  "question": "A new static trip unit trips too fast. What could be the cause?",
+  "options": [
+    "Zone interlock not set or bypassed",
+    "Thermal memory not programmed",
+    "Defective trip unit",
+    "Incorrect CT wiring or polarity",
+    "Incorrect pickup setting"
+  ],
+  "answer": "Zone interlock not set or bypassed",
+  "explanation": "✅ **Correct – Zone interlock not set or bypassed:** Static trip units may trip immediately if the zone interlock is not configured properly. The interlock prevents the unit from responding to neighboring zone currents or nuisance conditions.\n\n❌ **Why others are wrong:**\n- **Thermal memory not programmed:** This affects time-delay functions, usually for overload protection, not instantaneous trips.\n- **Defective trip unit:** Possible but less likely for a brand-new unit; troubleshooting should check settings first.\n- **Incorrect CT wiring or polarity:** Would usually prevent tripping or cause false tripping in specific phases, not a uniform too-fast trip.\n- **Incorrect pickup setting:** Would affect current threshold for tripping but the unit may still follow the time curve; too-fast trips across all currents point to interlock/settings issues."
+  },
+  {
+  "id": 217,
+  "question": "(3 + 5j) - (5 - 7j)",
+  "options": [
+    "8 + 12j",
+    "-2 + 12j",
+    "2 - 2j",
+    "-8 - 12j",
+    "0 + 0j"
+  ],
+  "answer": "-2 + 12j",
+  "explanation": "✅ **Correct – -2 + 12j:** To subtract complex numbers, subtract real parts and imaginary parts separately:\n\n1. Real part: 3 - 5 = -2\n2. Imaginary part: 5 - (-7) = 5 + 7 = 12\n\nSo, (3 + 5j) - (5 - 7j) = -2 + 12j.\n\n❌ **Why others are wrong:**\n- **8 + 12j:** Incorrect; real part addition is wrong.\n- **2 - 2j:** Both real and imaginary parts miscalculated.\n- **8 - 12j:** Wrong signs for both real and imaginary parts.\n- **0 + 0j:** Only possible if both numbers were identical; here they are not."
+  },
+  {
+  "id": 218,
+  "question": "Which type of equipment can store energy even after disconnecting the power supply?",
+  "options": [
+    "Resistors",
+    "Capacitors",
+    "Transformers",
+    "Induction motors",
+    "Circuit breakers"
+  ],
+  "answer": "Capacitors",
+  "explanation": "✅ **Correct – Capacitors:** Capacitors store electrical energy in an electric field between their plates. Even after the power source is disconnected, the charge can remain for some time.\n\n❌ **Why others are wrong:**\n- **Resistors:** Do not store energy; they dissipate it as heat.\n- **Transformers:** Can induce voltage temporarily, but do not store energy in a usable form after power is disconnected.\n- **Induction motors:** Have magnetic fields while powered, but they do not store significant energy after disconnection.\n- **Circuit breakers:** Only interrupt current; they do not store energy."
+  },
+  {
+  "id": 219,
+  "question": "LOTO scenario: You are new on the site. The switchgear is partially open, many people are working on it. What should you do?",
+  "options": [
+    "Perform a voltage test immediately",
+    "Apply LOTO before doing any work",
+    "Install a temporary safety ground without checking LOTO",
+    "Do a visual inspection only",
+    "Ask the local workers what to do"
+  ],
+  "answer": "Apply LOTO before doing any work",
+  "explanation": "✅ **Correct – Apply LOTO:** Lockout/Tagout (LOTO) is the first and most critical safety step to ensure the equipment cannot be energized while you are working, especially as a new worker.\n\n❌ **Why others are wrong:**\n- **Perform a voltage test immediately:** Unsafe without LOTO; could be exposed to live energy.\n- **Install a temporary safety ground without checking LOTO:** Risky if energy is not properly isolated.\n- **Do a visual inspection only:** Does not protect against accidental energization.\n- **Ask the local workers what to do:** While guidance is useful, you must follow LOTO procedures yourself as the responsible worker."
+  },
+  {
+  "id": 220,
+  "question": "How can I set the pick-up value of an induction relay?",
+  "options": [
+    "Change the diode",
+    "Adjust the spiral spring tension",
+    "Set the solenoid position",
+    "Vary the supply voltage",
+    "Replace the electromagnet"
+  ],
+  "answer": "Adjust the spiral spring tension",
+  "explanation": "✅ **Correct – Adjust the spiral spring tension:** The pick-up value of an induction relay is mechanically set by adjusting the tension of the spiral spring. Increasing the spring tension requires a higher current to move the disc and cause relay operation.\n\n❌ **Why others are wrong:**\n- **Change the diode:** Induction relays are electromechanical, diodes are not involved in setting pick-up.\n- **Set the solenoid position:** Solenoids are not part of the standard induction relay design.\n- **Vary the supply voltage:** The supply voltage is fixed and not intended to adjust relay settings.\n- **Replace the electromagnet:** The electromagnet determines the magnetic field strength, but pick-up adjustment is done via the spring, not by replacement."
+  },
+  {
+  "id": 221,
+  "question": "How can you test the ground protection function on a breaker?",
+  "options": [
+    "Apply full line-to-line voltage",
+    "Operate the breaker manually",
+    "Short-circuit the breaker",
+    "Inject a low magnitude ground current using a test set",
+    "Measure only insulation resistance"
+  ],
+  "answer": "Inject a low magnitude ground current using a test set",
+  "explanation": "✅ **Correct – Inject a low magnitude ground current using a test set:** Ground protection relays are tested by injecting a known ground (zero-sequence) current into the relay circuit and verifying that the breaker trips as designed.\n\n❌ **Why others are wrong:**\n- **Apply full line-to-line voltage:** Dangerous and not specific to ground protection; it tests insulation, not ground relay function.\n- **Operate the breaker manually:** Tests mechanical operation only, not the ground protection function.\n- **Short-circuit the breaker:** Unsafe and not a controlled test; does not verify relay function correctly.\n- **Measure only insulation resistance:** Measures insulation quality but does not test the operation of ground protection relays."
+  },
+  {
+  "id": 222,
+  "question": "What effect does moisture in insulating oil have on its properties?",
+  "options": [
+    "Decreases power factor and lowers operating temperature",
+    "Has no effect on power factor but increases dielectric strength",
+    "Increases power factor and causes higher operating temperature",
+    "Only affects the viscosity of the oil",
+    "Moisture is beneficial for cooling"
+  ],
+  "answer": "Increases power factor and causes higher operating temperature",
+  "explanation": "✅ **Correct – Increases power factor and causes higher operating temperature:** Moisture in insulating oil reduces the dielectric strength and increases losses, which raises the power factor. The higher losses also lead to higher operating temperatures.\n\n❌ **Why others are wrong:**\n- **Decreases power factor and lowers operating temperature:** Incorrect – moisture increases dielectric losses, so power factor rises and temperature rises.\n- **Has no effect on power factor but increases dielectric strength:** False – moisture reduces dielectric strength and affects power factor.\n- **Only affects the viscosity of the oil:** Viscosity is not the primary concern; the main effect is electrical.\n- **Moisture is beneficial for cooling:** Incorrect – moisture is harmful, not beneficial."
+  },
+  {
+  "id": 223,
+  "question": "When reading a transformer thermometer, which temperature is most critical to monitor?",
+  "options": [
+    "Top oil temperature",
+    "Average winding temperature",
+    "Bottom oil temperature",
+    "Ambient temperature",
+    "Cooling fan inlet temperature"
+  ],
+  "answer": "Top oil temperature",
+  "explanation": "✅ **Correct – Top oil temperature:** The top oil temperature is generally the highest in the transformer and represents the hottest part of the oil. Monitoring it ensures the transformer is not overheating.\n\n❌ **Why others are wrong:**\n- **Average winding temperature:** Useful for internal calculations but harder to measure directly; top oil temperature is simpler and indicative.\n- **Bottom oil temperature:** Usually cooler; not critical for immediate overheating concerns.\n- **Ambient temperature:** Does not reflect the transformer's internal thermal condition.\n- **Cooling fan inlet temperature:** Only indicates incoming air; does not represent actual transformer heating."
+  },
+  {
+  "id": 224,
+  "question": "If you cannot apply enough voltage with a TTR (Transformer Turns Ratio) test set, what could be the problem?",
+  "options": [
+    "Faulty winding",
+    "Shorted winding",
+    "Open secondary",
+    "Incorrect test connections",
+    "Low battery or test set malfunction"
+  ],
+  "answer": "Open secondary",
+  "explanation": "✅ **Correct – Open secondary:** If the secondary winding of the transformer is open or disconnected, the TTR set cannot induce voltage properly, resulting in insufficient voltage readings.\n\n❌ **Why others are wrong:**\n- **Faulty winding:** Might give incorrect ratio, but voltage can still be applied.\n- **Shorted winding:** Would likely allow voltage application but give abnormal ratio readings.\n- **Incorrect test connections:** This can cause wrong readings, but assuming connections are correct, open secondary is the main cause.\n- **Low battery or test set malfunction:** Can reduce voltage, but the TTR set should be able to output enough if properly powered; the most likely transformer-related cause is an open secondary."
+  },
+  {
+  "id": 225,
+  "question": "What is a latch in switchgear?",
+  "options": [
+    "Manual latch",
+    "Bypass latch",
+    "Spring-loaded latch",
+    "Automatic reset latch",
+    "Hold or locking latch"
+  ],
+  "answer": "Hold or locking latch",
+  "explanation": "✅ **Correct – Hold or locking latch:** A latch in switchgear is typically a mechanism that holds a breaker or switch in the open or closed position until intentionally released. It prevents unintended movement due to vibration or transient forces.\n\n❌ **Why others are wrong:**\n- **Manual latch:** Only describes how it is operated, not its function.\n- **Bypass latch:** Refers to bypassing a mechanism, not the latch itself.\n- **Spring-loaded latch:** A type of latch mechanism, but not the general function.\n- **Automatic reset latch:** Some latches may reset automatically, but the typical latch is a hold/locking type to maintain breaker/switch position."
+  },
+  {
+  "id": 226,
+  "question": "What is the minimum working space required in front of a 480V electrical panel installed near a brick wall?",
+  "options": [
+    "18 inches",
+    "24 inches",
+    "36 inches",
+    "42 inches",
+    "48 inches"
+  ],
+  "answer": "36 inches",
+  "explanation": "✅ **Correct – 36 inches:** According to the National Electrical Code (NEC) 110.26(A)(1), the minimum working clearance in front of electrical equipment operating at 480V is **3 feet (36 inches)** when the opposite surface (like a brick wall) is grounded and not live.\n\n❌ **Why others are wrong:**\n- **18 in / 24 in:** Too small — violates NEC clearance requirements.\n- **42 in / 48 in:** Greater clearances may be used but are not the NEC minimum for a brick wall installation.\n\n🧱 **Summary:** For a 480V panel facing a grounded surface (e.g., brick or concrete), you must maintain **36 inches** of clear working space in front."
   }
 ]
