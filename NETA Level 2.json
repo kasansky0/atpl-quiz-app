@@ -2167,5 +2167,212 @@
     ],
     "answer": "KOH/gm",
     "explanation": "The correct answer is 'KOH/gm' because the **neutralization number (or acid number)** indicates the acidity of insulating oil and is expressed as the **milligrams of potassium hydroxide (KOH) required to neutralize one gram of oil**.\n\n❌ **Why the others are wrong:**\n- **PPM maximum** — Typically used for water content measurements.\n- **KV/0.10 inch** — Used for dielectric breakdown voltage.\n- **Dynes/CM, minimum** — Used for interfacial tension measurements.\n- **% at 25C** — Not a standard unit for neutralization number.\n\n➡️ **Summary:** Neutralization number is always expressed in **mg KOH per gram of oil** to quantify oil acidity."
+  },
+  {
+    "id": 169,
+    "question": "The #27 device on the drawing is a",
+    "options": [
+      "Meter",
+      "Auxiliary transformer",
+      "Control switch",
+      "Under voltage relay",
+      "Resistor"
+    ],
+    "answer": "Under voltage relay",
+    "explanation": "The correct answer is **'Under voltage relay'** because in the ANSI/IEEE standard device numbering system, **Device #27** designates an **Under Voltage Relay**, which operates when the voltage drops below a preset value.\n\n❌ **Why others are wrong:**\n- **Meter** – ANSI device numbers in the 20s refer to protective relays, not measuring instruments (Meters have no assigned ANSI number like this).\n- **Auxiliary transformer** – Typically represented as part of the circuit diagram, not by a device number.\n- **Control switch** – Designated as **#43**, not #27.\n- **Resistor** – Passive component; not assigned an ANSI protective device number.\n\n📘 **Reference:** ANSI C37.2 Standard Device Numbers — #27 = Undervoltage Relay."
+  },
+  {
+    "id": 170,
+    "question": "The #52 device on drawing is",
+    "options": [
+      "Overcurrent relay",
+      "Circuit breaker",
+      "Position switch",
+      "Watthour meter",
+      "Current transformer"
+    ],
+    "answer": "Circuit breaker",
+    "explanation": "The correct answer is **'Circuit breaker'** because in the ANSI/IEEE device numbering system, **Device #52** designates a **circuit breaker**, which is used to open and close an electrical circuit under both normal and fault conditions.\n\n❌ **Why others are wrong (and their correct ANSI numbers):**\n- **Overcurrent relay** – This is **Device #50 (instantaneous)** or **#51 (time-overcurrent)**, not #52.\n- **Position switch** – Typically **Device #89**, used to indicate position (open/closed) of disconnects or breakers.\n- **Watthour meter** – Has no specific ANSI number; it is a metering device, not a protective relay.\n- **Current transformer** – Usually shown as **CT**, not assigned an ANSI device number since it’s a measuring element, not a relay.\n\n📘 **Reference:** ANSI C37.2 Standard Device Numbers — #52 = Circuit Breaker."
+  },
+  {
+    "id": 171,
+    "question": "A drawing that principally shows the flow of electrical power through power system components is a _____ diagram",
+    "options": [
+      "Wiring",
+      "Schematic",
+      "One-line",
+      "Interconnect",
+      "Switchgear"
+    ],
+    "answer": "One-line",
+    "explanation": "❌ **Why others are wrong:**\n- **Wiring diagram** – Shows the actual physical connections and wire routing between devices, not the flow of power.\n- **Schematic diagram** – Illustrates the functional relationships and control logic of a circuit, not the overall power flow.\n- **Interconnect diagram** – Shows external connections between separate systems or panels, not internal power distribution.\n- **Switchgear diagram** – Refers to the layout or physical arrangement of switchgear components, not the simplified representation of power flow like a one-line diagram."
+  },
+  {
+    "id": 172,
+    "question": "Wiring diagrams are principally utilized to show control device",
+    "options": [
+      "Connections",
+      "Operation",
+      "Power flow",
+      "Location",
+      "Rating"
+    ],
+    "answer": "Connections",
+    "explanation": "✅ **Correct:** Wiring diagrams show how control devices and components are physically connected with wires.\n\n❌ **Why others are wrong:**\n- **Operation** – Shown by schematic diagrams, not wiring diagrams.\n- **Power flow** – Displayed in one-line or block diagrams, not wiring diagrams.\n- **Location** – Found in layout or installation drawings, not in wiring diagrams.\n- **Rating** – Listed on equipment nameplates or specification sheets, not illustrated in wiring diagrams."
+  },
+  {
+    "id": 173,
+    "question": "Schematic diagrams are principally utilized to show",
+    "options": [
+      "Location",
+      "Connection",
+      "Power circuitry",
+      "Device/circuit operation"
+    ],
+    "answer": "Device/circuit operation",
+    "explanation": "✅ **Correct:** Schematic diagrams show how a circuit operates — the logical relationship and function of components rather than their physical connections.\n\n❌ **Why others are wrong:**\n- **Location** – Shown in layout or installation drawings, not schematics.\n- **Connection** – Detailed in wiring diagrams that show actual wire routing.\n- **Power circuitry** – Represented in one-line or elementary power diagrams, not in control schematics focused on logic and function."
+  },
+  {
+    "id": 174,
+    "question": "An 87 device is what type of relay",
+    "options": [
+      "Phase balance",
+      "Differential",
+      "Lockout",
+      "Phase sequence",
+      "Time"
+    ],
+    "answer": "Differential",
+    "explanation": "✅ **Correct:** Device #87 represents a **differential relay**, which detects differences between incoming and outgoing current to identify internal faults in equipment like transformers or generators.\n\n❌ **Why others are wrong:**\n- **Phase balance (Device #46)** – Detects unbalance between phases, not differential faults.\n- **Lockout (Device #86)** – A control relay that prevents re-energizing after a fault until reset.\n- **Phase sequence (Device #47)** – Detects incorrect phase rotation.\n- **Time (Device #62)** – A time-delay relay used for delayed operations, not fault detection."
+  },
+  {
+    "id": 175,
+    "question": "As built drawings typically include",
+    "options": [
+      "Wiring details",
+      "Interconnections",
+      "Construction design",
+      "Installation changes",
+      "Manufacturer submittals"
+    ],
+    "answer": "Installation changes",
+    "explanation": "✅ **Correct:** 'As-built' drawings document the **actual installation**, including any **changes or deviations** made during construction compared to the original design.\n\n❌ **Why others are wrong:**\n- **Wiring details** – Found in wiring or schematic diagrams, not specific to as-built documentation.\n- **Interconnections** – Typically shown in interconnection or one-line diagrams, not as-built plans.\n- **Construction design** – Part of the original design drawings, not the final installed version.\n- **Manufacturer submittals** – Contain product data and specifications, not field installation updates."
+  },
+  {
+  "id": 176,
+  "question": "The symbol showing two coils separated by two vertical lines (representing a magnetic core) depicts",
+  "options": [
+    "A current transformer",
+    "Parallel resistor",
+    "Power transformer",
+    "A reactor",
+    "An impedance"
+  ],
+  "answer": "Power transformer",
+  "explanation": "✅ **Correct – Power transformer:** The symbol with two coils separated by vertical lines represents a power transformer, transferring electrical energy between circuits using electromagnetic induction.\n\n❌ **Why others are wrong (and how their symbols look):**\n- **A current transformer:** Usually a single coil encircling a core or a small secondary winding; it looks like a ring with one winding or a coil with a dot.\n- **Parallel resistor:** Two resistor symbols (zigzag lines) placed side by side or in parallel; no coils or core lines.\n- **A reactor:** Depicted as a single inductor coil (a loop or series of loops), representing inductance.\n- **An impedance:** Shown as a zigzag line (resistive) or series combination of coil and resistor; not two windings with a core."
+  },
+  {
+  "id": 177,
+  "question": "The symbol for a medium voltage pothead termination is",
+  "options": [
+    "A rectangle with a diagonal line representing a fuse",
+    "Two parallel lines with a coil representing a current transformer",
+    "A zigzag line representing a resistor",
+    "A cone-shaped line connecting overhead and underground conductors",
+    "A single looped line representing an inductor or reactor"
+  ],
+  "answer": "A cone-shaped line connecting overhead and underground conductors",
+  "explanation": "✅ **Correct:** A medium voltage pothead termination is depicted as a cone-shaped symbol connecting the overhead line to the underground cable, representing the stress cone used for insulation and termination.\n\n❌ **Why others are wrong:**\n- **Rectangle with a diagonal line (fuse):** Represents a protective fuse, not a termination.\n- **Two parallel lines with a coil (current transformer):** Indicates a CT for measurement or protection.\n- **Zigzag line (resistor):** Symbolizes a resistor or impedance, not a cable termination.\n- **Single looped line (inductor/reactor):** Represents inductive components, not a pothead termination."
+  },
+  {
+    "id": 178,
+    "question": "The symbol showing a break in the line with a handle or arc indication, capable of interrupting load current, is a",
+    "options": [
+      "Circuit breaker",
+      "Switch",
+      "Fuse switch",
+      "Medium voltage switch",
+      "Load break switch"
+    ],
+    "answer": "Load break switch",
+    "explanation": "✅ **Correct – Load break switch:** This symbol depicts a switch that can safely interrupt load current in medium-voltage circuits. It is typically shown as a break in the line with a handle or arc indication.\n\n❌ **Why others are wrong:**\n- **Circuit breaker:** Shown as a rectangle with a line through it or a more detailed mechanism; designed for short-circuit protection.\n- **Switch:** A basic line break with no load-interrupting capability.\n- **Fuse switch:** Depicted as a switch with a fuse symbol; used primarily for overcurrent protection.\n- **Medium voltage switch:** Generic term that may not indicate load-breaking ability specifically."
+  },
+  {
+    "id": 179,
+    "question": "The system shown in the diagram has three phase conductors plus a neutral, with the neutral connected to ground through an impedance. This system is",
+    "options": [
+      "A 3 phase delta connected system",
+      "A three phase four wire with an impedance ground system",
+      "Three phase 5 wire system",
+      "3 phase 4 wire resistance grounded system",
+      "A single phase circuit"
+    ],
+    "answer": "A three phase four wire with an impedance ground system",
+    "explanation": ""
+  },
+  {
+    "id": 180,
+    "question": "A device labeled 50/51 indicates",
+    "options": [
+      "A time delay overcurrent relay with an instantaneous element",
+      "An over/under frequency relay",
+      "An over/under voltage relay",
+      "A breaker",
+      "A fuse"
+    ],
+    "answer": "A time delay overcurrent relay with an instantaneous element",
+    "explanation": "✅ **Correct – 50/51 device:** The number 50 represents the instantaneous overcurrent element, while 51 represents the time delay overcurrent element. Together, 50/51 indicates a relay that provides both instantaneous tripping for high currents and time-delayed tripping for moderate overcurrents.\n\n❌ **Why others are wrong:**\n- **An over/under frequency relay (number 81):** This device monitors system frequency, not current.\n- **An over/under voltage relay (numbers 27/59):** These devices protect against voltage abnormalities, not overcurrent.\n- **A breaker (number 52):** This is a switching device, not a protective relay.\n- **A fuse (numbers vary, typically 50 or 51 alone):** A fuse is a sacrificial protective device, not a relay with both instantaneous and time-delay elements.\n\n📌 **Device numbering reference:**\n- 50: Instantaneous overcurrent\n- 51: Time delay overcurrent\n- 27: Undervoltage\n- 59: Overvoltage\n- 81: Frequency\n- 52: Circuit breaker"
+  },
+  {
+    "id": 181,
+    "question": "A phase sequence under voltage relay has an electrical ANSI/IEEE designation of",
+    "options": [
+      "87",
+      "27",
+      "59",
+      "47",
+      "67"
+    ],
+    "answer": "47",
+    "explanation": "✅ **Correct – 47:** The ANSI/IEEE device number 47 represents a phase sequence under voltage relay, which monitors both the correct phase rotation and voltage level to ensure proper operation of equipment.\n\n❌ **Why others are wrong:**\n- **87:** Differential relay, protects equipment by comparing currents into and out of a device.\n- **27:** Undervoltage relay, monitors voltage alone, not phase sequence.\n- **59:** Overvoltage relay, monitors excessive voltage, not phase sequence.\n- **67:** Directional overcurrent relay, provides current protection with directional sensing.\n\n📌 **Device number reference:**\n- 27: Undervoltage\n- 47: Phase sequence undervoltage\n- 59: Overvoltage\n- 67: Directional overcurrent\n- 87: Differential relay"
+  },
+  {
+    "id": 182,
+    "question": "A device shown on schematic and labeled 86 is part of",
+    "options": [
+      "An overload relay",
+      "An undervoltage relay",
+      "A differential relay",
+      "A lockout relay",
+      "A transfer switch"
+    ],
+    "answer": "A lockout relay",
+    "explanation": "✅ **Correct – Lockout relay (86):** The device numbered 86 in ANSI/IEEE standard represents a lockout relay, which is used to trip or lock protective devices in the event of a fault, preventing automatic reclosing until manual reset.\n\n❌ **Why others are wrong:**\n- **An overload relay (49/51):** Protects against excessive current over time; 49 is thermal overload, 51 is time-delay overcurrent.\n- **An undervoltage relay (27):** Monitors low voltage conditions, not used for lockout.\n- **A differential relay (87):** Compares current entering and leaving a device; protects against internal faults.\n- **A transfer switch:** No standard device number; a mechanical switching device, not an ANSI protective relay.\n\n📌 **Other device numbers reference:**\n- 49: Thermal overload relay\n- 51: Time delay overcurrent\n- 27: Undervoltage relay\n- 87: Differential relay\n- 86: Lockout relay"
+  },
+  {
+    "id": 183,
+    "question": "A schematic diagram normally shows all device contacts in the",
+    "options": [
+      "open position",
+      "closed position",
+      "in between open and closed",
+      "in the energized position",
+      "in the de-energized position"
+    ],
+    "answer": "in the de-energized position",
+    "explanation": "✅ **Correct – in the de-energized position:** Schematic diagrams conventionally show contacts in their normal (de-energized) state, which represents how the circuit appears when no external control or power is applied.\n\n❌ **Why others are wrong:**\n- **Open position:** Only some contacts may be open; schematic shows both normally open and normally closed in de-energized state.\n- **Closed position:** Not all contacts are normally closed; schematic differentiates normally open (NO) and normally closed (NC).\n- **In between open and closed:** Contacts cannot physically exist in an intermediate state; schematic does not depict this.\n- **In the energized position:** Shows the circuit during operation, which is not standard practice for schematic representation."
+  },
+  {
+  "id": 184,
+  "question": "How can you test a 47 relay using a 2-channel test set? Options include: Open Delta, Series, Separately",
+  "options": [
+    "Apply voltage to the relay in an open delta connection",
+    "Apply voltage in series with a load",
+    "Test each phase separately using the 2-channel set",
+    "By shorting two phases and measuring response",
+    "By bypassing the relay and measuring downstream devices"
+  ],
+  "answer": "Test each phase separately using the 2-channel set",
+  "explanation": "✅ **Correct – Test each phase separately:** A 47 relay is a phase sequence undervoltage relay. Using a 2-channel test set, you can simulate voltages on each phase individually to verify that the relay responds correctly to undervoltage conditions and correct phase sequence.\n\n❌ **Why others are wrong:**\n- **Open Delta:** Only partially energizes the relay and may not test all phases.\n- **Series:** Connecting in series does not simulate correct phase sequence or undervoltage conditions.\n- **By shorting two phases:** This is unsafe and does not represent normal operation.\n- **By bypassing the relay:** This does not test the relay at all."
   }
 ]
