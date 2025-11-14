@@ -602,14 +602,14 @@
     "explanation": "Switchgear interiors are compartmentalized to provide fault damage control, limiting the effects of electrical faults to a single section and preventing damage from spreading to other components."
   },
   {
-    "id": 48,
-    "question": "If an infrared scan of bus insulation and connections does not detect any problem, hands on service during an outage is unnecessary",
-    "options": [
-      "True",
-      "False"
-    ],
-    "answer": "False",
-    "explanation": "Switchgear interiors are compartmentalized to provide fault damage control, limiting the effects of electrical faults to a single section and preventing damage from spreading to other components."
+  "id": 48,
+  "question": "If an infrared scan of bus insulation and connections does not detect any problem, is hands-on service during an outage unnecessary?",
+  "options": [
+    "True",
+    "False"
+  ],
+  "answer": "False",
+  "explanation": "❌ **False – hands-on service is still necessary:** Infrared scans detect thermal issues but **cannot identify mechanical problems, loose connections, or other hidden defects**. Switchgear interiors are compartmentalized to limit damage from faults, but physical inspection and maintenance during an outage ensure all components are in proper condition and functioning safely."
   },
   {
     "id": 49,
@@ -2920,5 +2920,372 @@
   ],
   "answer": "36 inches",
   "explanation": "✅ **Correct – 36 inches:** According to the National Electrical Code (NEC) 110.26(A)(1), the minimum working clearance in front of electrical equipment operating at 480V is **3 feet (36 inches)** when the opposite surface (like a brick wall) is grounded and not live.\n\n❌ **Why others are wrong:**\n- **18 in / 24 in:** Too small — violates NEC clearance requirements.\n- **42 in / 48 in:** Greater clearances may be used but are not the NEC minimum for a brick wall installation.\n\n🧱 **Summary:** For a 480V panel facing a grounded surface (e.g., brick or concrete), you must maintain **36 inches** of clear working space in front."
+  },
+  {
+    "id": 227,
+    "question": "What is ANSI device 52?",
+    "options": ["AC Circuit Breaker", "Lockout Relay", "Differential Relay", "Selector Switch", "Instantaneous Overcurrent"],
+    "answer": "AC Circuit Breaker",
+    "explanation": "52 = ‘breaker with 5 + 2 fingers to pull the handle’. Think: 52 trips the breaker."
+  },
+  {
+    "id": 228,
+    "question": "What does ANSI device 86 represent?",
+    "options": ["Lockout Relay", "AC Breaker", "Undervoltage", "Auto-Reclose", "Differential"],
+    "answer": "Lockout Relay",
+    "explanation": "86 = BIG red flag. If 86 picks up → NOTHING resets until manual intervention."
+  },
+  {
+    "id": 229,
+    "question": "What does ANSI device 87 represent?",
+    "options": ["Differential Relay", "Distance Relay", "Instantaneous Overcurrent", "Lockout Relay", "Auto-Reclose Relay"],
+    "answer": "Differential Relay",
+    "explanation": "87 = two coils comparing current → ‘8’ vs ‘7’ = compare values."
+  },
+  {
+    "id": 230,
+    "question": "ANSI device 21 is used for:",
+    "options": ["Distance Relaying", "Lockout", "Overvoltage", "Reclosing", "Differential"],
+    "answer": "Distance Relaying",
+    "explanation": "21 = 2→1 = how far fault is between two points."
+  },
+  {
+    "id": 231,
+    "question": "What is ANSI device 27?",
+    "options": ["Undervoltage Relay", "Overvoltage Relay", "Instantaneous Overcurrent", "Reclosing Relay", "Differential Relay"],
+    "answer": "Undervoltage Relay",
+    "explanation": "27 → 2Low7 → LOW voltage."
+  },
+  {
+    "id": 232,
+    "question": "What is ANSI device 59?",
+    "options": ["Overvoltage Relay", "Undervoltage Relay", "Distance Relay", "Lockout", "Auto-Reclose"],
+    "answer": "Overvoltage Relay",
+    "explanation": "59 = high number → high voltage."
+  },
+  {
+    "id": 233,
+    "question": "What does ANSI device 50 represent?",
+    "options": ["Instantaneous Overcurrent", "Time Overcurrent", "Differential Relay", "Voltage Relay", "Reclose Relay"],
+    "answer": "Instantaneous Overcurrent",
+    "explanation": "50 = ZERO time delay. Think: *50 = 0 delay.*"
+  },
+  {
+    "id": 234,
+    "question": "What is ANSI device 51?",
+    "options": ["Time Overcurrent", "Instantaneous Overcurrent", "Differential Relay", "Overvoltage", "Lockout"],
+    "answer": "Time Overcurrent",
+    "explanation": "51 = 5…1… delays → time curve."
+  },
+  {
+    "id": 235,
+    "question": "ANSI device 79 performs what function?",
+    "options": ["Auto-Reclose", "Trip Circuit", "Instantaneous Overcurrent", "Lockout", "Voltage Sensing"],
+    "answer": "Auto-Reclose",
+    "explanation": "79 = keeps trying again (like hitting retry over and over)."
+  },
+  {
+    "id": 236,
+    "question": "What is ANSI device 42?",
+    "options": ["Selector Switch", "Lockout Relay", "Overcurrent Relay", "Timer", "AC Breaker"],
+    "answer": "Selector Switch",
+    "explanation": "42 → ‘4-to-2’ positions → LOCAL/OFF/REMOTE selector."
+  },
+  {
+    "id": 237,
+    "question": "What is ANSI device 88?",
+    "options": ["Auxiliary Motor Controller", "Overcurrent Relay", "Lockout Relay", "Distance Relay", "Reclosing Relay"],
+    "answer": "Auxiliary Motor Controller",
+    "explanation": "88 almost looks like two wheels (motors)."
+  },
+  {
+    "id": 238,
+    "question": "What is ANSI device 11?",
+    "options": ["Multi-function Device", "Lockout Relay", "Differential Relay", "Voltage Relay", "Distance Relay"],
+    "answer": "Multi-function Device",
+    "explanation": "11 looks like two identical tools → multi-function."
+  },
+  {
+    "id": 239,
+    "question": "Which device number controls a lockout for major faults?",
+    "options": ["86", "87", "52", "51", "21"],
+    "answer": "86",
+    "explanation": "86 = Master Trip. If 86 drops, system STOPS."
+  },
+  {
+    "id": 240,
+    "question": "Which device protects transformer windings by comparing currents?",
+    "options": ["87", "51", "50", "21", "52"],
+    "answer": "87",
+    "explanation": "87 compares incoming vs outgoing → differential."
+  },
+  {
+    "id": 241,
+    "question": "Which device instantly trips on a major short circuit?",
+    "options": ["50", "51", "52", "59", "79"],
+    "answer": "50",
+    "explanation": "50 = ZERO TIME delay → boom trip."
+  },
+  {
+    "id": 242,
+    "question": "Which device trips on overcurrent with a time curve?",
+    "options": ["51", "50", "21", "42", "87"],
+    "answer": "51",
+    "explanation": "51 = slow response (inverse time)."
+  },
+  {
+    "id": 243,
+    "question": "Which device supervises and operates reclosing?",
+    "options": ["79", "52", "59", "86", "88"],
+    "answer": "79",
+    "explanation": "79 = multiple tries → recloser."
+  },
+  {
+    "id": 244,
+    "question": "Which ANSI device represents an AC breaker?",
+    "options": ["52", "51", "50", "42", "87"],
+    "answer": "52",
+    "explanation": "52 → breaker, always."
+  },
+  {
+    "id": 245,
+    "question": "Which device detects a LOW voltage condition?",
+    "options": ["27", "59", "50", "42", "79"],
+    "answer": "27",
+    "explanation": "27 = LOW voltage."
+  },
+  {
+    "id": 246,
+    "question": "Which ANSI device performs distance relaying?",
+    "options": ["21", "50", "59", "86", "42"],
+    "answer": "21",
+    "explanation": "21 = line impedance measurement = distance."
+  },
+  {
+    "id": 247,
+    "question": "Which device blocks breaker closure when faults exist?",
+    "options": ["86", "52", "79", "51", "42"],
+    "answer": "86",
+    "explanation": "86 prevents ANY operation until reset."
+  },
+  {
+    "id": 248,
+    "question": "Which device is used to choose LOCAL/OFF/REMOTE modes?",
+    "options": ["42", "88", "52", "21", "59"],
+    "answer": "42",
+    "explanation": "42 = selector switch for cutouts."
+  },
+  {
+    "id": 249,
+    "question": "Which device re-energizes a line after a temporary fault?",
+    "options": ["79", "51", "27", "59", "87"],
+    "answer": "79",
+    "explanation": "79 = try again → recloser."
+  },
+  {
+    "id": 250,
+    "question": "Which device detects HIGH voltage?",
+    "options": ["59", "27", "21", "50", "42"],
+    "answer": "59",
+    "explanation": "59 = HIGH (because 59 is a high number)."
+  },
+  {
+    "id": 251,
+    "question": "Which device compares phase current to detect internal faults?",
+    "options": ["87", "51", "79", "27", "52"],
+    "answer": "87",
+    "explanation": "87 = differential relay, iconic for transformers."
+  },
+  {
+    "id": 252,
+    "question": "Which device supervises overcurrent with delay?",
+    "options": ["51", "50", "86", "42", "21"],
+    "answer": "51",
+    "explanation": "51 = inverse time curve."
+  },
+  {
+    "id": 253,
+    "question": "Which device is an instantaneous overcurrent relay?",
+    "options": ["50", "51", "52", "59", "21"],
+    "answer": "50",
+    "explanation": "50 = fast, no delay."
+  },
+  {
+    "id": 254,
+    "question": "Which device provides automatic reclosing?",
+    "options": ["79", "52", "50", "21", "42"],
+    "answer": "79",
+    "explanation": "79 = auto retry."
+  },
+  {
+    "id": 255,
+    "question": "Which device is used as a multifunction relay?",
+    "options": ["11", "87", "52", "86", "21"],
+    "answer": "11",
+    "explanation": "11 = two straight lines → multiple combined functions."
+  },
+  {
+    "id": 256,
+    "question": "Which device trips & prevents reclose until manually reset?",
+    "options": ["86", "52", "50", "59", "42"],
+    "answer": "86",
+    "explanation": "86 = lockout. NOTHING moves until YOU do."
+  },
+  {
+    "id": 257,
+    "question": "Which device senses undervoltage?",
+    "options": ["27", "59", "79", "51", "42"],
+    "answer": "27",
+    "explanation": "27 = low voltage."
+  },
+  {
+    "id": 258,
+    "question": "Which device handles line impedance to locate faults?",
+    "options": ["21", "50", "87", "42", "59"],
+    "answer": "21",
+    "explanation": "21 = distance relay."
+  },
+  {
+    "id": 259,
+    "question": "Which device operates auxiliary motors or air systems?",
+    "options": ["88", "42", "51", "27", "21"],
+    "answer": "88",
+    "explanation": "88 looks like two wheels spinning → motors."
+  },
+  {
+    "id": 260,
+    "question": "Which device controls an AC breaker?",
+    "options": ["52", "87", "27", "51", "42"],
+    "answer": "52",
+    "explanation": "52 = classic breaker symbol."
+  },
+  {
+  "id": 261,
+  "question": "The NETA specifications for test instruments require that field instrument are calibrated every _____ months and that laboratory instrument are calibrated every _____ months.",
+  "options": [
+    "6, 24",
+    "6, 6",
+    "12, 12",
+    "6, 12",
+    "24, 6"
+  ],
+  "answer": "6, 12",
+  "explanation": "NETA MTS requires field instruments to be calibrated every 6 months because they are exposed to rough handling, temperature changes, vibration, and transport. These include: multimeters, clamp meters, insulation testers (Meggers), DLROs, analog/digital low-voltage meters, CT polarity testers, transformer turns-ratio testers, and portable relay test sets. Laboratory instruments—such as high-accuracy reference meters, resistance standards, precision voltage/current sources, and bench-top calibration equipment—are kept in controlled environments and therefore require calibration every 12 months."
+  },
+  {
+  "id": 262,
+  "question": "When measuring resistance of circuit breaker contacts, would the resultant reading be expressed in units of",
+  "options": [
+    "microohms",
+    "ohms",
+    "kiloohms",
+    "kilocycles"
+  ],
+  "answer": "microohms",
+  "explanation": "Circuit breaker contact resistance is very low—typically in the range of a few microohms to tens of microohms—because the contacts must carry high currents with minimal heating. Therefore, results are expressed in microohms. 'Ohms' is too large a unit and would not show the fine differences required to detect contact wear. 'Kiloohms' is thousands of ohms and has no relevance to high-current power contacts. 'Kilocycles' is not even a unit of resistance; it is an old term for kilohertz (frequency)."
+  },
+  {
+  "id": 263,
+  "question": "You are performing a transformer Turns Ratio Test (TTR). The transformer has a high-voltage (primary) winding labeled H1–H3 and a low-voltage (secondary) winding labeled X0–X1. If you apply the test voltage across the H3–H1 primary winding, which secondary winding terminals should be connected to the meter to correctly measure the turns ratio?",
+  "options": [
+    "X1-X0",
+    "X0-X1",
+    "H3-X3",
+    "X0-H3",
+    "H3-X0"
+  ],
+  "answer": "X0-X1",
+  "explanation": "To properly perform a turns ratio test, the test voltage is applied across the full primary winding (H3–H1), and the induced voltage is measured across the corresponding full secondary winding (X0–X1). The terminal orientation matters because TTR meters use polarity to determine proper winding direction. X0–X1 represents the correct polarity alignment for the H3–H1 primary connection. \n\nX1–X0 is the same winding but reversed; although the ratio numerically would be the same, it results in reversed polarity and an incorrect or failed measurement on a TTR meter. H3–X3 mixes primary and secondary terminals, which is never used for ratio testing. X0–H3 also mixes primary and secondary terminals and cannot be used for ratio. H3–X0 is likewise invalid because ratio cannot be measured between primary and secondary terminals. Only X0–X1 is the correct secondary winding for a proper TTR measurement when energizing H3–H1."
+  },
+  {
+  "id": 264,
+  "question": "On an ungrounded three-phase Delta system, what is the maximum voltage that can appear from any phase conductor to ground?",
+  "options": [
+    "Zero volts",
+    "Line voltage",
+    "Phase voltage",
+    "√3 × phase voltage",
+    "It cannot be determined"
+  ],
+  "answer": "Line voltage",
+  "explanation": "In an ungrounded Delta system, none of the phases are intentionally connected to ground. Because there is no reference point, a single phase can drift capacitively until one phase becomes effectively grounded through system capacitance. In the worst case (during a ground fault on one phase), the remaining two healthy phases rise to full line voltage with respect to ground. Therefore, the maximum possible phase-to-ground voltage is the line voltage.\n\nWhy the other answers are wrong:\n- **Zero volts**: Only true in a perfectly balanced ideal system with no capacitive coupling—this never occurs in real power systems. Phase-to-ground voltage in an ungrounded system is never reliably zero.\n- **Phase voltage**: This would be correct only for solidly grounded or wye systems where one point is tied to ground. In an ungrounded Delta there is no grounded reference.\n- **√3 × phase voltage**: This value is larger than line voltage and does not occur in Delta regarding phase-to-ground conditions.\n- **It cannot be determined**: While exact instantaneous value may float, the *maximum possible* value is clearly defined by system behavior—line voltage.\n\nLearning for variations: Any time a system is ungrounded or has a floating neutral (Delta or high-resistance grounded with certain faults), phase-to-ground voltage can rise to full line voltage on the unfaulted phases. Remember: no ground reference → possible voltage rise to line voltage."
+  },
+  {
+  "id": 265,
+  "question": "If an IAC 51 relay is set on the 1-amp tap and driven by a 200/5 CT, what actual circuit current must flow for the relay to begin operating?",
+  "options": [
+    "Current must exceed 5 amps",
+    "Current must exceed 20 amps",
+    "Current must be greater than 40 amps",
+    "Current must exceed 200 amps",
+    "Current must exceed 1 amp"
+  ],
+  "answer": "Current must be greater than 40 amps",
+  "explanation": "The relay is set on the 1-amp tap, meaning the relay begins to pick up when the **secondary current reaches 1 amp**. The CT ratio is 200/5, which reduces primary current to a secondary value by a factor of 40 (because 200 ÷ 5 = 40). To determine the primary current required to produce 1 amp into the relay, multiply the relay tap by the CT ratio: 1 A × 40 = 40 A. Therefore, the actual circuit must exceed **40 amps** before the relay starts operating.\n\nWhy wrong answers are wrong:\n- **\"Current must exceed 5 amps\"**: 5 A is the CT’s rated secondary current at full load, not the relay pickup value.\n- **\"Current must exceed 20 amps\"**: 20 A in the primary would produce 0.5 A secondary (20 ÷ 40), which is below the 1-amp pickup.\n- **\"Current must exceed 200 amps\"**: 200 A primary produces 5 A secondary (full CT ratio), far above pickup; this is not the *minimum* pickup value.\n- **\"Current must exceed 1 amp\"**: This describes relay secondary current, not primary circuit current, and does not answer the required primary value.\n\nHow to calculate:\n1. Identify relay tap: **1 A**.\n2. Determine CT ratio: **200/5 ⇒ 40:1 reduction**.\n3. Multiply relay tap × CT ratio: **1 A × 40 = 40 A**.\n4. That is the minimum primary current needed to make 1 A secondary and pick up the relay."
+  },
+  {
+  "id": 266,
+  "question": "At a constant test voltage, a resistance or leakage current to ground plotted with respect to time develops an _____ curve. A ratio of two specific readings taken at one minute and at ten minutes is used to determine the _____ index.",
+  "options": [
+    "Leakage, Insulation",
+    "Absorption, Polarization",
+    "Dielectric, Resistivity",
+    "Time-current, Polarization",
+    "Capacitive, Insulation"
+  ],
+  "answer": "Absorption, Polarization",
+  "explanation": "When performing insulation testing using a megohmmeter, the insulation resistance or leakage current measured over time at a constant voltage develops an **absorption curve**. The insulation charges like a capacitor initially, then the current decreases and stabilizes. The ratio of the readings at 1 minute and 10 minutes is used to calculate the **polarization index (PI)**, which is an indicator of insulation condition.\n\nWhy the correct answer is correct:\n- **Absorption curve** represents how insulation charges and conducts current over time under DC voltage.\n- **Polarization index** is defined as: PI = R(10 min) / R(1 min), used to assess insulation quality.\n\nWhy the other options are wrong:\n- **Leakage, Insulation**: While leakage is measured, the curve itself is called an absorption curve, not simply 'leakage'; the ratio is the polarization index, not 'insulation'.\n- **Dielectric, Resistivity**: Dielectric is a property of material but does not describe the time-dependent curve. Resistivity is related to material property, not the time-based ratio.\n- **Time-current, Polarization**: Time-current is a concept in protective relays, not insulation testing.\n- **Capacitive, Insulation**: Insulation acts like a capacitor, but the correct terminology for the curve is absorption, not 'capacitive'; again, the ratio determines polarization index, not just insulation.\n\nCalculation/interpretation note: Measure insulation resistance at 1 minute (R1) and 10 minutes (R10), then compute PI = R10 / R1. PI > 2 is generally good, PI < 1.5 indicates poor insulation."
+  },
+  {
+  "id": 267,
+  "question": "The gauges indicate abnormal conditions in an askarel-filled transformer: liquid temperature: 90°C, liquid level: close to low, pressure/vacuum: zero. What is the likely problem? (No liquid leak is noted)",
+  "options": [
+    "Low liquid temperature, high level. Possibly overfilled transformer due to condensation.",
+    "High pressure reading and high liquid level. Likely overcharging of the TBC fluid.",
+    "High liquid temperature and low liquid level. Probably an atmospheric leak above the liquid level. TBC solvent has flashed off, reducing the liquid volume.",
+    "Normal operating conditions. Temperature and level are within acceptable limits.",
+    "Low temperature and low liquid level. Indicating a severe leak in the tank."
+  ],
+  "answer": "High liquid temperature and low liquid level. Probably an atmospheric leak above the liquid level. TBC solvent has flashed off, reducing the liquid volume.",
+  "explanation": "Correct answer explanation:\n- The liquid temperature of 90°C is above normal, and the level is near the low mark. The pressure/vacuum gauge reads zero, which is common in askarel-filled transformers since the dielectric fluid is non-volatile under normal conditions.\n- Because there is **no liquid leak**, the low level is not caused by leakage. The most likely cause is that the **TBC solvent has slowly flashed off into the atmosphere** through a small atmospheric leak above the liquid level. This reduces the total liquid volume and can increase temperature due to reduced heat transfer.\n\nWhy the other options are wrong:\n- **\"Normal operating conditions...\"**: 90°C is above normal liquid temperature for an askarel-filled transformer; liquid level near low is abnormal.\n- **\"Low liquid temperature, high level...\"**: Does not match the measured conditions; temperature is high, not low, and the level is low.\n- **\"High pressure reading and high liquid level...\"**: Pressure is zero, not high, and level is low, not high; this does not fit the scenario.\n- **\"Low temperature and low liquid level...\"**: Temperature is high, not low; also, no leak is noted, so 'severe leak' is incorrect.\n\nKey point for variations:\n- When diagnosing askarel/TBC transformers, look for combinations of **temperature, liquid level, and pressure/vacuum**. If temperature is high and level low **without a leak**, consider **solvent flash-off** or trapped air above liquid. If pressure is high, or a leak is present, different causes apply."
+  },
+  {
+  "id": 268,
+  "question": "What are BDD or HU relays designed to protect? What is the principal design feature that is absent in other differential relays?",
+  "options": [
+    "Generator protection / Overcurrent sensing only",
+    "Transformer protection / Harmonic restraint circuit to prevent false tripping on magnetizing inrush",
+    "Bus differential protection / No harmonic restraint required",
+    "Motor protection / Thermal overload feature only",
+    "Feeder protection / Instantaneous overcurrent only"
+  ],
+  "answer": "Transformer protection / Harmonic restraint circuit to prevent false tripping on magnetizing inrush",
+  "explanation": "Correct answer explanation:\n- **BDD or HU relays** are specialized **transformer differential relays** designed to protect transformers. The key challenge with transformer differential protection is that during energization, the transformer draws a large inrush current, which is **non-fault current rich in second harmonics**. To prevent false tripping, BDD/HU relays include a **harmonic restraint circuit** that blocks operation when the current contains a high second harmonic content.\n\nWhy the other answers are wrong:\n- **\"Generator protection / Overcurrent sensing only\"**: Generators use different differential or overcurrent relays; they don’t use the harmonic restraint feature typical of transformer differential relays.\n- **\"Bus differential protection / No harmonic restraint required\"**: Bus differential relays do not experience magnetizing inrush; harmonic restraint is not needed.\n- **\"Motor protection / Thermal overload feature only\"**: Motor differential relays protect against faults, not inrush; thermal overload is unrelated to harmonic restraint.\n- **\"Feeder protection / Instantaneous overcurrent only\"**: Feeders are protected with overcurrent or distance relays; harmonic restraint is unnecessary.\n\nKey principle for variations:\n- **Any transformer differential relay question may include a trap**: magnetizing inrush can mimic a fault. BDD/HU relays are distinguished by **harmonic restraint**, which is absent in other differential relays like bus or motor differential types."
+  },
+  {
+  "id": 269,
+  "question": "Contact resistance of air circuit breakers is usually measured in units of",
+  "options": [
+    "Ohms",
+    "Kiloohms",
+    "Milliohms",
+    "Microohms",
+    "Megoohms"
+  ],
+  "answer": "Microohms",
+  "explanation": "Correct answer explanation:\n- Air circuit breaker contacts carry very high currents and have extremely low resistance, typically in the **microohm range (μΩ)**. Measuring in microohms allows detecting small increases in resistance that indicate contact wear or corrosion.\n\nWhy the other options are wrong:\n- **Ohms**: Too large a unit; normal contact resistance of an ACB is far below 1 ohm.\n- **Kiloohms**: Thousands of ohms are completely inappropriate; no circuit breaker contact has such high resistance.\n- **Milliohms**: Still much too large; while sometimes used for busbars or large connections, ACB contacts require microohm precision.\n- **Megohms**: Millions of ohms are used for insulation testing, not contact resistance.\n\nKey learning point for variations:\n- Any breaker or bus contact test requires **microohm measurement**. If asked for transformers or cables, insulation may use megohms, but contact resistance remains microohms. Always check the context: high current contacts = μΩ."
+  },
+  {
+  "id": 270,
+  "question": "The proper maximum DC high potential Acceptance Test voltage for new 5kV rated cable",
+  "options": [
+    "5kV",
+    "11kV",
+    "15kV",
+    "25kV",
+    "31kV"
+  ],
+  "answer": "25kV",
+  "explanation": "For a 5kV rated cable, the DC high potential (Hi-Pot) test is typically performed at a voltage several times the rated voltage to ensure insulation integrity. Standards such as IEEE 400 recommend applying a DC test voltage of approximately 5 times the cable's rated voltage for new cable. Therefore, 5kV × 5 = 25kV. Lower voltages like 5kV, 11kV, or 15kV would not sufficiently stress the insulation, while 31kV could exceed safety margins and potentially damage the cable."
   }
 ]
